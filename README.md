@@ -1,4 +1,24 @@
+## About project
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+
+CSS: styled components
+npm install --save styled-components 
+
+## Start project
+- docker-compose up --build (from adoveocouponsystem repo)
+- (cmd + t if want 2 tabs in same terminal window)
+- npm start (from coupon-system-frontend)
+
+## Install project
+- git clone git@github.com:nagavenkata/adoveocouponsystem.git (needs access first)
+- npm install (from coupon-system-frontend)
+
+## Help files
+Component tree + function analysis light: https://www.figma.com/file/RJa569kdHOhQxAy5Su2ptK/component-tree?node-id=0%3A1
+
+Coupon wireframe: https://www.figma.com/file/XDFVJANTdT8EFEeEva4fvr/coupon-platform?node-id=42%3A7405
+
+
 
 ## Available Scripts
 
