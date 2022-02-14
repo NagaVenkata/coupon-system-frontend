@@ -12,7 +12,7 @@ import UserPage from "./domain/userpage/index";
 function App() {
 
     return (
-          <div id="app">
+          <Styled.App id="app">
             <Router>
               <Routes>
                 <Route exact path="/" element={<Home />}></Route>
@@ -23,7 +23,7 @@ function App() {
                 {/* <BrowserRouter> */}
                   {/* <CouponSystemMainPage /> */}
                 {/* </BrowserRouter> */}
-          </div>
+          </Styled.App>
   );
 }
 

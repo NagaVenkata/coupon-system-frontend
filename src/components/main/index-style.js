@@ -2,10 +2,9 @@ import styled from 'styled-components';
 
 export const ColumnWrapper = styled.div`
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+   
 `;
 
 export const ColumnWrapperL = styled.div`
-    width: 60%;
+
 `;

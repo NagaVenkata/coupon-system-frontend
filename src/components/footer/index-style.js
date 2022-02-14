@@ -5,7 +5,9 @@ export const Footer = styled.footer`
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    margin-top: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 `;
 
 export const SomeIconWrapper = styled.div`
