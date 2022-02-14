@@ -4,6 +4,16 @@ export const ColumnWrapperR = styled.div`
     width: 40%;
 `;
 
+export const TermsWrapper = styled.div`
+    display: flex;
+    margin-top: 10px;
+`;
+
+export const TermsCheckbox = styled.input`
+    width: 30px;
+    height: 30px;
+`;
+
 
 // <div id='column-wrapper-R'>
 // <h3>Skapa gratiskonto</h3>

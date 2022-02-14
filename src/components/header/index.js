@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Styled from './style';
+import * as Styled from './index-style';
 
 import RegisterBtn from '../../components/button/register-btn';
 import LoginBtn from '../../components/button/login-btn';

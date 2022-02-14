@@ -10,7 +10,6 @@ export default function Home() {
         <Header />
         <Main />
         <Footer />
-        This is Home domain
     </>
   )
 };

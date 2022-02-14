@@ -4,13 +4,15 @@ import { Provider as ReduxProvider } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css"; //why bootstrap?
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+import * as Styled from './App-style';
+
 import Home from "./domain/home/index";
 import UserPage from "./domain/userpage/index";
 
 function App() {
 
     return (
-          <>
+          <div id="app">
             <Router>
               <Routes>
                 <Route exact path="/" element={<Home />}></Route>
@@ -21,7 +23,7 @@ function App() {
                 {/* <BrowserRouter> */}
                   {/* <CouponSystemMainPage /> */}
                 {/* </BrowserRouter> */}
-          </>
+          </div>
   );
 }
 

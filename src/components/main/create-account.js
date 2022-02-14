@@ -13,8 +13,11 @@ export default function CreateAccount() {
             <label id='label-user-password'>Välj lösenord:</label> 
             <input type='text' id='user-password' name='user-password' placeholder='Minst 8 tecken'/>
 
-            <input id='checkbox'></input>
-            <p>Jag godkänner villkoren Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <Styled.TermsWrapper id="termsWrapper">
+              <Styled.TermsCheckbox id='checkbox'></Styled.TermsCheckbox>
+              <p>Jag godkänner villkoren Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </Styled.TermsWrapper>
+            
         </form>
         
     </Styled.ColumnWrapperR>
