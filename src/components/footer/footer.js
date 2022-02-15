@@ -1,9 +1,9 @@
 import React from 'react';
-import * as Styled from './index-style';
+import styles from './footer.module.css';
 
 export default function Footer() {
   return (
-    <Styled.Footer id='footer'>
+    <div id='footer' className={styles.footerWrapper}>
         <div>
           <h4>Hjälp</h4>
           <ul>
@@ -31,12 +31,12 @@ export default function Footer() {
               <li>lovisa@adoveo.com</li>
           </ul>
         </div>
-        <Styled.SomeIconWrapper id="some-icon-wrapper">
+        <div id="some-icon-wrapper">
           <p>li</p>
           <p>fb</p>
           <p>ig</p>
-        </Styled.SomeIconWrapper>
+        </div>
 
-    </Styled.Footer>
+    </div>
   )
 };
