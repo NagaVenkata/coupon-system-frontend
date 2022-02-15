@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './register.module.css';
+import { setUser } from '../../actions/set-user';
+import { store } from '../../helpers/store';
 
 export default function Register(props) {
 
-  const onSubmit = () => {
-
+  const [userValue, setUserValue] = useState('');
+  
+  const onChange = (evt) => {
+    console.log("onchange:", evt.target.value);
+    setUserValue(evt.target.value);
   };
-
-  const onChange = () => {
-
+  const onSubmit = (evt) => {
+    evt.preventDefault();
+    console.log("save userValue:", userValue);
+    store.dispatch(setUser(userValue));
   };
-
 
   return (
     <div id='registerWrapper' className={styles.registerWrapper}>

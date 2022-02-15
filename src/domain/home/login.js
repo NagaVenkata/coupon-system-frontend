@@ -16,19 +16,10 @@ export default function Login(props) {
     // if login ok -> backend send: getUserId + getCampaignArr
  
     let getUserId = "userid-1a";
-    let getCampaignArr = [
-      {
-        'campaignId': '1',
-        'campaignTitle': "Kampanj1",
-      }, {
-        'campaignId': '2',
-        'campaignTitle': "Kampanj2",
-      }
-    ];
 
     let existingUser = {
       "userId": getUserId,
-      "campaignArr": getCampaignArr
+      // "campaignArr": getCampaignArr
     };
     console.log("existingUser", existingUser);
 

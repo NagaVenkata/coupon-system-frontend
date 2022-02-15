@@ -18,12 +18,17 @@ export default function Home() {
        'userName': 'pippi@mail.com',
        'password': 'pippi',
        'campaignArrId': '1'
-      }
+      }, {
+        'userId': '2',
+        'userName': 'tommy@mail.com',
+        'password': 'tommy',
+        'campaignArrId': '2'
+       }
     ];
-
-    
-
     //later add mockCampaignArrs?
+
+    localStorage.setItem('users', JSON.stringify(mockUsers));
+    
   }, []);
 
   const [showLogin, setShowLogin] = useState(false);

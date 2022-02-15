@@ -1,15 +1,17 @@
-import { combineReducers } from 'redux';
+export default function reduce(state, action) {
+    console.log("reducer", state);
 
-import { login } from './login.reducers';
-/*import { registration } from './registration.reducer';
-import { users } from './users.reducer';
-import { alert } from './alert.reducer';*/
+    switch(action.type) {
+        case "SET_USER":
+            return {
+                ...state, user: action.user
+            }
+        // case "SET_CLICKED": 
+        //     return {
+        //         ...state, clicked: action.clicked
+        //     }
 
-const rootReducer = combineReducers({
-    login/*,
-    registration,
-    users,
-    alert*/
-});
-
-export default rootReducer;
+            default: 
+            return state;
+    };
+};
