@@ -6,6 +6,8 @@ import LoginBtn from '../../components/button/login-btn';
 
 export default function Header() {
 
+  //add if userId exist -> hide register-btn + login-btn and show statistic+accountSetting
+
   return (
     <Styled.Header id='header'>
     {/* <Style /> */}
@@ -18,8 +20,8 @@ export default function Header() {
             </Styled.Ul>
         </Styled.Nav>
         <div className='btnWrapper'>
-            <RegisterBtn />
-            <LoginBtn />
+          <button id="register-btn">Skapa konto</button>
+          <button id="login-btn">Logga in</button>
         </div>
     </Styled.Header>
   )

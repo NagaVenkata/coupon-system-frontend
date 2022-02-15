@@ -1,91 +1,96 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import * as Styled from './create-account-style';
 
 import RegisterBtn from '../button/register-btn';
+// import UserPage from '../../domain/userpage/index';
 
 export default function CreateAccount() {
+  const [users, setUsers] = useState([]);
+
+  // let navigate = useNavigate();
   const [inputUserName, setInputUserName] = useState('');
   const [inputPassword, setInputPassword] = useState('');
 
-  const [newUser, setNewUser] = useState({});
+  const [userId, setUserId] = useState({});
 
-  let users = [
-    {"username": "pippi@mail.com", "password": "test1"},
-    {"username": "tommy@mail.com", "password": "test2"}
-  ];
+
+  useEffect( () => {
+    //set data to lS
+    let mockUsers = [
+      {
+        "userId": "1", "username": "pippi@mail.com", "password": "test1"
+      }, {
+        "userId": "2", "username": "tommy@mail.com", "password": "test2"
+      }
+    ];
+    localStorage.setItem('users', JSON.stringify(mockUsers));
+  }, []);
+  
 
   const onSubmit = (evt) => {
     evt.preventDefault();
 
-    if ( (inputUserName.name !== '') && (inputPassword.password !== '') && (document.getElementById('terms-checkbox').checked === true)) {
-      console.log("allt är ifyllt");
-    } else {
-      if (inputUserName.name === '') {
-        console.log("Välj din email som ditt användarnamn.");
-      }
-      if (inputPassword.name === '') {
-        console.log("Välj ett lösenord, max 8 tecken.");
-      }
-      if (document.getElementById('terms-checkbox').checked !== true) {
-        console.log("För att skapa ett konto måste du först godkänna våra villkor.");
-      }
+     // check if input fields aren't empty
+    // check if terms are accepted
+    // send newUser(username + password) to backend. Check if userName already exists. if not exist -> send back userId, else -> errorMsg 
 
-    }
+    //userId from db
+    let getUserId = '3';
+    setUserId(getUserId);
+    
+    console.log("visa userpage");
 
-    // if (inputUserName !== '') {
-    //   console.log("kolla om username finns");
-    // } else {
-    //   console.log("du måste fylla i både användarnamn");
-    // };
+    // document.getElementById('register-error-wrapper').innerHTML = '';
 
-    // if (inputPassword === '') {
-    //   console.log("du måste fylla i både password:", inputPassword);
+   
 
-    // } else {
-    //   console.log("fyllt i password", inputPassword);
-    // };
+    //hämta från input
+    
 
-
-
-    //check if terms are accepted
-    // if (document.getElementById('terms-checkbox').checked === true) {
       
-      // let userArr = [];
-      // let newUser = {
-      //     username: inputUserName,
-      //     password: inputPassword
+      
+      
+      
+
+      // //check if lS is empty 
+      // if (JSON.parse(localStorage.getItem('users')) === null) {
+      //   userArr.push(newUser);
+      //   localStorage.setItem('users', JSON.stringify(userArr));
+      // } else {
+      //   //get from lS
+      //   let getUsers = JSON.parse(localStorage.getItem('users')); 
+
+      //   //change
+      //   getUsers.push(newUser);
+      //   console.log("logga in:", getUsers);
+
+      //   //save to lS
+      //   localStorage.setItem('users', JSON.stringify(getUsers));
+
+        //save userId to state 
+
+        //navigate 
+        // navigate('/userpage',{state: userId})
+    
+        
       // };
 
-    //   //check if lS is empty ADD: && if userName exist
-    //   if (JSON.parse(localStorage.getItem('users')) === null) {
-    //     userArr.push(newUser);
-    //     localStorage.setItem('users', JSON.stringify(userArr));
-    //   } else {
-    //     //get from lS
-    //     let getUsers = JSON.parse(localStorage.getItem('users')); 
-
-    //     //change
-    //     getUsers.push(newUser);
-    //     console.log("logga in:", getUsers);
-
-    //     //save to lS
-    //     localStorage.setItem('users', JSON.stringify(getUsers));
-    //   };
-
     // } else {
-    //   document.getElementById('register-error-wrapper').innerHTML = 'För att skapa ett konto måste du först godkänna våra villkor.';
+      // document.getElementById('register-error-wrapper').innerHTML = 'För att skapa ett konto måste du först godkänna våra villkor.';
     // };
   };
 
   const onChange = (evt) => {
-    document.getElementById('register-error-wrapper').innerHTML = '';
+    // document.getElementById('register-error-wrapper').innerHTML = '';
+
+    
 
     switch (evt.target.id) {
       case "input-username":
-        setInputUserName({[evt.target.name]: evt.target.value})
+        setInputUserName(evt.target.value); 
       break;
       case "input-password":
-        setInputPassword({[evt.target.name]: evt.target.value})
+        setInputPassword(evt.target.value)
       break;
       default:
       break;

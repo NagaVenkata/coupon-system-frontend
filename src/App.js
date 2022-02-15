@@ -6,8 +6,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import * as Styled from './App-style';
 
-import Home from "./domain/home/index";
-import UserPage from "./domain/userpage/index";
+import Home from './domain/home/index';
+import UserPage from './domain/userpage/index';
+import CreateCampaign from './domain/create-campaign/index';
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
               <Routes>
                 <Route exact path="/" element={<Home />}></Route>
                 <Route exact path="/userpage" element={<UserPage />}></Route>
+                <Route exact path="/userpage/create-campaign" element={<CreateCampaign />}></Route>
+                 
 
               </Routes>
             </Router>
