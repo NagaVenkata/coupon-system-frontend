@@ -1,0 +1,15 @@
+.registerWrapper {
+    padding: 10px 10px 0px 10px;
+
+    /* TODO remove later: */
+    border: 1px solid black;
+}
+
+.textAndCloseWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textWrapper {
+    max-width: 70%;
+}

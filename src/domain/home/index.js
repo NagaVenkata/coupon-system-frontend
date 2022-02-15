@@ -1,31 +1,44 @@
 import React, { useState } from 'react';
-import Header from '../../components/header/header';
 
+
+import Header from '../../components/header/header';
 import IntroSection from './intro-section';
-import LoginMain from './login-main';
-import RegisterMain from './register-main';
+import Login from './login';
+import Register from './register';
 import B2BFlow from './b2b-flow';
 import B2CFlow from './b2c-flow';
-
-import Footer from '../../components/footer/footer';
 
 
 export default function Home() {
 
-  const [showLogin, setShowLogin] = useState(true);
+  const [showLogin, setShowLogin] = useState(false);
+  const [showRegister, setShowRegister] = useState(false);
+  const [userId, setUserId] = useState('');
+
+  const onClickRegister = () => {
+    setShowRegister(true);
+    setShowLogin(false);
+  };
+
+  const onClickLogin = () => {
+    setShowLogin(true);
+    setShowRegister(false);
+  };
+
+  const onClickClose = () => {
+    console.log("stäng");
+    setShowLogin(false);
+    setShowRegister(false);
+  };
 
   return (
     <>
-        <Header />
+        <Header onClickLogin={onClickLogin} onClickRegister={onClickRegister}/>
+        {showLogin ? <Login userId={userId} onClickClose={onClickClose}/> : ''}
+        {showRegister ? <Register onClickClose={onClickClose}/> : ''}
         <IntroSection />
-        {showLogin ?  <LoginMain /> : <RegisterMain />}
         <B2CFlow />
         <B2BFlow />
-        <Footer />
     </>
   )
 };
-
-
-
-//what's the diff? import Header from '../../components/header';

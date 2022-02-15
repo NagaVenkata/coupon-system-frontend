@@ -2,9 +2,16 @@ import React, {useState, useEffect} from 'react';
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 
-export default function UserPage() {
+export default function UserPage(props) {
 
-    //Adjust Header - remove register+loginBtns. Print statisticIcon+Accountsetting
+    // const [userId, setUserId] = useState('');
+
+    useEffect( () => {
+        // setUserId(props.userId);
+        // console.log("props userpage", props);
+    }, []);
+
+    //Adjust Header - remove register+loginBtns. Print statisticIcon+Accountsettings
     const [showCreateCampaign, setShowCreateCampaign] = useState(false);
 
     const handleClick = () => {
@@ -34,7 +41,6 @@ export default function UserPage() {
                 </div>
             </div>
         <Footer />
-
     </>
   )
 }
