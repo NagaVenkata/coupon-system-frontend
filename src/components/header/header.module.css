@@ -1,0 +1,21 @@
+
+.headerWrapper {
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    /* TODO remove later: */
+    border: 1px solid black;
+}
+
+.menuWrapper {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    
+    /* TODO remove later: */
+    border: 1px solid black;
+
+}

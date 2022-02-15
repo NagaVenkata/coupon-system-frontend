@@ -1,19 +1,49 @@
 ## About project
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Install project
-- git clone git@github.com:nagavenkata/adoveocouponsystem.git (needs access first)
-- npm install (from coupon-system-frontend)
+CSS: using CSS modules due to time limit (later on, using for example Tailwind + sass, styled components or semantic ui)
 
 ## Start project
 - docker-compose up --build (from adoveocouponsystem repo)
 - (cmd + t if want 2 tabs in same terminal window)
 - npm start (from coupon-system-frontend)
 
-## Design files
+## Install project
+- git clone git@github.com:nagavenkata/adoveocouponsystem.git (needs access first)
+- npm install (from coupon-system-frontend)
+
+## Help files
 Component tree + function analysis light: https://www.figma.com/file/RJa569kdHOhQxAy5Su2ptK/component-tree?node-id=0%3A1
 
 Coupon wireframe: https://www.figma.com/file/XDFVJANTdT8EFEeEva4fvr/coupon-platform?node-id=42%3A7405
+
+## Structure
+index.js 
+    app.js
+        domain: 
+        home
+            index.js
+            index.module.css
+            other files that's used in home page (maybe move to components folder?)
+        userpage
+            index.js
+
+        components:
+        header
+            header.js
+            header.module.css
+        footer
+            footer.js
+            footer.module.css
+        not-found
+            not-found.js
+        
+
+
+
+
+
+
 
 
 ## Available Scripts
