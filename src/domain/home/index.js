@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-
+import React, { useEffect, useState } from 'react';
 
 import Header from '../../components/header/header';
 import IntroSection from './intro-section';
@@ -10,6 +9,22 @@ import B2CFlow from './b2c-flow';
 
 
 export default function Home() {
+
+  useEffect( () => {
+    //set mockdata in lS
+    let mockUsers = [
+      {
+       'userId': '1',
+       'userName': 'pippi@mail.com',
+       'password': 'pippi',
+       'campaignArrId': '1'
+      }
+    ];
+
+    
+
+    //later add mockCampaignArrs?
+  }, []);
 
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
