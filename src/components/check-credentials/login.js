@@ -65,11 +65,11 @@ export default function Login(props) {
         }
 
       } else {
-        setLoginErrorMsg('Vi kan inte hitta något konto med denna mail. Försök med en annan mail eller skapa ett nytt konto.');
+        setLoginErrorMsg('För att logga in behöver du fylla i rätt användarnamn och lösenord. Pröva igen eller kontakta oss så hjälper vi dig!');
       };
       
     } else {
-      setLoginErrorMsg('För att logga in behöver du fylla i användarnamn och lösenord. Testa igen eller kontakta oss så hjälper vi gärna till!');
+      setLoginErrorMsg('För att logga in behöver du fylla i både användarnamn och lösenord. Pröva igen!');
     }
   };
 
