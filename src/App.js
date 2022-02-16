@@ -15,12 +15,11 @@ function App() {
 
   return (
         <div id="app" className={styles.appWrapper}>
-
           <Router>
             <Routes>
               <Route exact path="/" element={<Home />}></Route>
-              <Route exact path="/userpage" element={<UserPage />}></Route>
-              <Route exact path="/userpage/create-campaign" element={<CreateCampaign />}></Route>
+              <Route exact path="/userpage/:userId" element={<UserPage />}></Route>
+              <Route exact path="/userpage/create-campaign/:campaignId" element={<CreateCampaign />}></Route>
               <Route exact path='*' element={<NotFound />}></Route>
                 
             </Routes>

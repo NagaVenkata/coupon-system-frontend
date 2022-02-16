@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../../components/header/header';
 import IntroSection from './intro-section';
 import Login from './login';
-import Register from './register';
+import Register from '../../components/check-credentials/register';
 import B2BFlow from './b2b-flow';
 import B2CFlow from './b2c-flow';
 
@@ -47,7 +47,6 @@ export default function Home() {
   };
 
   const onClickClose = () => {
-    console.log("stäng");
     setShowLogin(false);
     setShowRegister(false);
   };

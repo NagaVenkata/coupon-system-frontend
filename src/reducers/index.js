@@ -6,6 +6,10 @@ export default function reduce(state, action) {
             return {
                 ...state, user: action.user
             }
+        case 'SET_USER_ID':
+            return {
+                ...state, userid: action.userId
+            }
         // case "SET_CLICKED": 
         //     return {
         //         ...state, clicked: action.clicked

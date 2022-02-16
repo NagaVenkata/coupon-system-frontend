@@ -1,12 +1,17 @@
 import React, {useState, useEffect} from 'react';
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
+import { useNavigate } from 'react-router';
+
 
 export default function UserPage(props) {
+    let navigate = useNavigate();
+
 
     // const [userId, setUserId] = useState('');
 
     useEffect( () => {
+        console.log("userId i userpage?", props.state);
         // setUserId(props.userId);
         // console.log("props userpage", props);
     }, []);
@@ -16,7 +21,9 @@ export default function UserPage(props) {
 
     const handleClick = () => {
         console.log("skapa ny kampanj");
-        setShowCreateCampaign(true);
+        let campaignId = 'campaign-title-and-123abc';
+        navigate(`/userpage/create-campaign/${campaignId}`); 
+        // setShowCreateCampaign(true);
     };
 
   return (

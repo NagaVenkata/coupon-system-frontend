@@ -7,3 +7,15 @@ export function setUser(userName) {
         user: userName
     };
 };
+
+
+export function setUserId(userId) {
+    console.log("actions", userId);
+
+    //create receipe
+    return {
+        type: 'SET_USER_ID', 
+        userid: userId
+    };
+};
+

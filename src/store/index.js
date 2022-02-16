@@ -1,8 +1,9 @@
-import reduce from "../reducers/index-addlater";
+import reduce from "../reducers/index";
 import { createStore } from "redux";
 
 const initialState = { 
     user: "Eva", 
+    userid: ''
     // clicked: 0
 };
 
