@@ -10,7 +10,9 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <ReduxProvider store={store}>
-      <App />
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
     </ReduxProvider>,
   document.getElementById('root')
 );

@@ -55,26 +55,26 @@ export default function Register(props) {
         // =========
 
         // get successMsg + needed info from backend, save userInfo to state:  
-        let userInfoLogged= {
+        let userLoggedIn = {
           userId: newUser.userId,
           campaignArr: [
             {
               campaignId: '1', 
-              campaignTitle: 'kampanjtitel', 
+              campaignTitle: 'kampanjtitel1', 
               deliveryDate: '2022-02-02'
             }, {
-              campaignId: '1', 
-              campaignTitle: 'kampanjtitel', 
-              deliveryDate: '2022-02-02'
+              campaignId: '2', 
+              campaignTitle: 'kampanjtitel2', 
+              deliveryDate: '2022-03-02'
             }
           ]
         };
 
-       //TODO: save state userInfoLogged in redux  
-       localStorage.setItem('userLoggedIn', JSON.stringify(userInfoLogged));
+       //TODO: save state userInfo in redux  
+       localStorage.setItem('userLoggedIn', JSON.stringify(userLoggedIn));
 
         //print userPage 
-        navigate(`/userpage/${newUser.userId}`);
+        navigate(`/userpage/${newUser.userId}`, {state: userLoggedIn});
       }
 
     } else {
@@ -96,10 +96,10 @@ export default function Register(props) {
       
 
       <form onSubmit={onSubmit}>
-        <div id="userNameWrapper">
-          <h4 id="userNameInputLabel">Din email</h4>
+        <div id="userNameRegisterWrapper">
+          <h4 id="userNameRegisterLabel">Din email</h4>
           <input 
-            id='usernameInput' 
+            id='usernameRegisterInput' 
             type='email' 
             name='userName' placeholder='example@mail.com' 
             value={userValue.username} 
@@ -107,11 +107,11 @@ export default function Register(props) {
           />
         </div><br></br>
 
-        <div id="passwordWrapper">
-          <h4 id="passwordInputLabel">Välj lösenord</h4>
+        <div id="passwordRegisterWrapper">
+          <h4 id="passwordRegisterLabel">Välj lösenord</h4>
           <input 
-            id='passwordInput' 
-            type='text' 
+            id='passwordRegisterInput' 
+            type='password' 
             name='password' 
             placeholder='Minst 8 tecken' 
             value={userValue.password} 

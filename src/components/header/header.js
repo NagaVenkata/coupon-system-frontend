@@ -2,7 +2,13 @@ import React, { useState ,useEffect } from 'react';
 import styles from './header.module.css';
 
 export default function Header(props) {
-  
+  const [isUser, setIsUser] = useState(false);
+
+  useEffect(() => {
+    setIsUser(props.isUser);
+    console.log("isUser från header:", isUser);
+  }, []);
+
   return (
     <header id='header' className={styles.headerWrapper}>
         <div id='logo'>KaChing</div>
@@ -16,10 +22,17 @@ export default function Header(props) {
         </nav>
         <div className='btnWrapper'>
         
-          <button id="register-btn-shortcut" onClick={props.onClickRegister}>Gå till skapa konto</button>
-
-          <button id="login-btn-shortcut" onClick={props.onClickLogin}>Gå till logga in</button>
-
+        {isUser ? 
+          <>
+            <button>Statistik</button>
+            <button>Min profil</button> 
+          </> 
+          : 
+          <>
+            <button id="register-btn-shortcut" onClick={props.onClickRegister}>Gå till skapa konto</button>
+            <button id="login-btn-shortcut" onClick={props.onClickLogin}>Gå till logga in</button>
+          </>
+        }
         </div>
     </header>
   )

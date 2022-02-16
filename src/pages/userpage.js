@@ -2,22 +2,23 @@ import React, {useState, useEffect} from 'react';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import { useNavigate } from 'react-router';
-
+import { useLocation } from "react-router-dom";
 
 export default function UserPage(props) {
     let navigate = useNavigate();
+    const location = useLocation();
 
+    const [isUser, setIsUser] = useState(true);
+    // const [showCreateCampaign, setShowCreateCampaign] = useState(false);
 
-    // const [userId, setUserId] = useState('');
 
     useEffect( () => {
-        console.log("userId i userpage?", props.state);
-        // setUserId(props.userId);
-        // console.log("props userpage", props);
+        const userLoggedIn = location.state;
+        console.log("userLoggedIn från userpage", userLoggedIn);
+        // setIsUser(true);
     }, []);
 
     //Adjust Header - remove register+loginBtns. Print statisticIcon+Accountsettings
-    const [showCreateCampaign, setShowCreateCampaign] = useState(false);
 
     const handleClick = () => {
         console.log("skapa ny kampanj");
@@ -28,7 +29,7 @@ export default function UserPage(props) {
 
   return (
     <>
-        <Header />
+        <Header isUser={setIsUser}/>
             <div id='userpage-main'>
                 <div id='userpage-start'>
                     <div id='create-campaign-wrapper'>
