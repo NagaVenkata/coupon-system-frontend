@@ -26,6 +26,7 @@ export default function Home() {
        }
     ];
     //later add mockCampaignArrs?
+    console.log("mockUsers in home:", mockUsers);
 
     localStorage.setItem('users', JSON.stringify(mockUsers));
     

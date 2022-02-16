@@ -13,3 +13,8 @@
 .textWrapper {
     max-width: 70%;
 }
+
+.errorMsg {
+    color: red;
+    border: 1px solid black;
+}

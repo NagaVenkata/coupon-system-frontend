@@ -1,20 +1,72 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router';
 import styles from './register.module.css';
 import { setUser } from '../../actions/set-user';
 import { store } from '../../helpers/store';
 
 export default function Register(props) {
+  let navigate = useNavigate();
 
   const [userValue, setUserValue] = useState('');
+  const [userValueTest, setUserValueTest] = useState({
+    userName: '',
+    password: ''
+  });
+  const [errorMsg, setErrorMsg] = useState('');
+
   
   const onChange = (evt) => {
-    console.log("onchange:", evt.target.value);
+
+    //save input value username + password in state
+    const value = evt.target.value;
+    setUserValueTest({
+      ...userValueTest,
+      [evt.target.name]: value
+    });
+    // console.log("userValueTest i onchange:", userValueTest);
+
+    //redux
     setUserValue(evt.target.value);
   };
   const onSubmit = (evt) => {
     evt.preventDefault();
-    console.log("save userValue:", userValue);
+    // redux:
     store.dispatch(setUser(userValue));
+
+    console.log("userValueTest i onSubmit", userValueTest);
+    
+    //send userValue to backend - check if userName exists -> false: add userId + save + send back userId. true: errorMsg. 
+
+    //getData
+    let getMockUsers = JSON.parse(localStorage.getItem('users'));
+
+    //check if userName is available
+    console.log("userValueTest", typeof userValueTest);
+    let userExists = Object.values(getMockUsers).find(obj => obj.userName === userValueTest.userName);
+
+    if (userExists !== undefined) {
+      setErrorMsg('Denna mail är redan registrerad, pröva att logga in istället!');
+    } else {
+      console.log("Jippie - kontot är skapat, nu kör vi!", userExists);
+      
+      let randomId = Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1); 
+
+      let newUser = {
+        userId: randomId,
+        userName: userValueTest.userName,
+        password: userValueTest.password,
+        campaignArrId: ''
+      };
+
+      //update getMockUsers
+      let newMockUsers = [...Object.values(getMockUsers), newUser]
+
+      //save in lS
+      localStorage.setItem('users', JSON.stringify(newMockUsers));
+
+      //print userPage + TODO: send in redux state userId
+      navigate('/userpage'); 
+    }
   };
 
   return (
@@ -31,25 +83,25 @@ export default function Register(props) {
       
 
       <form onSubmit={onSubmit}>
-        <div id="pickedUserNameWrapper">
-          <h4 id="pickedUserNameLabel">Din email</h4>
+        <div id="userNameWrapper">
+          <h4 id="userNameInputLabel">Din email</h4>
           <input 
-            id='pickedUserNameInput' 
+            id='usernameInput' 
             type='email' 
-            name='pickedUserNameInput' placeholder='example@mail.com' 
-            // value={userName} 
+            name='userName' placeholder='example@mail.com' 
+            value={userValueTest.username} 
             onChange={onChange}
           />
         </div><br></br>
 
-        <div id="pickedPasswordWrapper">
-          <h4 id="pickedPasswordlLabel">Välj lösenord</h4>
+        <div id="passwordWrapper">
+          <h4 id="passwordInputLabel">Välj lösenord</h4>
           <input 
-            id='pickedPasswordInput' 
+            id='passwordInput' 
             type='text' 
-            name='pickedPasswordInput' 
+            name='password' 
             placeholder='Minst 8 tecken' 
-            // value={userPassword}
+            value={userValueTest.password} 
             onChange={onChange}
           />
         </div><br></br>
@@ -57,8 +109,11 @@ export default function Register(props) {
         <button type="submit">Skapa konto</button>
       </form><br></br>
       
+      <div id='errorMsgWrapper'>
+        <p id='errorMsg' className={styles.errorMsg}>{errorMsg}</p>
+      </div><br></br>
+
       <h5>Har du redan ett konto? Logga in här</h5>
-        
         
     </div>
   )
