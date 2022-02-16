@@ -4,7 +4,7 @@ import styles from './header.module.css';
 export default function Header(props) {
   
   return (
-    <div id='header' className={styles.headerWrapper}>
+    <header id='header' className={styles.headerWrapper}>
         <div id='logo'>KaChing</div>
         <nav id='header-menu'>
             <ul className={styles.menuWrapper}>
@@ -21,7 +21,7 @@ export default function Header(props) {
           <button id="login-btn-shortcut" onClick={props.onClickLogin}>Gå till logga in</button>
 
         </div>
-    </div>
+    </header>
   )
 };
 

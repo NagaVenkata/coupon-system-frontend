@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-import Header from '../../components/header/header';
-import IntroSection from './intro-section';
-import Login from './login';
-import Register from '../../components/check-credentials/register';
-import B2BFlow from './b2b-flow';
-import B2CFlow from './b2c-flow';
+import Header from '../components/header/header';
+import IntroSection from '../components/home/intro-section';
+import Login from '../components/home/login';
+import Register from '../components/check-credentials/register';
+import B2BFlow from '../components/home/b2b-flow';
+import B2CFlow from '../components/home/b2c-flow';
 
 
 export default function Home() {
@@ -54,11 +54,14 @@ export default function Home() {
   return (
     <>
         <Header onClickLogin={onClickLogin} onClickRegister={onClickRegister}/>
-        {showLogin ? <Login userId={userId} onClickClose={onClickClose}/> : ''}
-        {showRegister ? <Register onClickClose={onClickClose}/> : ''}
-        <IntroSection />
-        <B2CFlow />
-        <B2BFlow />
+        <main>
+          {showLogin ? <Login userId={userId} onClickClose={onClickClose}/> : ''}
+          {showRegister ? <Register onClickClose={onClickClose}/> : ''}
+          <IntroSection onClickRegister={onClickRegister}/>
+          <B2CFlow />
+          <B2BFlow />
+        </main>
+
     </>
   )
 };

@@ -3,7 +3,7 @@ import styles from './footer.module.css';
 
 export default function Footer() {
   return (
-    <div id='footer' className={styles.footerWrapper}>
+    <footer id='footer' className={styles.footerWrapper}>
         <div>
           <h4>Hjälp</h4>
           <ul>
@@ -37,6 +37,6 @@ export default function Footer() {
           <p>ig</p>
         </div>
 
-    </div>
+    </footer>
   )
 };
