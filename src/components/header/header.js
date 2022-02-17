@@ -12,15 +12,18 @@ export default function Header(props) {
   return (
     <header id='header' className={styles.headerWrapper}>
         <div id='logo' className={styles.logo}>KaChing</div>
-        <nav id='header-menu'>
+        {/* <button id="hamburger">hamIcon</button> */}
+        <nav id='side-nav' className={styles.sideNav}>
             <ul className={styles.menuWrapper}>
                 <li id='header-menu-item1'>Hem</li>
                 <li id='header-menu-item2'>Såhär funkar det</li>
                 <li id='header-menu-item3'>Kontakt</li>
                 <li id='header-menu-item4'>Om oss</li>
             </ul>
+            {/* <button id='closeNav'>X</button> */}
         </nav>
-        <div className='btnWrapper'>
+
+        <div className={styles.btnWrapper}>
         
         {isUser ? 
           <>
