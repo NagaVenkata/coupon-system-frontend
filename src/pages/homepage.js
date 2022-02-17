@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import './homepage.scss';
+// import './homepage.scss';
+import styles from './homepage.module.scss'; 
+
 
 import Header from '../components/header/header';
-import IntroSection from '../components/home/intro-section';
+import IntroWrapper from '../components/home/intro-wrapper';
 import Login from '../components/check-credentials/login';
 import Register from '../components/check-credentials/register';
-import B2BFlow from '../components/home/b2b-flow';
-import B2CFlow from '../components/home/b2c-flow';
+import MainSection3 from '../components/home/main-section3';
+import MainSection2 from '../components/home/main-section2';
+import Footer from '../components/footer/footer';
 
 
 export default function Home(props) {
@@ -58,14 +61,33 @@ export default function Home(props) {
 
   return (
     <>
-        <Header isUser={isUser} onClickLogin={onClickLogin} onClickRegister={onClickRegister} />
-        <main>
+        <header id='header' className={styles.headerWrapper}>
+          <Header isUser={isUser} onClickLogin={onClickLogin} onClickRegister={onClickRegister} />
+        </header>
+        
+        <main className={styles.homePageMain}>
           {showLogin ? <Login isUser={isUser} onClickClose={onClickClose}/> : ''}
           {showRegister ? <Register isUser={isUser} onClickClose={onClickClose}/> : ''}
-          <IntroSection onClickRegister={onClickRegister}/>
-          <B2CFlow />
-          <B2BFlow />
+          <div id='mainSection1' className={styles.mainSection1}>
+            <div>Bakgrundsbild</div>
+            <IntroWrapper onClickRegister={onClickRegister}/>
+          </div>
+
+          <div id='mainSection2' className={styles.mainSection2}>
+            <MainSection2 />
+          </div>
+
+          <div id='mainSection3' className={styles.mainSection3}>
+            <MainSection3 />
+          </div>
         </main>
+        
+        <footer id='footer' className={styles.footerWrapper}>
+          <Footer /> 
+        </footer>
+
     </>
   )
 };
+
+// needs to add footer here and not in App due to css/sass?

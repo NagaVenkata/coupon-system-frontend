@@ -9,7 +9,6 @@ import HomePage from './pages/homepage';
 import UserPage from './pages/userpage';
 import CreateCampaign from './components/create-campaign/index';
 import NotFound from './components/not-found/not-found';
-import Footer from './components/footer/footer';
 
 function App() {
 
@@ -27,8 +26,6 @@ function App() {
                 
             </Routes>
           </Router>
-
-          <Footer />
         </div>
   );
 };

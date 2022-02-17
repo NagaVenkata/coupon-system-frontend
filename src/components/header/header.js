@@ -10,7 +10,7 @@ export default function Header(props) {
   }, []);
 
   return (
-    <header id='header' className={styles.headerWrapper}>
+    <>
         <div id='logo' className={styles.logo}>KaChing</div>
         {/* <button id="hamburger">hamIcon</button> */}
         <nav id='side-nav' className={styles.sideNav}>
@@ -37,7 +37,7 @@ export default function Header(props) {
           </>
         }
         </div>
-    </header>
+    </>
   )
 };
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './footer.module.scss';
+// import styles from './footer.module.scss';
 
 export default function Footer() {
   return (
-    <footer id='footer' className={styles.footerWrapper}>
+    <>
         <div>
           <h4>Hjälp</h4>
           <ul>
@@ -37,6 +37,6 @@ export default function Footer() {
           <p>ig</p>
         </div>
 
-    </footer>
+    </>
   )
 };
