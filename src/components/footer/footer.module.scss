@@ -1,39 +1,48 @@
-.footerWrapper {
-    width: 100%;
-    padding: 10px 10px 0px 10px;
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: absolute; 
-    bottom: 0;
+$debugging: true; //TODO remove, only for testing
 
-    /* TODO remove later: */
-    border: 1px solid black;
+@mixin menuItems {
+  list-style: none;
+  padding-left: 0;
+}
 
-    // background-color: yellow;
+.footerColumnWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerColumn1 {
+  @if $debugging {
+    outline: 2px solid black;
+  } 
+}
+
+.soMeWrapper {
+  display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  justify-content: space-between;
 
 }
 
+.helpWrapper {
 
+}
 
+.helpItems {
+  @include menuItems;
+  
+}
 
+.footerColumn2 {
 
+}
 
+.contactItems {
+  @include menuItems;
+}
 
-
-/* export const Footer = styled.footer`
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-`;
-
-export const SomeIconWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-`; */
+.visitItems {
+  @include menuItems;
+}

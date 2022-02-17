@@ -124,13 +124,6 @@ export default function Login(props) {
   )
 };
 
-// check with db if userExist + if match with password
-// if login ok -> backend send: getUserId + getCampaignArr
-//set state isUserExist or userId 
-//navigate to /userpage
-//show correct in header
-// else show errorMsg
-
 //show errorMsg if input fields + termsCheckbox are empty
 
 

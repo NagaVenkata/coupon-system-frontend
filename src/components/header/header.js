@@ -41,7 +41,4 @@ export default function Header(props) {
   )
 };
 
-
-//add a href to li
-
-//NOTE: add multiple classNames: className={`${styles.flex} ${styles.menuWrapper}`}>
+//TODO add a href to li

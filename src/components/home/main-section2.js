@@ -12,12 +12,12 @@ export default function MainSection2() {
       <div>Card slider</div>
     </div>
 
-    <div id='ourClientsWrapper' className={styles.ourProductWrapper}> 
+    <div id='ourClientsWrapper' className={styles.ourClientsWrapper}> 
       <div id="testimonialWrapper">
         <q>Testimonials lorem ipsum  lorem ipsum lorem ipsum lorem ipsum ipsum lorem ipsum lorem ipsum!</q>
         <p>Ivar Folkesson, Pågen</p>
       </div>
-      <div id='clientLogoWrapper' className={styles.clientLogoWrapper}>
+      <div id='clientLogosWrapper' className={styles.clientLogosWrapper}>
         <p>clientLogo</p>
         <p>clientLogo</p>
         <p>clientLogo</p>

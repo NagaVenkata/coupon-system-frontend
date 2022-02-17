@@ -1,11 +1,15 @@
 @import '../../src/scss/assets/fonts';
 
-
 $debugging: true; //TODO remove, only for testing
+@mixin screenMargins {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+};
 
 .headerWrapper {
+    @include screenMargins;
     font-family: $font-family-space-grotesk;
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,6 +25,7 @@ $debugging: true; //TODO remove, only for testing
 }
 
 .homePageMain {
+    @include screenMargins;
 
     @if $debugging {
         outline: 2px solid black;
@@ -32,11 +37,21 @@ $debugging: true; //TODO remove, only for testing
 }
 
 .mainSection2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
+    @if $debugging {
+        outline: 2px solid black;
+    } 
 }
 
 .mainSection3 {
 
+    @if $debugging {
+        outline: 2px solid black;
+    } 
 }
 
 .ourProductWrapper {
@@ -45,6 +60,7 @@ $debugging: true; //TODO remove, only for testing
 
 
 .footerWrapper {
+    @include screenMargins;
 
 }
 

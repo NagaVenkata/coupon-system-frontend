@@ -1,13 +1,15 @@
 import React from 'react';
 import styles from './main-section3.module.scss'; 
 
-
 export default function MainSection3() {
   return (
     <>
-      <h4>Så funkar det</h4>
-      <p>Lorem ipsum......</p>
-      <div id='stepCardsWrapper'>
+      <div id='stepTextWrapper' className={styles.stepTextWrapper}>
+        <h4>Så funkar det</h4>
+        <p>Lorem ipsum......</p>
+      </div>
+      
+      <div id='stepCardsWrapper'className={styles.stepCardsWrapper} >
         <div id='stepCard1' className={styles.stepCard}>
           <div className='stepIconsWrapper'>
             <div className='stepNumber'>Stepnumber</div>

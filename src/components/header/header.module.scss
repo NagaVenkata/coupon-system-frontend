@@ -2,23 +2,6 @@
 
 $debugging: true; //TODO remove, only for testing
 
-// .headerWrapper {
-//     font-family: $font-family-space-grotesk;
-//     width: 100%;
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//     overflow: hidden;
-
-//     //TODO move to specific elements rather than also background?
-//     // position: fixed; 
-
-//     @if $debugging {
-//         outline: 2px solid black;
-//     } 
-// }
-
 .logo {
     font-family: $font-family-shrikhand;
 
@@ -29,7 +12,7 @@ $debugging: true; //TODO remove, only for testing
 }
 
 .sideNav {
-    //TODO make it for mobile screen
+    //TODO adjust for mobile screen so menu items not hidden
 
     @if $debugging {
         outline: 2px solid black;

@@ -1,0 +1,15 @@
+$debugging: true; //TODO remove, only for testing
+
+.ourProductWrapper {
+    
+    @if $debugging {
+        outline: 2px solid black;
+    } 
+}
+
+.ourClientsWrapper {
+    margin-top: 50px;
+    @if $debugging {
+        outline: 2px solid black;
+    } 
+}

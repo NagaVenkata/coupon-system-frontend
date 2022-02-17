@@ -1,3 +1,19 @@
-.stepCard {
+$debugging: true; //TODO remove, only for testing
 
+.stepTextWrapper {
+
+}
+
+.stepCardsWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.stepCard {
+    width: 200px;
+    @if $debugging {
+        outline: 2px solid black;
+    } 
 }
