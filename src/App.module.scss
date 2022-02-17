@@ -1,12 +1,13 @@
-//TODO Remove?
+@import '../src/scss/vendor/normalize'; //TODO need to import in every module.scss?
 
-// $debugging: false; //TODO only for debugging, set True if want to see outline
+.appWrapper {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+}
 
-// @if $debugging {
-//     outline: 3px solid black;
-// } 
 
-// @import './vendor/normalize.scss';
 
 //mobile-screen 357px x 667px
 // @import '_base.scss';

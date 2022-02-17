@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './homepage.scss';
 
 import Header from '../components/header/header';
 import IntroSection from '../components/home/intro-section';

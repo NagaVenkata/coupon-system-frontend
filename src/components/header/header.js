@@ -1,5 +1,5 @@
 import React, { useState ,useEffect } from 'react';
-import styles from './header.module.css';
+import styles from './header.module.scss';
 
 export default function Header(props) {
   const [isUser, setIsUser] = useState(false);
@@ -11,7 +11,7 @@ export default function Header(props) {
 
   return (
     <header id='header' className={styles.headerWrapper}>
-        <div id='logo'>KaChing</div>
+        <div id='logo' className={styles.logo}>KaChing</div>
         <nav id='header-menu'>
             <ul className={styles.menuWrapper}>
                 <li id='header-menu-item1'>Hem</li>

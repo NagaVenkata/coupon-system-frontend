@@ -1,12 +1,21 @@
+@import '../../scss/assets/_fonts.scss';
 
 .headerWrapper {
+    font-family: $font-family-space-grotesk;
+    // font-family: $font-family-mulish;
+
     padding: 10px 10px 0px 10px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    font-weight: 600;
 
     /* TODO remove later: */
     border: 1px solid black;
+}
+
+.logo {
+    font-family: $font-family-shrikhand;
 }
 
 .menuWrapper {

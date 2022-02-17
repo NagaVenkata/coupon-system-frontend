@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
-import styles from './register.module.css';
+import styles from './register.module.scss';
 
 export default function Register(props) {
   let navigate = useNavigate();

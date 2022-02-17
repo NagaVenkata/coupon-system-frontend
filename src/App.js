@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import styles from './App.module.css'; //TODO Ta bort?
+import styles from './App.module.scss'; //TODO Ta bort?
 
-import '../src/scss/style.scss';
+// import '../src/scss/style.scss'; //import here or ex index.js?
 // import CouponSystemMainPage from "./CouponSystemMainPage";
 import { Provider as ReduxProvider } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css"; //why bootstrap?
@@ -19,8 +19,8 @@ function App() {
   const [isUser, setIsUser] = useState(false);
 
   return (
-        // <div id="app" className={styles.appWrapper}>
-        <div id="app">
+        <div id="app" className={styles.appWrapper}>
+        {/* <div id="app"> */}
           <Router>
             <Routes>
               <Route exact path="/" element={<HomePage isUser={isUser} />}></Route>

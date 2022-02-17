@@ -1,13 +1,15 @@
-// skriv all css i detta dok. Detta är mobilversionen. Ska ha enskilda filer för tablet o desktop?
+// mobile-screen
 
-@import "_nav.scss";
+// @import '_header.scss';
+// @import '_main.scss'
+// @import "_nav.scss";
 
 div {
     box-sizing: border-box; //om du lägger till en border ökar annars bredden på rutan. 
 }
 @mixin fullscreen {
-    height: 100vh; //täcker hela sidan
-    width: 100vw;
+    height: 100vh; 
+    width: 100%;
 }
 
 .start {

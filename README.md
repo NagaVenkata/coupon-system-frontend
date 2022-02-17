@@ -1,10 +1,11 @@
 ## About project
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-CSS: using CSS modules due to time limit (later on, using for example Tailwind + sass, styled components or semantic ui)
+# CSS 
+Using CSS modules due to time limit and testing together with: https://www.npmjs.com/package/node-sass 
+npm install node-sass
 
-testing: npm install node-sass
-TODO: remove styled-components dependencies
+(later on, maybe use for example Tailwind + sass, styled components or semantic ui?) TODO: remove styled-components dependencies odyl?
 
 ## Start project
 - docker-compose up --build (from adoveocouponsystem repo)
