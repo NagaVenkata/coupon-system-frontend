@@ -1,0 +1,14 @@
+$debugging: false; //tips för att se elementen bättre. sätt till true för att se outlinen.
+div {
+    @if $debugging {
+        outline: 3px solid black;
+    } 
+}
+
+@import './vendor/normalize.scss';
+
+@import '_base.scss';
+
+// @media screen and (min-width: 900px) {
+//     @import "_desktop.scss";
+// }

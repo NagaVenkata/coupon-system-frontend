@@ -3,6 +3,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 CSS: using CSS modules due to time limit (later on, using for example Tailwind + sass, styled components or semantic ui)
 
+testing: npm install node-sass
+TODO: remove styled-components dependencies
+
 ## Start project
 - docker-compose up --build (from adoveocouponsystem repo)
 - (cmd + t if want 2 tabs in same terminal window)
