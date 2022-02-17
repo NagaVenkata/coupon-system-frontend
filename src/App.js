@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import styles from './App.module.scss'; //TODO Ta bort?
-
-// import '../src/scss/style.scss'; //import here or ex index.js?
+import styles from './App.module.scss'; 
 // import CouponSystemMainPage from "./CouponSystemMainPage";
 import { Provider as ReduxProvider } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css"; //why bootstrap?
@@ -20,7 +18,6 @@ function App() {
 
   return (
         <div id="app" className={styles.appWrapper}>
-        {/* <div id="app"> */}
           <Router>
             <Routes>
               <Route exact path="/" element={<HomePage isUser={isUser} />}></Route>
