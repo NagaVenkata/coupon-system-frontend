@@ -20,30 +20,11 @@ Coupon wireframe: https://www.figma.com/file/XDFVJANTdT8EFEeEva4fvr/coupon-platf
 ## Structure
 index.js 
     app.js
-        domain: 
-        home
-            index.js
-            index.module.css
-            other files that's used in home page (maybe move to components folder?)
-        userpage
-            index.js
+        pages:
+        homepage.js
+        userpage.js
 
-        components:
-        header
-            header.js
-            header.module.css
-        footer
-            footer.js
-            footer.module.css
-        not-found
-            not-found.js
-        
-
-
-
-
-
-
+        components: (all files)
 
 
 ## Available Scripts
