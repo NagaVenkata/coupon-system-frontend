@@ -1,11 +1,19 @@
 $debugging: true; //TODO remove, only for testing
 
+@mixin screenMargins {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+};
+
 @mixin menuItems {
   list-style: none;
   padding-left: 0;
 }
 
+
 .footerColumnWrapper {
+  @include screenMargins;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

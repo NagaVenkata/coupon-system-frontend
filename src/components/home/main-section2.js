@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './main-section2.module.scss'; 
+import { gsap } from "gsap";
 
-
+// import BlobSvg from './blob-svg';
 export default function MainSection2() {
   return (
     <>
     <div id='ourProductWrapper' className={styles.ourProductWrapper}>
-      <div>Blob bakgrund</div>
       <h3>Vår produkt</h3>
       <div>Mobile flow</div>
       <div>Card slider</div>

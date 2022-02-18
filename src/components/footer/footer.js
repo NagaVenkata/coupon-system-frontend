@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './footer.module.scss';
 
+import BackgroundSvgFooter from './backgroundSvgFooter';
+
+
 export default function Footer() {
   return (
     <>
@@ -44,6 +47,9 @@ export default function Footer() {
         </div> 
       </div>
       <p id='copyrightText'>Copyright © 2022 Adoveo AB. All rights reserved.</p>
+      <div id='backgroundSvgFooterWrapper' className={styles.backgroundSvgFooterWrapper}>
+            <BackgroundSvgFooter />
+      </div>
     </>
   )
 };

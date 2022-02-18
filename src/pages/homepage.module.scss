@@ -66,7 +66,9 @@ $debugging: true; //TODO remove, only for testing
         @if $debugging {
             outline: 2px solid black;
         } 
-
+    }
+    .blobWrapper {
+        height: 80vh;
     }
 // }
 
@@ -100,7 +102,7 @@ $debugging: true; //TODO remove, only for testing
 
 
 .footerWrapper {
-    @include screenMargins;
+    // @include screenMargins;
 
 }
 
