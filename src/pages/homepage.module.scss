@@ -1,6 +1,7 @@
 @import '../../src/scss/assets/fonts';
 
 $debugging: true; //TODO remove, only for testing
+
 @mixin screenMargins {
     width: 100%;
     padding-left: 20px;
@@ -16,6 +17,8 @@ $debugging: true; //TODO remove, only for testing
     justify-content: space-between;
     overflow: hidden;
 
+    position: fixed;
+
     //TODO move to specific elements rather than also background?
     // position: fixed; 
 
@@ -25,18 +28,52 @@ $debugging: true; //TODO remove, only for testing
 }
 
 .homePageMain {
-    @include screenMargins;
 
     @if $debugging {
         outline: 2px solid black;
     } 
 }
 
-.mainSection1 {
+// .aboveFoldWrapper {
 
-}
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    
+    .backgroundImgAboveFoldWrapper {
+        overflow: hidden;
+        // position: absolute;s
+        // z-index: -10;
+
+        .backgroundImgAboveFold {
+            width: 120%;
+        }
+        
+    }
+
+    .mainSection1 {
+        max-width: 80%;
+        
+        // position: absolute;
+        // height: 400px;
+        // background-color: pink;
+        
+
+        @include screenMargins;
+
+
+        @if $debugging {
+            outline: 2px solid black;
+        } 
+
+    }
+// }
+
 
 .mainSection2 {
+    @include screenMargins;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -48,15 +85,18 @@ $debugging: true; //TODO remove, only for testing
 }
 
 .mainSection3 {
+    @include screenMargins;
+
+    .ourProductWrapper {
+    
+    }
 
     @if $debugging {
         outline: 2px solid black;
     } 
 }
 
-.ourProductWrapper {
-    
-}
+
 
 
 .footerWrapper {

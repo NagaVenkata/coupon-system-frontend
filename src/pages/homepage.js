@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import './homepage.scss';
 import styles from './homepage.module.scss'; 
+import backgroundImg from '../img/qr-code-transaction-in-store-tim-douglas-pexels.jpg'
 
 
 import Header from '../components/header/header';
@@ -68,10 +69,21 @@ export default function Home(props) {
         <main className={styles.homePageMain}>
           {showLogin ? <Login isUser={isUser} onClickClose={onClickClose}/> : ''}
           {showRegister ? <Register isUser={isUser} onClickClose={onClickClose}/> : ''}
-          <div id='mainSection1' className={styles.mainSection1}>
-            <div>Bakgrundsbild</div>
-            <IntroWrapper onClickRegister={onClickRegister}/>
-          </div>
+
+          {/* <div id='aboveFoldWrapper' className={styles.aboveFoldWrapper}> */}
+
+            <div id='backgroundImgAboveFoldWrapper' className={styles.backgroundImgAboveFoldWrapper}>
+              {/* <div style={ {backgroundImage: `url(${backgroundImg})`}}></div> */}
+                <img id='backgroundImgAboveFold' className={styles.backgroundImgAboveFold} alt='Customer buying in store with QR code coupon, by Tim Douglas from Pexels.' src={backgroundImg}></img>
+            </div>
+            
+            <div id='mainSection1' className={styles.mainSection1}>
+              <IntroWrapper onClickRegister={onClickRegister}/>
+            </div>
+          {/* </div> */}
+        
+
+
 
           <div id='mainSection2' className={styles.mainSection2}>
             <MainSection2 />
