@@ -6,15 +6,18 @@ $debugging: true; //TODO remove, only for testing
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+
 };
 
 .headerWrapper {
     @include screenMargins;
+    margin-top: 10px;
     font-family: $font-family-space-grotesk;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: baseline;
     overflow: hidden;
 
     position: fixed;
@@ -34,15 +37,18 @@ $debugging: true; //TODO remove, only for testing
     } 
 }
 
-// .aboveFoldWrapper {
+.aboveFoldWrapper {
 
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
+
+   
+}
+
+
     // justify-content: space-between;
     
     .backgroundImgAboveFoldWrapper {
         overflow: hidden;
+        // align-self: center;
         // position: absolute;s
         // z-index: -10;
 
@@ -53,7 +59,7 @@ $debugging: true; //TODO remove, only for testing
     }
 
     .mainSection1 {
-        max-width: 80%;
+        // max-width: 80%;
         
         // position: absolute;
         // height: 400px;
@@ -106,5 +112,22 @@ $debugging: true; //TODO remove, only for testing
 
 }
 
+// =========== media screens ===========
+
+//mobile-screen 357px x 667px
+// @import '_base.scss';
+
+//TBD tablet
+@media screen and (min-width: 736px) {
+    .hideNav {
+        
+    }
+}
+
+// desktop, height: 1024px
+// @media screen and (min-width: 1440px) {
+
+// }
+// =========== / media screens ===========
 
 

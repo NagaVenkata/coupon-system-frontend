@@ -1,10 +1,15 @@
 @import '../src/scss/vendor/normalize'; //TODO need to import in every module.scss?
 
+@import '../src/scss/assets/colors';
+@import '../src/scss/assets/fonts';
+
+
+
 .appWrapper {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  // background-color: pink;
+  color: $color-black;
 }
 
 

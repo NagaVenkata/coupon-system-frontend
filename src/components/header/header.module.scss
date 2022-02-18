@@ -1,4 +1,5 @@
-@import '../../scss/assets/_fonts.scss';
+@import '../../scss/assets/_elements.scss';
+
 
 $debugging: true; //TODO remove, only for testing
 
@@ -13,7 +14,7 @@ $debugging: true; //TODO remove, only for testing
 
 .sideNav {
     //TODO adjust for mobile screen so menu items not hidden
-
+    @include fontMainMenu;
     @if $debugging {
         outline: 2px solid black;
     } 
@@ -23,8 +24,8 @@ $debugging: true; //TODO remove, only for testing
     display: flex;
     list-style: none;
     justify-content: space-between;
-    min-width: 500px;
-
+    min-width: 300px;
+    padding-left: 0px;
 
     @if $debugging {
         outline: 2px solid black;
@@ -32,8 +33,25 @@ $debugging: true; //TODO remove, only for testing
 }
 
 .btnWrapper {
+    margin-right: 0;
+
+    .registerBtnShortcut {
+        @include stylePrimaryBtnActive;
+    }
+    .loginBtnShortcut {
+        @include styleSecondaryBtnActive;
+
+    }
+
+    .statisticIcon {
+
+    }
+    .settingsIcon {
+
+    }
 
     @if $debugging {
         outline: 2px solid black;
     } 
 }
+

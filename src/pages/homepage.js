@@ -71,18 +71,20 @@ export default function Home(props) {
           {showLogin ? <Login isUser={isUser} onClickClose={onClickClose}/> : ''}
           {showRegister ? <Register isUser={isUser} onClickClose={onClickClose}/> : ''}
 
-          <div id='backgroundImgAboveFoldWrapper' className={styles.backgroundImgAboveFoldWrapper}>
-            {/* <div style={ {backgroundImage: `url(${backgroundImg})`}}></div> */}
-              <img id='backgroundImgAboveFold' className={styles.backgroundImgAboveFold} alt='Customer buying in store with QR code coupon, by Tim Douglas from Pexels.' src={backgroundImg}></img>
-          </div>
-          
-          <div id='mainSection1' className={styles.mainSection1}>
-            <IntroWrapper onClickRegister={onClickRegister}/>
-          </div>
+          <span id='aboveFoldWrapper' className={styles.aboveFoldWrapper}>
+            <div id='backgroundImgAboveFoldWrapper' className={styles.backgroundImgAboveFoldWrapper}>
+              {/* <div style={ {backgroundImage: `url(${backgroundImg})`}}></div> */}
+                <img id='backgroundImgAboveFold' className={styles.backgroundImgAboveFold} alt='Customer buying in store with QR code coupon, by Tim Douglas from Pexels.' src={backgroundImg}></img>
+            </div>
+            
+            <div id='mainSection1' className={styles.mainSection1}>
+              <IntroWrapper onClickRegister={onClickRegister}/>
+            </div>
+          </span>
           
 
           <div id='blobWrapper' className={styles.blobWrapper}>
-            <BlobSvg />
+            {/* <BlobSvg /> */}
           </div>
 
           <div id='mainSection2' className={styles.mainSection2}>

@@ -1,0 +1,48 @@
+@import '../../scss/assets/fonts';
+@import '../../scss/assets/elements';
+
+
+$debugging: true; //TODO remove, only for testing
+
+.introWrapper {
+    max-width: 500px;
+    position: absolute;
+    z-index: 10;
+    max-width: 400px;
+
+    @if $debugging {
+        outline: 2px solid black;
+    } 
+}
+
+.h2 {
+    font-family: $font-family-space-grotesk;
+}
+
+.hisspitch {
+    @include fontIngress;
+}
+
+.ctaBtn {
+    @include styleSquareBtnActive;
+}
+
+
+// =========== media screens ===========
+
+//mobile-screen 357px x 667px
+// @import '_base.scss';
+
+//TBD tablet
+@media screen and (min-width: 736px) {
+    .introWrapper {
+        top: 25%;
+        margin-left: 18%;
+    }
+}
+
+// desktop, height: 1024px
+// @media screen and (min-width: 1440px) {
+
+// }
+// =========== / media screens ===========

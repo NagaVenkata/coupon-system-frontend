@@ -15,10 +15,9 @@ export default function Header(props) {
         {/* <button id="hamburger">hamIcon</button> */}
         <nav id='side-nav' className={styles.sideNav}>
             <ul className={styles.menuWrapper}>
-                <li id='header-menu-item1'>Hem</li>
-                <li id='header-menu-item2'>Såhär funkar det</li>
-                <li id='header-menu-item3'>Kontakt</li>
-                <li id='header-menu-item4'>Om oss</li>
+                <li id='header-menu-item1'>Så funkar det</li>
+                <li id='header-menu-item2'>Kontakt</li>
+                <li id='header-menu-item3'>Om oss</li>
             </ul>
             {/* <button id='closeNav'>X</button> */}
         </nav>
@@ -27,13 +26,13 @@ export default function Header(props) {
         
         {isUser ? 
           <>
-            <button>Statistik</button>
-            <button>Min profil</button> 
+            <button id='statisticIcon' className={styles.statisticIcon}>Statistik</button>
+            <button id='settingsIcon' className={styles.settingsIcon}>Min profil</button> 
           </> 
           : 
           <>
-            <button id="register-btn-shortcut" onClick={props.onClickRegister}>Gå till skapa konto</button>
-            <button id="login-btn-shortcut" onClick={props.onClickLogin}>Gå till logga in</button>
+            <button id='registerBtnShortcut' className={styles.registerBtnShortcut} onClick={props.onClickRegister}>Skapa konto</button>
+            <button id='loginBtnShortcut' className={styles.loginBtnShortcut} onClick={props.onClickLogin}>Logga in</button>
           </>
         }
         </div>

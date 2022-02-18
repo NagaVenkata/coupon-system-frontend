@@ -14,8 +14,50 @@ $font-family-spinnaker: 'Spinnaker', sans-serif;
 $font-family-shrikhand: 'Shrikhand', cursive;
 
 
+@mixin fontMainMenu {
+    font-family: $font-family-space-grotesk;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@mixin fontBodyCopy {
+    font-size: 1rem;
+}
+
+@mixin fontIngress {
+    font-size: 1.2rem;
+}
+
+@mixin fontSquareBtnActive {
+    font-size: 1rem;
+    font-family: $font-family-mulish;
+    font-weight: 600;
+
+}
+@mixin fontPrimaryBtnActive {
+    font-family: $font-family-mulish;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+@mixin fontSecondaryBtnActive {
+    font-family: $font-family-mulish;
+    font-weight: 700;
+    font-size: 0.8rem;
 
 
+}
+
+
+
+//TBD tablet
+@media screen and (min-width: 736px) {
+    @mixin fontPrimaryBtnActive {
+        font-family: $font-family-mulish;
+        font-weight: 600;
+        font-size: 0.1rem;
+    }
+}
 //Space Grotesk font-weight here: https://fonts.google.com/specimen/Space+Grotesk 
 
 //Mulish font-weight here: https://fonts.google.com/specimen/Mulish?query=mulish

@@ -40,7 +40,7 @@ export default function Footer() {
             <h6>Besöksadress</h6>
             <ul id='visitItems' className={styles.visitItems}>
                 <li>c/o Epicenter</li>
-                <li>Mäster Samuelsgatan 36</li>
+                <li>Mäster Samuelsgatan 36</li >
                 <li>111 57 Stockholm</li>
             </ul>
           </div>
@@ -48,7 +48,7 @@ export default function Footer() {
       </div>
       <p id='copyrightText'>Copyright © 2022 Adoveo AB. All rights reserved.</p>
       <div id='backgroundSvgFooterWrapper' className={styles.backgroundSvgFooterWrapper}>
-            <BackgroundSvgFooter />
+            {/* <BackgroundSvgFooter /> */}
       </div>
     </>
   )

@@ -1,0 +1,45 @@
+@import './colors';
+@import './fonts';
+
+@mixin styleSquareBtnActive {
+    @include fontSquareBtnActive;
+    @include colorSquareBtnActive;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+@mixin stylePrimaryBtnActive {
+    @include colorPrimaryBtnActive;
+    @include fontPrimaryBtnActive;
+    padding: 10px 20px 10px 20px;
+    border-radius: 1.4rem;
+}
+
+// @mixin stylePrimaryBtnHover {
+//     @include colorPrimaryBtnActive;
+//     @include fontPrimaryBtnActive;
+//     padding: 10px 20px 10px 20px;
+//     border-radius: 1rem;
+// }
+
+@mixin stylePrimaryBtnInactive {
+    // @include colorPrimaryBtnInactive ;
+    // @include fontPrimaryBtnInactive;
+    // padding: 10px 20px 10px 20px;
+    // border-radius: 1.4rem;
+
+}
+
+@mixin styleSecondaryBtnActive {
+    @include colorSecondaryBtnActive;
+    @include fontSecondaryBtnActive;
+    padding: 10px 20px 10px 20px;
+    border-radius: 1.4rem;
+
+    
+}
+
+//TBD tablet
+@media screen and (min-width: 736px) {
+
+}
