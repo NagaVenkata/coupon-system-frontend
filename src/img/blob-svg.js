@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import styles from './blob-svg.module.scss'; 
+
 
 export default function BlobSvg() {
   return (
-    <>
+    <div id='blobWrapper' className={styles.blobWrapper}>
         <svg id="blobSvg" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="120%" height="120%" viewBox="400 0 1300 2000">
             <defs>
                 <filter id="blob1" x="0" y="0" width="1460.106" height="1509.097" filterUnits="userSpaceOnUse">
@@ -21,6 +23,6 @@ export default function BlobSvg() {
             </g>
         </svg>
 
-    </>
+    </div>
   )
 }

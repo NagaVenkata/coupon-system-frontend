@@ -1,4 +1,5 @@
 @import '../../src/scss/assets/fonts';
+@import '../../src/scss/assets/colors';
 
 $debugging: true; //TODO remove, only for testing
 
@@ -11,7 +12,7 @@ $debugging: true; //TODO remove, only for testing
 
 .headerWrapper {
     @include screenMargins;
-    margin-top: 10px;
+    padding-top: 10px;
     font-family: $font-family-space-grotesk;
     display: flex;
     flex-direction: row;
@@ -19,14 +20,12 @@ $debugging: true; //TODO remove, only for testing
     justify-content: space-between;
     align-items: baseline;
     overflow: hidden;
-
+    background: linear-gradient(135deg, #2B81BE, #4190C8 60%); //header background gradient colors matched with background img
+    top: 0;    
     position: fixed;
 
-    //TODO move to specific elements rather than also background?
-    // position: fixed; 
-
     @if $debugging {
-        outline: 2px solid black;
+        // outline: 2px solid black;
     } 
 }
 
@@ -38,44 +37,41 @@ $debugging: true; //TODO remove, only for testing
 }
 
 .aboveFoldWrapper {
-
+    // display: flex;
 
    
 }
-
-
-    // justify-content: space-between;
     
     .backgroundImgAboveFoldWrapper {
-        overflow: hidden;
-        // align-self: center;
-        // position: absolute;s
-        // z-index: -10;
-
+        // overflow: hidden;
+        background-image: url('../img/white-clouds-on-blue-sky-pixabay-pexels-cropped.jpg');
+        // width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // margin-top: 5%;
+        background-position: 0% 100%; //x% y%
+        // background-color: $color-black;
         .backgroundImgAboveFold {
-            width: 120%;
+            // width: 120%;
         }
         
     }
 
     .mainSection1 {
-        // max-width: 80%;
-        
-        // position: absolute;
-        // height: 400px;
-        // background-color: pink;
+
         
 
         @include screenMargins;
 
 
         @if $debugging {
-            outline: 2px solid black;
+            outline: 2px solid red;
         } 
     }
-    .blobWrapper {
-        height: 80vh;
-    }
+    // .blobWrapper {
+    //     height: 80vh;
+    // }
 // }
 
 

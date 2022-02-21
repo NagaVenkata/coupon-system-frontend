@@ -21,12 +21,14 @@ npm install node-sass
 
 (later on, maybe use for example Tailwind + sass, styled components or semantic ui?) TODO: remove styled-components dependencies odyl?
 
-## Animations/ read svgs
+## Animations/ read svgs - TBD
 https://greensock.com/docs/v3/Installation
 npm install gsap 
 
+
 ## Images/ Icons
 https://www.pexels.com/sv-se/foto/smartphone-kvinnor-bladdring-internet-6205512/ 
+https://www.pexels.com/sv-se/foto/himmel-moln-molnig-vader-531767/
 
 ## Structure
 index.js 

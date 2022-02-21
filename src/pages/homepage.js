@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import styles from './homepage.module.scss'; 
 import backgroundImg from '../img/qr-code-transaction-in-store-tim-douglas-pexels.jpg';
-import BlobSvg from '../components/home/blob-svg';
+import BlobSvg from '../../src/img/blob-svg';
 
 
 import Header from '../components/header/header';
@@ -68,24 +68,27 @@ export default function Home(props) {
         </header>
         
         <main className={styles.homePageMain}>
+          
           {showLogin ? <Login isUser={isUser} onClickClose={onClickClose}/> : ''}
           {showRegister ? <Register isUser={isUser} onClickClose={onClickClose}/> : ''}
 
-          <span id='aboveFoldWrapper' className={styles.aboveFoldWrapper}>
+          {/* <span id='aboveFoldWrapper' className={styles.aboveFoldWrapper}> */}
             <div id='backgroundImgAboveFoldWrapper' className={styles.backgroundImgAboveFoldWrapper}>
               {/* <div style={ {backgroundImage: `url(${backgroundImg})`}}></div> */}
-                <img id='backgroundImgAboveFold' className={styles.backgroundImgAboveFold} alt='Customer buying in store with QR code coupon, by Tim Douglas from Pexels.' src={backgroundImg}></img>
+              {/* <img className={styles.backgroundImgAboveFold} alt='Allt'></img> */}
+                {/* <img id='backgroundImgAboveFold' className={styles.backgroundImgAboveFold} alt='Customer buying in store with QR code coupon, by Tim Douglas from Pexels.' src={backgroundImg}></img> */}
+                <div id='mainSection1' className={styles.mainSection1}>
+                  <IntroWrapper onClickRegister={onClickRegister}/>
+                </div>
             </div>
             
-            <div id='mainSection1' className={styles.mainSection1}>
-              <IntroWrapper onClickRegister={onClickRegister}/>
-            </div>
-          </span>
+            
+          {/* </span> */}
           
 
-          <div id='blobWrapper' className={styles.blobWrapper}>
+          {/* <div id='blobWrapper' className={styles.blobWrapper}> */}
             {/* <BlobSvg /> */}
-          </div>
+          {/* </div> */}
 
           <div id='mainSection2' className={styles.mainSection2}>
             <MainSection2 />

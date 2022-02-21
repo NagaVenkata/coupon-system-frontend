@@ -1,0 +1,9 @@
+$debugging: true; //TODO remove, only for testing
+
+.blobWrapper {
+    height: 80vh;
+
+    @if $debugging {
+        outline: 2px solid pink;
+    } 
+}

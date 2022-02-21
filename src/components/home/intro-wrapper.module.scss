@@ -5,13 +5,18 @@
 $debugging: true; //TODO remove, only for testing
 
 .introWrapper {
-    max-width: 500px;
-    position: absolute;
-    z-index: 10;
-    max-width: 400px;
+    // align-self: center;
+    // max-width: 500px;
+    // position: absolute;
+    // z-index: 10;
+    // max-width: 400px;
+    // left: 50%;
+    padding-top: 90px;
+    // text-align: center;
+
 
     @if $debugging {
-        outline: 2px solid black;
+        outline: 2px solid purple;
     } 
 }
 
