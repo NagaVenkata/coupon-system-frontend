@@ -1,25 +1,27 @@
 import React from 'react';
 import styles from './main-section2.module.scss'; 
 import quoteMarks from '../../img/quote-marks.svg';
-// import clientLogo from '../../img/sj-logo.svg';
 import clientLogo from '../../img/sj-logo.gif';
-
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 // import { gsap } from "gsap";
 // import BlobBackground from '../../img/blob-svg';
-
 // import BlobSvg from './blob-svg';
+
 export default function MainSection2() {
+
+  const onClick = () => {
+    document.getElementById('mobileFlow').classList.toggle(`${styles.mobileFlow2}`);
+  };
+
   return (
     <>
       <div id='ourProductWrapper' className={styles.ourProductWrapper}>
         <h3 className={styles.h3}>Vår produkt</h3>
         <p className={styles.mobilePreviewText}>Klicka runt på mobilen för att testa vårt flöde!</p>
-        <div id='mobileFlow' className={styles.mobileFlow}></div>
+        <div id='mobileFlow' className={styles.mobileFlow1} onClick={onClick}></div>
         <div id='mobileFrame' className={styles.mobileFrame}></div>
-          {/* <img alt='iphone 11 frame' src='../../img/iphone11-frame-pinterest-vhv.png'></img> */}
           {/* <BlobBackground /> */}
       </div>
 
@@ -27,7 +29,7 @@ export default function MainSection2() {
         <div id='clientsSection1' className={styles.clientsSection1}>
           <img id='quoteMarks' className={styles.quoteMarks} alt='quotation marks' src={quoteMarks}></img>
           <div id="testimonialWrapper" className={styles.testimonialWrapper} >
-            <q className={styles.quote} >30 minuter senare hade vi skickat ut 480 kuponger till alla våra anställda! Ett supersmidigt och visuellt snyggt sätt att visa uppskattning på!</q>
+            <q className={styles.quote} >30 minuter senare hade vi skickat ut 480 kuponger till alla våra anställda! Ett fint sätt att i vardagen visa uppskattning!</q>
             <p>Pär Nyberg, HR-chef Göteborgs Kex</p>
           </div>
         </div>
@@ -47,7 +49,6 @@ export default function MainSection2() {
           </div>
         </div>
       </div>
-      
     </>
   )
 };

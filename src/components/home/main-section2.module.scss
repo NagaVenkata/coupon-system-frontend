@@ -1,18 +1,15 @@
 @import '../../scss/assets/elements';
 
-$debugging: true; //TODO remove, only for testing
+$debugging: false; //TODO remove, only for testing
 
-$margin-top-section: 40px;
+$margin-btw-section: 40px; //margin between sections
 $margin-left-testimonial: 20px;
 
 .ourProductWrapper {
-    // width: 60%;
-    margin-top: $margin-top-section;
-    // flex: 1;
-    
+    margin-top: $margin-btw-section;
 
     @if $debugging {
-        // outline: 2px solid purple;
+        outline: 2px solid purple;
     } 
 }
 
@@ -24,50 +21,60 @@ $margin-left-testimonial: 20px;
 //     @include styleMobilePreviewText;
 }
 
-.mobileFlow {
-    background-image: url('../../img/mobile-flow.png');
-    height: 330px;
-    // max-width: 400px;
-    min-width: 200px;
+.mobileFlow1 {
+    background-image: url('../../img/mobile-sprite-sheet.png');
+    background-position: 0 0; //page1
 
+    //"frame" what's shown:
+    height: 330px;
+    min-width: 200px;
     margin-left: 60px;
     margin-top: 60px;
-
-
     position:absolute;
        
-        @if $debugging {
-            outline: 2px solid yellow;
-        } 
+    @if $debugging {
+        // outline: 2px solid yellow;
+    } 
+}
+
+.mobileFrame:hover {
+    // TODO: add hover mobile screen
+}
+
+.mobileFlow2 {
+    background-image: url('../../img/mobile-sprite-sheet.png');
+    background-position: 200px 0%; //page2
+
+    //"frame" what's shown:
+    height: 330px;
+    min-width: 200px;
+    margin-left: 60px;
+    margin-top: 60px;
+    position:absolute;
 }
 
 .mobileFrame {
     background-image: url('../../img/iphone11-frame-pinterest-vhv.png');
-    min-height: 400px;
+    min-height: 390px;
     max-width: 400px;
     min-width: 200px;
-
-    // margin-top: 70vh;
     background-size: cover;
-    // z-index: -9;
-    // position: absolute;
 
-    // width: 100%;
     @if $debugging {
-        outline: 2px solid pink;
+        // outline: 2px solid pink;
     } 
 
 }
 
 .ourClientsWrapper {
-    // flex: 2;
     min-width: 400px;
-
-    //section 1 + 2
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: $margin-btw-section;
 
     @if $debugging {
-        // outline: 2px solid black;
+        // outline: 2px solid red;
     } 
 }
 
@@ -83,9 +90,7 @@ $margin-left-testimonial: 20px;
 
 .testimonialWrapper {
     margin-left: $margin-left-testimonial;
-
     max-width: 220px;
-
 
     p {
         max-width: 200px;
@@ -99,37 +104,23 @@ $margin-left-testimonial: 20px;
 }
 
 .clientsSection2 {
-    margin-top: 80px;
-    margin-bottom: 40px;
+    margin-top: $margin-btw-section;
     margin-left: $margin-left-testimonial;
-
+    margin-bottom: $margin-btw-section;
 }
+
 .h4 {
     @include styleH4;
 
 }
 
 .clientLogosWrapper {
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
-    // margin-top: 50px;
-    height: 22%;
-    // width: 98%;
-    max-width: 55%;
-
+    height: 70%;
+    max-width: 80%;
     display: inline-flex;
     align-items:center;
-    // flex-direction: row;
-    // flex-wrap: nowrap;
-    // justify-content: center;
     gap: 36px;
     overflow-x: scroll;
-    
-
-
-    // max-width: 350px;
 
     @if $debugging {
         outline: 2px solid green;
@@ -138,34 +129,29 @@ $margin-left-testimonial: 20px;
 
 .clientLogo {
     height: 8vh;
-    
-    // overflow: hidden;
-    // display: inline-block;
-    // flex: 1 1 auto;
-
 
     @if $debugging {
         outline: 2px solid red;
     } 
 }
 
-
 //TBD tablet
 @media screen and (min-width: 736px) {
     
     .ourClientsWrapper  {
-        // background-color: red;
         margin-top: 100px;
-        
     }
 
     .testimonialWrapper {
         max-width: 500px;
     }
 
+    .clientsSection2 {
+        margin-bottom: 0px;
+    }
+
     .clientLogosWrapper {
-        // max-width: 500px;
-        max-width: 400px;
+        max-width: 470px;
 
         gap: 36px;
 

@@ -10,10 +10,7 @@ $debugging: true; //TODO remove, only for testing
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-
 };
-
-$color-darkSky:#4190C8;
 
 .headerWrapper {
     @include screenMargins;
@@ -29,7 +26,7 @@ $color-darkSky:#4190C8;
     z-index: 100;
 
     @if $debugging {
-        // outline: 2px solid black;
+        outline: 2px solid black;
     } 
 }
 
@@ -56,7 +53,7 @@ $color-darkSky:#4190C8;
     height: 50%;
     
     @if $debugging {
-        // outline: 2px solid red;
+        outline: 2px solid red;
     } 
 }
 
@@ -66,7 +63,7 @@ $color-darkSky:#4190C8;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 80px;
 
     //TODO blob background not finished
@@ -90,9 +87,6 @@ $color-darkSky:#4190C8;
     } 
 }
 
-
-
-
 .footerWrapper {
     // @include screenMargins;
 
@@ -105,15 +99,16 @@ $color-darkSky:#4190C8;
 
 //TBD tablet
 @media screen and (min-width: 736px) {
+    .mainSection2 {
+        // justify-content: space-around;
+    }
     .hideNav {
         
     }
 }
 
 // desktop, height: 1024px
-// @media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
 
-// }
+}
 // =========== / media screens ===========
-
-
