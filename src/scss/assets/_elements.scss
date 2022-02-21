@@ -8,6 +8,8 @@
     text-align: center;
 }
 
+
+//rename round borders
 @mixin stylePrimaryBtnActive {
     @include colorPrimaryBtnActive;
     @include fontPrimaryBtnActive;
@@ -35,8 +37,16 @@
     @include fontSecondaryBtnActive;
     padding: 10px 20px 10px 20px;
     border-radius: 1.4rem;
+}
 
-    
+@mixin styleH2 {
+    @include fontH2;
+    @include colorH2;
+}
+
+@mixin styleHissPitch {
+    @include fontHissPitch;
+    @include colorHissPitch;
 }
 
 //TBD tablet

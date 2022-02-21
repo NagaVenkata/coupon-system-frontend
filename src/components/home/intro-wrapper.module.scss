@@ -5,27 +5,19 @@
 $debugging: true; //TODO remove, only for testing
 
 .introWrapper {
-    // align-self: center;
-    // max-width: 500px;
-    // position: absolute;
-    // z-index: 10;
-    // max-width: 400px;
-    // left: 50%;
-    padding-top: 90px;
-    // text-align: center;
-
-
+    max-width: 500px;
+   
     @if $debugging {
-        outline: 2px solid purple;
+        // outline: 2px solid purple;
     } 
 }
 
 .h2 {
-    font-family: $font-family-space-grotesk;
+    @include styleH2;
 }
 
 .hisspitch {
-    @include fontIngress;
+    @include styleHissPitch;
 }
 
 .ctaBtn {
@@ -41,8 +33,8 @@ $debugging: true; //TODO remove, only for testing
 //TBD tablet
 @media screen and (min-width: 736px) {
     .introWrapper {
-        top: 25%;
-        margin-left: 18%;
+       
+        
     }
 }
 

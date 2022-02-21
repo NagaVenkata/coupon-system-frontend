@@ -14,6 +14,13 @@ $font-family-spinnaker: 'Spinnaker', sans-serif;
 $font-family-shrikhand: 'Shrikhand', cursive;
 
 
+@mixin fontH2 {
+    font-family: $font-family-space-grotesk;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
 @mixin fontMainMenu {
     font-family: $font-family-space-grotesk;
     font-size: 1rem;
@@ -24,8 +31,10 @@ $font-family-shrikhand: 'Shrikhand', cursive;
     font-size: 1rem;
 }
 
-@mixin fontIngress {
+@mixin fontHissPitch {
     font-size: 1.2rem;
+    // font-weight: 500;
+
 }
 
 @mixin fontSquareBtnActive {
@@ -44,7 +53,6 @@ $font-family-shrikhand: 'Shrikhand', cursive;
     font-family: $font-family-mulish;
     font-weight: 700;
     font-size: 0.8rem;
-
 
 }
 

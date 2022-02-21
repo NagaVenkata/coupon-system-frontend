@@ -73,7 +73,7 @@ export default function Home(props) {
           {showRegister ? <Register isUser={isUser} onClickClose={onClickClose}/> : ''}
 
           {/* <span id='aboveFoldWrapper' className={styles.aboveFoldWrapper}> */}
-            <div id='backgroundImgAboveFoldWrapper' className={styles.backgroundImgAboveFoldWrapper}>
+            <div id='backgroundImgAboveFold' className={styles.backgroundImgAboveFold}>
               {/* <div style={ {backgroundImage: `url(${backgroundImg})`}}></div> */}
               {/* <img className={styles.backgroundImgAboveFold} alt='Allt'></img> */}
                 {/* <img id='backgroundImgAboveFold' className={styles.backgroundImgAboveFold} alt='Customer buying in store with QR code coupon, by Tim Douglas from Pexels.' src={backgroundImg}></img> */}
