@@ -42,21 +42,21 @@
 }
 
 //rename round borders
-@mixin stylePrimaryBtnActive {
+@mixin stylePrimaryRoundBtnActive {
     @include colorPrimaryBtnActive;
     @include fontPrimaryBtnActive;
-    padding: 10px 20px 10px 20px;
+    padding: 6px 20px 6px 20px;
     border-radius: 1.4rem;
 }
 
-// @mixin stylePrimaryBtnHover {
+// @mixin stylePrimaryRoundBtnHover {
 //     @include colorPrimaryBtnActive;
 //     @include fontPrimaryBtnActive;
 //     padding: 10px 20px 10px 20px;
 //     border-radius: 1rem;
 // }
 
-@mixin stylePrimaryBtnInactive {
+@mixin stylePrimaryRoundBtnInactive {
     // @include colorPrimaryBtnInactive ;
     // @include fontPrimaryBtnInactive;
     // padding: 10px 20px 10px 20px;
@@ -64,10 +64,10 @@
 
 }
 
-@mixin styleSecondaryBtnActive {
+@mixin styleSecondaryRoundBtnActive {
     @include colorSecondaryBtnActive;
     @include fontSecondaryBtnActive;
-    padding: 10px 20px 10px 20px;
+    padding: 6px 20px 6px 20px;
     border-radius: 1.4rem;
 }
 

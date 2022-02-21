@@ -29,14 +29,16 @@ $debugging: false; //TODO remove, only for testing
 
 .btnWrapper {
     margin-right: 0;
+    padding-bottom: 10px;
 
     .registerBtnShortcut {
-        @include stylePrimaryBtnActive;
+        @include stylePrimaryRoundBtnActive;
     }
     .loginBtnShortcut {
-        @include styleSecondaryBtnActive;
+        @include styleSecondaryRoundBtnActive;
 
     }
+
 
     .statisticIcon {
 
