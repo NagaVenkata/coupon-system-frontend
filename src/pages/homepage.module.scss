@@ -1,3 +1,6 @@
+@import '../../src/scss/assets/elements';
+
+
 @import '../../src/scss/assets/fonts';
 @import '../../src/scss/assets/colors';
 
@@ -10,17 +13,17 @@ $debugging: true; //TODO remove, only for testing
 
 };
 
+$color-darkSky:#4190C8;
+
 .headerWrapper {
     @include screenMargins;
-    padding-top: 10px;
-    font-family: $font-family-space-grotesk;
+    @include colorHeaderWrapper;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
     overflow: hidden;
-    background: linear-gradient(135deg, #2B81BE, #4190C8 60%); //header background gradient colors matched with background img
     top: 0;    
     position: fixed;
 
@@ -46,8 +49,6 @@ $debugging: true; //TODO remove, only for testing
 
 .mainSection1 {
     @include screenMargins;
-    
-    //center intro-wrapper:
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -70,8 +71,6 @@ $debugging: true; //TODO remove, only for testing
     //TODO blob background not finished
     // background-image: url('../img/blob-svg2.svg');
     // background-repeat: no-repeat;
- 
-
 
     @if $debugging {
         outline: 2px solid red;

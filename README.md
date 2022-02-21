@@ -30,6 +30,11 @@ npm install gsap
 https://www.pexels.com/sv-se/foto/smartphone-kvinnor-bladdring-internet-6205512/ 
 https://www.pexels.com/sv-se/foto/himmel-moln-molnig-vader-531767/
 
+fontAwesome https://fontawesome.com/v5/docs/web/use-with/react
+npm i --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome
+
 ## Structure
 index.js 
     app.js

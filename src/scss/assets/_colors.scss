@@ -5,13 +5,48 @@ $color-blue-ocean: #8AC1E6;//alt1
 $color-plum: #683C45;
 $color-white: #FFFFFF;
 
-// $color-creme: #F7F7F1; //alt1
+// $color-ceme: #F7F7F1; //alt1
 $color-creme: #F7F1DE; //alt2
 
 $color-black: #0B0B09;
 $color-soft-black: #34342C;
 $color-disable: #34342C;
 
+$color-darkSky: #4190C8;
+
+
+@mixin colorH2 {
+    color: $color-creme;
+}
+
+@mixin colorH3 {
+    color: $color-soft-black;
+}
+
+@mixin colorH4 {
+    color: $color-soft-black;
+
+}
+
+
+@mixin colorHissPitch {
+    color: $color-creme;
+}
+
+@mixin colorQuote {
+    // color: $color-plum;
+}
+
+@mixin colorPCursive {
+    color: $color-disable;
+}
+
+@mixin colorHeaderWrapper {
+    background: linear-gradient(120deg, #2C83C0, #4893CA 40%); 
+}
+
+
+// ==============  Buttons ==============
 
 @mixin colorSquareBtnActive {
     background-color: $color-black;
@@ -39,11 +74,4 @@ $color-disable: #34342C;
     border: 1px solid $color-black;
     color: $color-black;
 }
-
-@mixin colorH2 {
-    color: $color-creme;
-}
-
-@mixin colorHissPitch {
-    color: $color-creme;
-}
+// ==============  /Buttons ==============

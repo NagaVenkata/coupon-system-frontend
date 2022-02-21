@@ -1,13 +1,44 @@
+@import '../../scss/assets/elements';
+
 $debugging: true; //TODO remove, only for testing
+
+$margin-top-section: 40px;
+$margin-left-testimonial: 20px;
 
 .ourProductWrapper {
     // width: 60%;
-    flex: 1;
+    margin-top: $margin-top-section;
+    // flex: 1;
     
 
     @if $debugging {
-        outline: 2px solid purple;
+        // outline: 2px solid purple;
     } 
+}
+
+.h3 {
+    @include styleH3;
+}
+
+.mobilePreviewText {
+//     @include styleMobilePreviewText;
+}
+
+.mobileFlow {
+    background-image: url('../../img/mobile-flow.png');
+    height: 330px;
+    // max-width: 400px;
+    min-width: 200px;
+
+    margin-left: 60px;
+    margin-top: 60px;
+
+
+    position:absolute;
+       
+        @if $debugging {
+            outline: 2px solid yellow;
+        } 
 }
 
 .mobileFrame {
@@ -29,9 +60,114 @@ $debugging: true; //TODO remove, only for testing
 }
 
 .ourClientsWrapper {
-    flex: 2;
-    margin-top: 50px;
+    // flex: 2;
+    min-width: 400px;
+
+    //section 1 + 2
+
+
     @if $debugging {
-        outline: 2px solid black;
+        // outline: 2px solid black;
     } 
+}
+
+.quoteMarks {
+    z-index: -5;
+    position: absolute;
+    margin-top: -40px;
+
+    @if $debugging {
+        // outline: 2px solid black;
+    } 
+}
+
+.testimonialWrapper {
+    margin-left: $margin-left-testimonial;
+
+    max-width: 220px;
+
+
+    p {
+        max-width: 200px;
+        @include stylePCursive;
+        margin-top: 20px;
+    }
+}
+
+.quote {
+    @include styleQuote;
+}
+
+.clientsSection2 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    margin-left: $margin-left-testimonial;
+
+}
+.h4 {
+    @include styleH4;
+
+}
+
+.clientLogosWrapper {
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // margin-top: 50px;
+    height: 22%;
+    // width: 98%;
+    max-width: 55%;
+
+    display: inline-flex;
+    align-items:center;
+    // flex-direction: row;
+    // flex-wrap: nowrap;
+    // justify-content: center;
+    gap: 36px;
+    overflow-x: scroll;
+    
+
+
+    // max-width: 350px;
+
+    @if $debugging {
+        outline: 2px solid green;
+    } 
+}
+
+.clientLogo {
+    height: 8vh;
+    
+    // overflow: hidden;
+    // display: inline-block;
+    // flex: 1 1 auto;
+
+
+    @if $debugging {
+        outline: 2px solid red;
+    } 
+}
+
+
+//TBD tablet
+@media screen and (min-width: 736px) {
+    
+    .ourClientsWrapper  {
+        // background-color: red;
+        margin-top: 100px;
+        
+    }
+
+    .testimonialWrapper {
+        max-width: 500px;
+    }
+
+    .clientLogosWrapper {
+        // max-width: 500px;
+        max-width: 400px;
+
+        gap: 36px;
+
+    }
 }

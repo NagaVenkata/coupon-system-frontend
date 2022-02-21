@@ -1,13 +1,45 @@
 @import './colors';
 @import './fonts';
 
+
+
+@mixin styleH2 {
+    @include fontH2;
+    @include colorH2;
+}
+
+@mixin styleH3 {
+    @include fontH3;
+    @include colorH3;
+}
+
+@mixin styleH4 {
+    @include fontH4;
+    @include colorH4;
+}
+
+@mixin styleHissPitch {
+    @include fontHissPitch;
+    @include colorHissPitch;
+}
+
+@mixin styleQuote {
+    @include fontQuote;
+    @include colorQuote;
+}
+
+@mixin stylePCursive {
+    @include fontPCursive;
+    @include colorPCursive;
+}
+
+// ==============  Buttons ==============
 @mixin styleSquareBtnActive {
     @include fontSquareBtnActive;
     @include colorSquareBtnActive;
     padding: 10px 20px 10px 20px;
     text-align: center;
 }
-
 
 //rename round borders
 @mixin stylePrimaryBtnActive {
@@ -39,15 +71,8 @@
     border-radius: 1.4rem;
 }
 
-@mixin styleH2 {
-    @include fontH2;
-    @include colorH2;
-}
+// ==============  /Buttons ==============
 
-@mixin styleHissPitch {
-    @include fontHissPitch;
-    @include colorHissPitch;
-}
 
 //TBD tablet
 @media screen and (min-width: 736px) {

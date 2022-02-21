@@ -3,6 +3,7 @@
 
 $font-family-space-grotesk: 'Space Grotesk', sans-serif;
 //font-weight: Light 300, Regular 400, Medium 500, Semi-bold 600, Bold 700 
+//font-style 
 //TODO clean not used styles
 
 $font-family-mulish: 'Mulish', sans-serif;
@@ -20,6 +21,18 @@ $font-family-shrikhand: 'Shrikhand', cursive;
     font-weight: 700;
 }
 
+@mixin fontH3 {
+    font-family: $font-family-space-grotesk;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@mixin fontH4 {
+    font-family: $font-family-space-grotesk;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
 
 @mixin fontMainMenu {
     font-family: $font-family-space-grotesk;
@@ -34,8 +47,21 @@ $font-family-shrikhand: 'Shrikhand', cursive;
 @mixin fontHissPitch {
     font-size: 1.2rem;
     // font-weight: 500;
+}
+
+@mixin fontQuote {
+    font-size: 1.2rem;
+    font-family: $font-family-space-grotesk;
 
 }
+
+@mixin fontPCursive {
+    // font-weight: 300;
+    font-style: italic;
+}
+
+
+// ==============  Buttons ==============
 
 @mixin fontSquareBtnActive {
     font-size: 1rem;
@@ -55,6 +81,8 @@ $font-family-shrikhand: 'Shrikhand', cursive;
     font-size: 0.8rem;
 
 }
+
+// ==============  /Buttons ==============
 
 
 
