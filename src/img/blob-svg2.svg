@@ -1,19 +1,9 @@
-import React from 'react';
-import styles from './blob-svg.module.scss'; 
-
-
-export default function BlobBackground() {
-  return (
-    // <div id='blobWrapper' className={styles.blobWrapper}>
-
-    <> 
-      <svg id="blob" className={styles.blob} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="50%" height="50%" viewBox="400 0 1300 1500">
-
+<svg id="blobSvg" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="120%" height="120%" viewBox="400 0 1300 2000">
           <defs>
               <filter id="blob1" x="0" y="0" width="1460.106" height="1509.097" filterUnits="userSpaceOnUse">
               <feOffset dy="3" input="SourceAlpha"/>
               <feGaussianBlur stdDeviation="3" result="blur"/>
-              <feFlood floodOpacity="0.302"/>
+              <feFlood flood-opacity="0.302"/>
               <feComposite operator="in" in2="blur"/>
               <feComposite in="SourceGraphic"/>
               </filter>
@@ -25,7 +15,3 @@ export default function BlobBackground() {
               </g>
           </g>
       </svg>
-    </>
-    // </div>
-  )
-}

@@ -65,9 +65,16 @@ $debugging: true; //TODO remove, only for testing
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 80px;
+
+    //TODO blob background not finished
+    // background-image: url('../img/blob-svg2.svg');
+    // background-repeat: no-repeat;
+ 
+
 
     @if $debugging {
-        outline: 2px solid black;
+        outline: 2px solid red;
     } 
 }
 

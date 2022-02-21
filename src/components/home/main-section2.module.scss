@@ -1,13 +1,35 @@
 $debugging: true; //TODO remove, only for testing
 
 .ourProductWrapper {
+    // width: 60%;
+    flex: 1;
     
+
     @if $debugging {
-        outline: 2px solid black;
+        outline: 2px solid purple;
     } 
 }
 
+.mobileFrame {
+    background-image: url('../../img/iphone11-frame-pinterest-vhv.png');
+    min-height: 400px;
+    max-width: 400px;
+    min-width: 200px;
+
+    // margin-top: 70vh;
+    background-size: cover;
+    // z-index: -9;
+    // position: absolute;
+
+    // width: 100%;
+    @if $debugging {
+        outline: 2px solid pink;
+    } 
+
+}
+
 .ourClientsWrapper {
+    flex: 2;
     margin-top: 50px;
     @if $debugging {
         outline: 2px solid black;

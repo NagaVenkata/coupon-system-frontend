@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import styles from './homepage.module.scss'; 
 import backgroundImg from '../img/qr-code-transaction-in-store-tim-douglas-pexels.jpg';
-import BlobSvg from '../../src/img/blob-svg';
+// import BlobSvg from '../../src/img/blob-svg';
 
 
 import Header from '../components/header/header';
@@ -72,26 +72,19 @@ export default function Home(props) {
           {showLogin ? <Login isUser={isUser} onClickClose={onClickClose}/> : ''}
           {showRegister ? <Register isUser={isUser} onClickClose={onClickClose}/> : ''}
 
-          {/* <span id='aboveFoldWrapper' className={styles.aboveFoldWrapper}> */}
             <div id='backgroundImgAboveFold' className={styles.backgroundImgAboveFold}>
-              {/* <div style={ {backgroundImage: `url(${backgroundImg})`}}></div> */}
-              {/* <img className={styles.backgroundImgAboveFold} alt='Allt'></img> */}
-                {/* <img id='backgroundImgAboveFold' className={styles.backgroundImgAboveFold} alt='Customer buying in store with QR code coupon, by Tim Douglas from Pexels.' src={backgroundImg}></img> */}
                 <div id='mainSection1' className={styles.mainSection1}>
                   <IntroWrapper onClickRegister={onClickRegister}/>
                 </div>
             </div>
             
-            
-          {/* </span> */}
-          
-
           {/* <div id='blobWrapper' className={styles.blobWrapper}> */}
-            {/* <BlobSvg /> */}
+           
           {/* </div> */}
 
           <div id='mainSection2' className={styles.mainSection2}>
             <MainSection2 />
+       
           </div>
 
           <div id='mainSection3' className={styles.mainSection3}>
