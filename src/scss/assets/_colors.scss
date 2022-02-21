@@ -12,8 +12,8 @@ $color-black: #0B0B09;
 $color-soft-black: #34342C;
 $color-disable: #34342C;
 
-$color-darkSky: #4190C8;
-
+$color-darkSky: #2C83C0;
+$color-lightSky: #4893CA;
 
 @mixin colorH2 {
     color: $color-creme;
@@ -25,9 +25,7 @@ $color-darkSky: #4190C8;
 
 @mixin colorH4 {
     color: $color-soft-black;
-
 }
-
 
 @mixin colorHissPitch {
     color: $color-creme;
@@ -42,7 +40,7 @@ $color-darkSky: #4190C8;
 }
 
 @mixin colorHeaderWrapper {
-    background: linear-gradient(120deg, #2C83C0, #4893CA 40%); 
+    background: linear-gradient(120deg, $color-darkSky, $color-lightSky 40%); 
 }
 
 

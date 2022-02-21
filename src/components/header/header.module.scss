@@ -1,7 +1,6 @@
 @import '../../scss/assets/_elements.scss';
 
-
-$debugging: true; //TODO remove, only for testing
+$debugging: false; //TODO remove, only for testing
 
 .logo {
     font-family: $font-family-shrikhand;
@@ -9,7 +8,6 @@ $debugging: true; //TODO remove, only for testing
     @if $debugging {
         outline: 2px solid black;
     } 
-
 }
 
 .sideNav {
@@ -26,10 +24,7 @@ $debugging: true; //TODO remove, only for testing
     justify-content: space-between;
     min-width: 300px;
     padding-left: 0px;
-
-    @if $debugging {
-        outline: 2px solid black;
-    } 
+    margin-bottom: 0;
 }
 
 .btnWrapper {
@@ -54,4 +49,3 @@ $debugging: true; //TODO remove, only for testing
         outline: 2px solid black;
     } 
 }
-

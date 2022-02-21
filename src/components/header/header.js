@@ -13,8 +13,8 @@ export default function Header(props) {
     <>
         <div id='logo' className={styles.logo}>KaChing</div>
         {/* <button id="hamburger">hamIcon</button> */}
-        <nav id='side-nav' className={styles.sideNav}>
-            <ul className={styles.menuWrapper}>
+        <nav id='sideNav' className={styles.sideNav}>
+            <ul id='menuWrapper' className={styles.menuWrapper}>
                 <li id='header-menu-item1'>Så funkar det</li>
                 <li id='header-menu-item2'>Kontakt</li>
                 <li id='header-menu-item3'>Om oss</li>

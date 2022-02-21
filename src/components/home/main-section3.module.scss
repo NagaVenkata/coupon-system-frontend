@@ -1,4 +1,10 @@
+@import '../../scss/assets/elements';
+
 $debugging: true; //TODO remove, only for testing
+
+.h3 {
+    @include styleH3;
+}
 
 .stepTextWrapper {
 
@@ -9,6 +15,7 @@ $debugging: true; //TODO remove, only for testing
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 20px;
 
 }
 .stepCard {

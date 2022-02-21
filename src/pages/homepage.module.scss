@@ -1,16 +1,16 @@
+//mobile-screen 357px x 667px
+
 @import '../../src/scss/assets/elements';
-
-
-@import '../../src/scss/assets/fonts';
-@import '../../src/scss/assets/colors';
-
-$debugging: true; //TODO remove, only for testing
 
 @mixin screenMargins {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
 };
+
+$margin-sections: 60px;
+
+$debugging: false; //TODO remove, only for testing
 
 .headerWrapper {
     @include screenMargins;
@@ -19,11 +19,13 @@ $debugging: true; //TODO remove, only for testing
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     overflow: hidden;
     top: 0;    
     position: fixed;
     z-index: 100;
+    height: 60px;
+    // padding-top: 14px;
 
     @if $debugging {
         outline: 2px solid black;
@@ -59,7 +61,7 @@ $debugging: true; //TODO remove, only for testing
 
 .mainSection2 {
     @include screenMargins;
-
+    margin-top: $margin-sections;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -71,32 +73,31 @@ $debugging: true; //TODO remove, only for testing
     // background-repeat: no-repeat;
 
     @if $debugging {
-        outline: 2px solid red;
+        // outline: 2px solid red;
     } 
 }
 
 .mainSection3 {
     @include screenMargins;
+    margin-top: $margin-sections;
 
     .ourProductWrapper {
     
     }
 
     @if $debugging {
-        outline: 2px solid black;
+        // outline: 2px solid red;
     } 
 }
 
 .footerWrapper {
+    margin-top: $margin-sections;
+
     // @include screenMargins;
 
 }
 
 // =========== media screens ===========
-
-//mobile-screen 357px x 667px
-// @import '_base.scss';
-
 //TBD tablet
 @media screen and (min-width: 736px) {
     .mainSection2 {

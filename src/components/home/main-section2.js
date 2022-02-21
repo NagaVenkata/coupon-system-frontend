@@ -29,7 +29,7 @@ export default function MainSection2() {
         <div id='clientsSection1' className={styles.clientsSection1}>
           <img id='quoteMarks' className={styles.quoteMarks} alt='quotation marks' src={quoteMarks}></img>
           <div id="testimonialWrapper" className={styles.testimonialWrapper} >
-            <q className={styles.quote} >30 minuter senare hade vi skickat ut 480 kuponger till alla våra anställda! Ett fint sätt att i vardagen visa uppskattning!</q>
+            <q className={styles.quote} >30 minuter senare hade vi skickat ut 480 kuponger till alla våra anställda! Ett fint sätt att i vardagen ge pepp och visa uppskattning!</q>
             <p>Pär Nyberg, HR-chef Göteborgs Kex</p>
           </div>
         </div>

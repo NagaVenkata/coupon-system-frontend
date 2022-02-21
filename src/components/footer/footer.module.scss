@@ -11,16 +11,71 @@ $debugging: true; //TODO remove, only for testing
   padding-left: 0;
 }
 
+@mixin footerSection {
+  margin-bottom: $margin-bottom-section;
+}
+
+$margin-bottom-section: 20px;
+
+.backgroundImgFooter {
+  background-image: url('../../img/background-footer.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // height: 60vh;
+
+
+  // background-position: 0% 100%; //x% y%
+    // background-size: 100% 95%;
+  // min-height: 60vh;
+
+  @if $debugging {
+    outline: 2px solid pink;
+  } 
+}
+
+.logoIconFooterWrapper {
+  @include screenMargins;
+  padding-top: 100px;
+  margin-bottom: $margin-bottom-section;
+  max-width: 200px;
+
+  @if $debugging {
+    outline: 2px solid black;
+  } 
+}
 
 .footerColumnWrapper {
   @include screenMargins;
+  // margin-top: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  height: 50%;
+
+  @if $debugging {
+    outline: 2px solid black;
+  } 
 }
 
 .footerColumn1 {
+  @include footerSection;
+  @if $debugging {
+    outline: 2px solid black;
+  } 
+}
+.footerColumn2 {
+  @include footerSection;
+  @if $debugging {
+    outline: 2px solid black;
+  } 
+}
+.footerColumn3 {
+  @include footerSection;
   @if $debugging {
     outline: 2px solid black;
   } 
@@ -43,10 +98,6 @@ $debugging: true; //TODO remove, only for testing
   
 }
 
-.footerColumn2 {
-
-}
-
 .contactItems {
   @include menuItems;
 }
@@ -54,3 +105,28 @@ $debugging: true; //TODO remove, only for testing
 .visitItems {
   @include menuItems;
 }
+
+.copyrightText {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+// =========== media screens ===========
+//TBD tablet
+@media screen and (min-width: 736px) {
+  .backgroundImgFooter {
+    background-color: red;
+    height: 80vh;
+  }
+}
+
+// desktop, height: 1024px
+@media screen and (min-width: 1440px) {
+  .backgroundImgFooter {
+    background-color: green;
+    // height: 90vh;s
+  }
+
+}
+// =========== / media screens ===========
