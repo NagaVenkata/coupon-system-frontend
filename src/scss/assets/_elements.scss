@@ -1,7 +1,8 @@
 @import './colors';
 @import './fonts';
 
-
+$width-input-btn: 300px;
+$height-input-btn: 50px;
 
 @mixin styleH2 {
     @include fontH2;
@@ -33,18 +34,68 @@
     @include colorPCursive;
 }
 
+@mixin styleInput {
+    padding: 6px 20px 6px 20px;
+    width: $width-input-btn;
+    height: $height-input-btn;
+    // border-radius: 1.4rem;
+    @include colorSecondaryBtnActive;
+    @include fontInput;
+}
+
+
+//menu
+
+@mixin styleLoginSlider {
+    @include fontSideNavSlider;
+    @include colorSideNavSlider;
+    position: fixed;
+    height: 86%;
+    width: 100%;
+    padding: 6px 30px 0px 30px;
+    // top: 0;
+    bottom: 0;
+    // margin-top: 60px;
+    z-index: 7;
+    right: 0;
+}
+
+@mixin navHorizontal {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    padding-left: 0px;
+    margin-bottom: 0;
+}
+
+@mixin hoverLinks {
+    color: $color-plum;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
 // ==============  Buttons ==============
-@mixin styleSquareBtnActive {
+@mixin stylePrimarySquareBtnActive {
     @include fontSquareBtnActive;
-    @include colorSquareBtnActive;
+    @include colorPrimaryBtnActive;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+}
+@mixin styleSecondarySquareBtnActive {
+    @include fontSquareBtnActive;
+    @include colorSecondaryBtnActive;
     padding: 10px 20px 10px 20px;
     text-align: center;
 }
 
+
+
+//TODO remove round btns?
 //rename round borders
 @mixin stylePrimaryRoundBtnActive {
     @include colorPrimaryBtnActive;
-    @include fontPrimaryBtnActive;
+    @include fontPrimaryRoundBtnActive;
     padding: 6px 20px 6px 20px;
     border-radius: 1.4rem;
 }
@@ -66,15 +117,34 @@
 
 @mixin styleSecondaryRoundBtnActive {
     @include colorSecondaryBtnActive;
-    @include fontSecondaryBtnActive;
+    @include fontSecondaryRoundBtnActive;
     padding: 6px 20px 6px 20px;
     border-radius: 1.4rem;
 }
 
 // ==============  /Buttons ==============
 
-
+// =========== media screens ===========
 //TBD tablet
 @media screen and (min-width: 736px) {
 
+    @mixin styleSideNavSlider {
+        // @include fontSideNavSlider;
+        // @include colorSideNavSlider;
+        // position: fixed;
+        // height: 86vh;
+        // width: 70%;
+        // padding: 20px 20px 0px 20px;
+        // margin-top: 60px;
+        // z-index: 100;
+        // right: 0;
+    
+    
+    }
 }
+
+// desktop, height: 1024px
+@media screen and (min-width: 1440px) {
+
+}
+// =========== / media screens ===========

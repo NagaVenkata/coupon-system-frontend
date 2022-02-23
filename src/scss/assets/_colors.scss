@@ -43,21 +43,17 @@ $color-lightSky: #4893CA;
     background: linear-gradient(120deg, $color-darkSky, $color-lightSky 40%); 
 }
 
-
-// ==============  Buttons ==============
-
-@mixin colorSquareBtnActive {
-    background-color: $color-black;
-    filter: drop-shadow(2px 2px 2px $color-disable);
-    border: 1px solid $color-black;
-    color: $color-white;
+@mixin colorSideNavSlider {
+    background-color: $color-creme;
 }
+// ==============  Buttons ==============
 
 //dark background + light text
 @mixin colorPrimaryBtnActive {
     background-color: $color-black;
     border: 1px solid $color-black;
     color: $color-white;   
+    filter: drop-shadow(2px 2px 2px $color-disable);
 }
 
 @mixin colorPrimaryBtnInactive {
@@ -71,5 +67,6 @@ $color-lightSky: #4893CA;
     background-color: $color-white;
     border: 1px solid $color-black;
     color: $color-black;
+    filter: drop-shadow(2px 2px 2px $color-disable);
 }
 // ==============  /Buttons ==============

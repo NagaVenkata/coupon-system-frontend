@@ -18,10 +18,12 @@ export default function Home(props) {
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
   const [isUser, setIsUser] = useState(false);
+  const [btnText, setBtnText] = useState('');
 
   useEffect( () => {
 
     setIsUser(props.isUser);
+    setBtnText('LOGGA IN');
 
     //save mockdata in lS if lS is empty
     if (JSON.parse(localStorage.getItem('users')) === null) {
@@ -46,37 +48,39 @@ export default function Home(props) {
 
   }, []);
 
+  //TODO remove registerBtn from header?
   const onClickRegister = () => {
     setShowRegister(true);
     setShowLogin(false);
   };
 
   const onClickLogin = () => {
-    setShowLogin(true);
-    setShowRegister(false);
-  };
-
-  const onClickClose = () => {
-    setShowLogin(false);
-    setShowRegister(false);
+    setShowLogin(!showLogin);
+    // setShowRegister(false);   //TODO remove registerBtn from header?
+    if (showLogin === true) {
+      setBtnText('LOGGA IN');
+    } else {
+      setBtnText('STÄNG');
+    }
   };
 
   return (
     <>
         <header id='header' className={styles.headerWrapper}>
-          <Header isUser={isUser} onClickLogin={onClickLogin} onClickRegister={onClickRegister} />
+          <Header isUser={isUser} onClickLogin={onClickLogin} onClickRegister={onClickRegister} btnText={btnText}/>
         </header>
         
         <main className={styles.homePageMain}>
           
-          {showLogin ? <Login isUser={isUser} onClickClose={onClickClose}/> : ''}
-          {showRegister ? <Register isUser={isUser} onClickClose={onClickClose}/> : ''}
+          {showLogin ? <Login isUser={isUser}/> : ''}
+          {showRegister ? <Register isUser={isUser}/> : ''}
 
             <div id='backgroundImgAboveFold' className={styles.backgroundImgAboveFold}>
                 <div id='mainSection1' className={styles.mainSection1}>
                   <IntroWrapper onClickRegister={onClickRegister}/>
                 </div>
             </div>
+            {/* <img id='hamburger' className={styles.hamburger} alt='hamburger menu icon' src={hamburger}onClick={onClickHamburger}></img> */}
             
           {/* <div id='blobWrapper' className={styles.blobWrapper}> */}
            

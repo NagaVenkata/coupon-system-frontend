@@ -86,7 +86,7 @@ export default function Register(props) {
     <div id='registerWrapper' className={styles.registerWrapper}>
       <div id='textAndCloseWrapper' className={styles.textAndCloseWrapper}>
         <div id='textWrapper' className={styles.textWrapper}>
-          <h3>Skapa konto</h3>
+          <h3 className={styles.h3}>Skapa konto</h3>
           <p>
             Första steget för att kunna skapa skräddarsydda kupongutskick är att skapa ett konto. Det är gratis!
           </p>
@@ -98,7 +98,7 @@ export default function Register(props) {
       <form onSubmit={onSubmit}>
         <div id="userNameRegisterWrapper">
           <h4 id="userNameRegisterLabel">Din email</h4>
-          <input 
+          <input className={styles.input}
             id='usernameRegisterInput' 
             type='email' 
             name='userName' placeholder='example@mail.com' 
@@ -109,7 +109,7 @@ export default function Register(props) {
 
         <div id="passwordRegisterWrapper">
           <h4 id="passwordRegisterLabel">Välj lösenord</h4>
-          <input 
+          <input className={styles.input}
             id='passwordRegisterInput' 
             type='password' 
             name='password' 
@@ -119,14 +119,15 @@ export default function Register(props) {
           />
         </div><br></br>
 
-        <button type="submit">Skapa konto</button>
+        <button type="submit" className={styles.createAccountBtn}>Skapa konto</button>
       </form><br></br>
       
       <div id='errorMsgWrapper'>
         <p id='errorMsg' className={styles.errorMsg}>{errorMsg}</p>
       </div><br></br>
 
-      <h5>Har du redan ett konto? Logga in här</h5>
+      <h5>Har du redan ett konto?</h5>
+      <button id='loginBtn' className={styles.loginBtn}>LOGGA IN</button>
         
     </div>
   )

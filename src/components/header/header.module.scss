@@ -1,6 +1,11 @@
 @import '../../scss/assets/_elements.scss';
+@import '../../scss/assets/colors.scss';
 
 $debugging: false; //TODO remove, only for testing
+
+.logoHamburgerWrapper {
+    
+}
 
 .logo {
     font-family: $font-family-shrikhand;
@@ -10,21 +15,48 @@ $debugging: false; //TODO remove, only for testing
     } 
 }
 
+.hamburger {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 10;
+}
+.hamburger:hover {
+   cursor: pointer;
+}
+
 .sideNav {
-    //TODO adjust for mobile screen so menu items not hidden
-    @include fontMainMenu;
+    height: 86%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    background-color: $color-creme;
+    // transition: margin 1s;
+    // margin: 0 0 0 -250px;
+    
+
     @if $debugging {
         outline: 2px solid black;
     } 
+    a {
+        text-decoration: none;
+        color: $color-soft-black;
+    }
+    a:hover {
+        @include hoverLinks;
+    }
 }
 
 .menuWrapper {
-    display: flex;
     list-style: none;
-    justify-content: space-between;
-    min-width: 300px;
-    padding-left: 0px;
-    margin-bottom: 0;
+    margin-top: 80px;
+    font-size: 1.5rem;
+    // @include styleLoginSlider;
+}
+.menuItem {
+    margin-bottom: 20px;
 }
 
 .btnWrapper {
@@ -32,13 +64,13 @@ $debugging: false; //TODO remove, only for testing
     padding-bottom: 10px;
 
     .registerBtnShortcut {
-        @include stylePrimaryRoundBtnActive;
+       
     }
     .loginBtnShortcut {
-        @include styleSecondaryRoundBtnActive;
-
+        @include styleSecondarySquareBtnActive;
+        z-index: 19;
+        font-size: 0.8rem;
     }
-
 
     .statisticIcon {
 
@@ -51,3 +83,32 @@ $debugging: false; //TODO remove, only for testing
         outline: 2px solid black;
     } 
 }
+
+
+// =========== media screens ===========
+//TBD tablet
+@media screen and (min-width: 736px) {
+
+    .sideNav {
+        background-color: red;
+        // @include styleLoginSlider;
+        @include fontMainMenu;
+
+    }
+
+    .menuWrapper {
+        @include navHorizontal;
+    }
+
+    .registerBtnShortcut {
+        display: inline-block; //TODO not working
+
+        @include stylePrimaryRoundBtnActive;
+    }
+}
+
+// desktop, height: 1024px
+@media screen and (min-width: 1440px) {
+
+}
+// =========== / media screens ===========

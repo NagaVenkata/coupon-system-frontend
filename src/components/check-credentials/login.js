@@ -75,31 +75,30 @@ export default function Login(props) {
 
   return (
     <div id='loginWrapper' className={styles.loginWrapper}>
-      <div id='textAndCloseWrapper' className={styles.textAndCloseWrapper}>
+      <section id='loginColumn1' className={styles.loginColumn1}>
+
         <div id='textWrapper' className={styles.textWrapper}>
-          <h3>Logga in</h3>
+          <h3 className={styles.h3}>Logga in</h3>
           <p>
-            Visa uppskattning till kollegor och kunder - Logga in för att skicka ut dina kuponger!
+            Visa uppskattning till kollegor och kunder! Logga in för att skicka ut dina kuponger.
           </p>
         </div>
-        <button className="closeBtn" onClick={props.onClickClose}>X</button>
-      </div>
     
-        <form onSubmit={onSubmit}>
-          <div id="userNameLoginWrapper">
-            <h4 id="userNameLoginLabel">Användarnamn</h4>
-            <input 
+        <form id='loginForm' className={styles.loginForm} onSubmit={onSubmit}>
+          <section id='userNameLoginWrapper' className={styles.userNameLoginWrapper}>
+            <h5 id='userNameLoginLabel' className={styles.inputLabel}>Användarnamn</h5>
+            <input className={styles.input}
               id='userNameLoginInput' 
               type='email' 
               name='userName' placeholder='example@mail.com' 
               value={userValueLogin.username} 
               onChange={onChange}
             />
-          </div><br></br>
+          </section>
 
-          <div id="passwordLoginWrapper">
-            <h4 id="passwordLoginLabel">Lösenord</h4>
-            <input 
+          <section id='passwordLoginWrapper' className={styles.passwordLoginWrapper}>
+            <h5 id='passwordLoginLabel' className={styles.inputLabel}>Lösenord</h5>
+            <input className={styles.input}
               id='passwordLoginInput' 
               type='password' 
               name='password' 
@@ -107,19 +106,21 @@ export default function Login(props) {
               // value={userPassword}
               onChange={onChange}
             />
-          </div><br></br>
+          </section>
 
-          <button type="submit">Logga in</button>
-        </form><br></br>
+          <button type='submit' className={styles.loginBtn}>LOGGA IN</button>
+        </form>
 
-        <div id='loginErrorMsgWrapper'>
-        <p id='loginErrorMsg' className={styles.errorMsg}>{loginErrorMsg}</p>
-      </div><br></br>
+        <div id='loginErrorMsgWrapper' className={styles.loginErrorMsgWrapper}>
+          <p id='loginErrorMsg' className={styles.errorMsg}>{loginErrorMsg}</p>
+        </div>
         
-        <h5>Har du inget konto? Skapa konto här</h5>
-
-        <p>Glömt lösenord?</p>
-        
+        <section id='loginLastSection' className={styles.loginLastSection}>
+          <h5 className={styles.h5}>Har du inget konto?</h5>
+          <button id='createAccountBtn' className={styles.createAccountBtn}>SKAPA KONTO</button>
+          <p id='forgotPassword' className={styles.forgotPassword}><a href='http://adoveo.se/'>Glömt lösenord?</a></p>
+        </section>
+      </section>
     </div>
   )
 };

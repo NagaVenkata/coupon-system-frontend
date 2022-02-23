@@ -1,10 +1,36 @@
+@import '../../scss/assets/elements';
+
+$width-input-btn: 300px;
+$height-input-btn: 50px;
+
 .registerWrapper {
-    padding: 10px 10px 0px 10px;
+    @include styleLoginSlider;
+
 
     /* TODO remove later: */
     border: 1px solid black;
 }
 
+.h3 {
+    @include fontH3;
+}
+
+.input {
+    @include styleInput;
+
+}
+
+.createAccountBtn {
+    @include stylePrimarySquareBtnActive;
+    width: $width-input-btn;
+    height: $height-input-btn;
+}
+
+.loginBtn {
+    @include styleSecondarySquareBtnActive;
+    width: $width-input-btn;
+    height: $height-input-btn;
+}
 .textAndCloseWrapper {
     display: flex;
     justify-content: space-between;

@@ -2,13 +2,14 @@
 @import '../../scss/assets/elements';
 
 
-$debugging: true; //TODO remove, only for testing
+$debugging: false; //TODO remove, only for testing
 
 .introWrapper {
     max-width: 550px;
+
    
     @if $debugging {
-        // outline: 2px solid purple;
+        outline: 2px solid purple;
     } 
 }
 
@@ -21,7 +22,7 @@ $debugging: true; //TODO remove, only for testing
 }
 
 .ctaBtn {
-    @include styleSquareBtnActive;
+    @include stylePrimarySquareBtnActive;
 }
 
 

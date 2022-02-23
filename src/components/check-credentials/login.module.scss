@@ -1,20 +1,113 @@
+//mobile-screen 357px x 667px
+
+@import '../../scss/assets/elements';
+@import '../../scss/assets/fonts';
+@import '../../scss/assets/colors';
+
+$margin-btw-section: 40px;
+$margin-in-section: 16px;
+$width-input-btn: 300px;
+$height-input-btn: 50px;
+
+$debugging: false; //TODO remove, only for testing
+
 .loginWrapper {
-    padding: 10px 10px 0px 10px;
-
-    /* TODO remove later: */
-    border: 1px solid black;
-}
-
-.textAndCloseWrapper {
+    @include styleLoginSlider;
     display: flex;
-    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    z-index: 8;
+
+    @if $debugging {
+        outline: 2px solid pink;
+    } 
 }
 
+.loginColumn1 {
+    gap: 40px;
+
+    @if $debugging {
+        outline: 2px solid black;
+    } 
+}
+
+.h3 {
+    @include fontH3;
+}
+.inputLabel {
+    @include fontH5;
+    padding-left: 6px;
+    // margin-bottom: 2px;
+}
 .textWrapper {
-    max-width: 70%;
+    max-width: 400px;
+    padding-top: 20px;
+
+    @if $debugging {
+        outline: 2px solid purple;
+    } 
 }
 
+.loginForm {
+    @if $debugging {
+        outline: 2px solid black;
+    } 
+}
+.userNameLoginWrapper {
+    // margin-top: $margin-btw-section;
+    margin-top: $margin-in-section;
+}
+
+.passwordLoginWrapper {
+    margin-top: $margin-in-section;
+    margin-bottom: 10px;
+
+}
+.input {
+    @include styleInput;
+}
+
+.loginBtn {
+    @include stylePrimarySquareBtnActive;
+    margin-top: 10px;
+    width: $width-input-btn;
+    height: $height-input-btn;
+}
+
+.loginErrorMsgWrapper {
+    margin-top: $margin-in-section;
+    height: 30px;
+    @if $debugging {
+        // outline: 2px solid red;
+    } 
+}
 .errorMsg {
-    color: red;
-    border: 1px solid black;
+    @include fontError;
+    margin-bottom: 10px;
+}
+
+.loginLastSection {
+    margin-top: $margin-in-section;
+
+    @if $debugging {
+        outline: 2px solid black;
+    } 
+}
+
+.createAccountBtn {
+    @include styleSecondarySquareBtnActive;
+    width: $width-input-btn;
+    height: $height-input-btn;
+}
+
+.forgotPassword {
+    margin-top: 10px;
+    a {
+        text-decoration: none;
+        color: $color-soft-black;
+    }
+    a:hover {
+        @include hoverLinks;
+    }
+
 }

@@ -19,12 +19,13 @@ $debugging: false; //TODO remove, only for testing
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     overflow: hidden;
     top: 0;    
     position: fixed;
-    z-index: 100;
-    height: 60px;
+    z-index: 8;
+    // height: 60px;
+    // padding-bottom: 10px;
     // padding-top: 14px;
 
     @if $debugging {
@@ -52,12 +53,16 @@ $debugging: false; //TODO remove, only for testing
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 50%;
+    // height: 50%;
+    // top: 100px;
+    // margin-top: 96px;
+    padding-top: 116px;
     
     @if $debugging {
         outline: 2px solid red;
     } 
 }
+
 
 .mainSection2 {
     @include screenMargins;
@@ -100,16 +105,14 @@ $debugging: false; //TODO remove, only for testing
 // =========== media screens ===========
 //TBD tablet
 @media screen and (min-width: 736px) {
-    .mainSection2 {
-        // justify-content: space-around;
-    }
-    .hideNav {
-        
+    .hamburger {
+        display: none;
     }
 }
 
 // desktop, height: 1024px
 @media screen and (min-width: 1440px) {
+
 
 }
 // =========== / media screens ===========
