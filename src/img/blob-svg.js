@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './blob-svg.module.scss'; 
 
-
 export default function BlobBackground() {
   return (
     // <div id='blobWrapper' className={styles.blobWrapper}>

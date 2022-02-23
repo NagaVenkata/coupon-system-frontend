@@ -3,18 +3,9 @@
 
 $debugging: false; //TODO remove, only for testing
 
-.logoHamburgerWrapper {
-    
+.navHorizontal {
+    display: none;
 }
-
-.logo {
-    fontFamily: $fontFamily-shrikhand;
-
-    @if $debugging {
-        outline: 2px solid black;
-    } 
-}
-
 .hamburger {
     position: fixed;
     bottom: 40px;
@@ -33,9 +24,6 @@ $debugging: false; //TODO remove, only for testing
     bottom: 0;
     right: 0;
     background-color: $color-creme;
-    // transition: margin 1s;
-    // margin: 0 0 0 -250px;
-    
 
     @if $debugging {
         outline: 2px solid black;
@@ -52,7 +40,7 @@ $debugging: false; //TODO remove, only for testing
 .menuWrapper {
     list-style: none;
     margin-top: 80px;
-    fontSize: 1.5rem;
+    font-size: 1.5rem;
     // @include styleLoginSlider;
 }
 .menuItem {
@@ -63,13 +51,10 @@ $debugging: false; //TODO remove, only for testing
     margin-right: 0;
     padding-bottom: 10px;
 
-    .registerBtnShortcut {
-       
-    }
     .loginBtnShortcut {
         @include styleSecondarySquareBtnActive;
         z-index: 19;
-        fontSize: 0.8rem;
+        font-size: 0.8rem;
     }
 
     .loginBtnShortcut:hover {
@@ -93,21 +78,20 @@ $debugging: false; //TODO remove, only for testing
 //TBD tablet
 @media screen and (min-width: 736px) {
 
-    .sideNav {
-        background-color: red;
-        // @include styleLoginSlider;
-        @include fontMainMenu;
-
+    .hamburger {
+        display: none;
+    }
+    .navHorizontal {
+        display: block;
     }
 
     .menuWrapper {
         @include navHorizontal;
     }
 
-    .registerBtnShortcut {
-        display: inline-block; //TODO not working
-
-        @include stylePrimaryRoundBtnActive;
+    .menuItem {
+        @include styleH5;
+        text-decoration: none;
     }
 }
 

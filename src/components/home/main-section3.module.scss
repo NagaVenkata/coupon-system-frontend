@@ -19,18 +19,18 @@ $debugging: false; //TODO remove, only for testing
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: baseline;
-    row-gap: 20px;
+    align-items: flex-start;
+    gap: 40px;
 
 }
 .stepCard {
-    width: 214px;
+    width: 240px;
+    height: 320px;
     @if $debugging {
         outline: 2px solid black;
     } 
 }
 
 .stepText {
-    // text-align: center;
     margin-top: 10px;
 }

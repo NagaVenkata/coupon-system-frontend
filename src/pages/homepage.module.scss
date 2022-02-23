@@ -24,9 +24,6 @@ $debugging: false; //TODO remove, only for testing
     top: 0;    
     position: fixed;
     z-index: 8;
-    // height: 60px;
-    // padding-bottom: 10px;
-    // padding-top: 14px;
 
     @if $debugging {
         outline: 2px solid black;
@@ -53,10 +50,7 @@ $debugging: false; //TODO remove, only for testing
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    // height: 50%;
-    // top: 100px;
-    // margin-top: 96px;
-    padding-top: 116px;
+    padding-top: 180px;
     
     @if $debugging {
         outline: 2px solid red;
@@ -84,6 +78,10 @@ $debugging: false; //TODO remove, only for testing
 .mainSection3 {
     @include screenMargins;
     margin-top: $margin-sections;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
     .ourProductWrapper {
     
@@ -96,9 +94,6 @@ $debugging: false; //TODO remove, only for testing
 
 .footerWrapper {
     margin-top: $margin-sections;
-
-    // @include screenMargins;
-
 }
 
 // =========== media screens ===========

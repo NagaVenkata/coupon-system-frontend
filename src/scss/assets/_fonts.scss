@@ -1,91 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shrikhand&family=Space+Grotesk:wght@300;400;500;600;700&family=Spinnaker&display=swap');
 
 
-$fontFamily-space-grotesk: 'Space Grotesk', sans-serif;
+$font-family-space-grotesk: 'Space Grotesk', sans-serif;
 //fontWeight: Light 300, Regular 400, Medium 500, Semi-bold 600, Bold 700 
 //font-style 
 //TODO clean not used styles
 
-$fontFamily-mulish: 'Mulish', sans-serif;
+$font-family-mulish: 'Mulish', sans-serif;
 
 
-$fontFamily-spinnaker: 'Spinnaker', sans-serif;
+$font-family-spinnaker: 'Spinnaker', sans-serif;
 
 
-$fontFamily-shrikhand: 'Shrikhand', cursive;
+$font-family-shrikhand: 'Shrikhand', cursive;
 
 
 @mixin fontH2 {
-    fontFamily: $fontFamily-space-grotesk;
-    fontSize: 2.2rem;
-    fontWeight: 700;
+    font-family: $font-family-space-grotesk;
+    font-size: 2.2rem;
+    font-weight: 700;
 }
 
 @mixin fontH3 {
-    fontFamily: $fontFamily-space-grotesk;
-    // fontSize: 1.8rem;
-    fontSize: 18rem;
+    font-family: $font-family-space-grotesk;
+    font-size: 1.8rem;
 
-    fontWeight: 600;
+    font-weight: 600;
 }
 
 @mixin fontH4 {
-    fontFamily: $fontFamily-space-grotesk;
-    fontSize: 1.2rem;
-    fontWeight: 400;
+    font-family: $font-family-space-grotesk;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 @mixin fontH5 {
-    fontFamily: $fontFamily-space-grotesk;
-    fontSize: 1.2rem;
-    fontWeight: 600;
+    font-family: $font-family-space-grotesk;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 @mixin fontDisclaimer {
-    fontFamily: $fontFamily-mulish;
+    font-family: $font-family-mulish;
 }
 
 @mixin fontMainMenu {
-    fontFamily: $fontFamily-space-grotesk;
-    fontSize: 1rem;
-    fontWeight: 500;
+    font-family: $font-family-space-grotesk;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 @mixin fontBodyCopy {
-    fontFamily: $fontFamily-mulish;
-    fontSize: 1rem;
+    font-family: $font-family-mulish;
+    font-size: 1rem;
 }
 
 @mixin fontHissPitch {
-    fontSize: 1.2rem;
+    font-size: 1.2rem;
 }
 
 @mixin fontQuote {
-    fontSize: 1.2rem;
-    fontFamily: $fontFamily-space-grotesk;
+    font-size: 1.2rem;
+    font-family: $font-family-space-grotesk;
 
 }
 
 @mixin fontPCursive {
-    // fontWeight: 300;
+    font-weight: 500;
     font-style: italic;
 }
 
 @mixin fontError {
     color: red; 
-    fontFamily: $fontFamily-mulish;
-    fontWeight: 600;
-    fontSize: 0.8rem;
+    font-family: $font-family-mulish;
+    font-weight: 600;
+    font-size: 0.8rem;
 
 }
 
 @mixin fontInput {
-    fontFamily: $fontFamily-mulish;
-    fontWeight: 700;
+    font-family: $font-family-mulish;
+    font-weight: 700;
 }
 
 @mixin fontSideNavSlider {
-    // fontFamily: $fontFamily-space-grotesk;
+    // font-family: $font-family-space-grotesk;
 
 
 }
@@ -94,9 +93,9 @@ $fontFamily-shrikhand: 'Shrikhand', cursive;
 // ==============  Buttons ==============
 
 @mixin fontSquareBtnActive {
-    fontSize: 1rem;
-    fontFamily: $fontFamily-mulish;
-    fontWeight: 600;
+    font-size: 1rem;
+    font-family: $font-family-mulish;
+    font-weight: 600;
 }
 
 
@@ -104,15 +103,15 @@ $fontFamily-shrikhand: 'Shrikhand', cursive;
 
 //TODO REMOVE?
 @mixin fontPrimaryRoundBtnActive {
-    fontFamily: $fontFamily-mulish;
-    fontWeight: 700;
-    fontSize: 0.8rem;
+    font-family: $font-family-mulish;
+    font-weight: 700;
+    font-size: 0.8rem;
 }
 
 @mixin fontSecondaryRoundBtnActive {
-    fontFamily: $fontFamily-mulish;
-    fontWeight: 700;
-    fontSize: 0.8rem;
+    font-family: $font-family-mulish;
+    font-weight: 700;
+    font-size: 0.8rem;
 
 }
 
@@ -123,9 +122,9 @@ $fontFamily-shrikhand: 'Shrikhand', cursive;
 //TBD tablet
 @media screen and (min-width: 736px) {
     @mixin fontPrimaryBtnActive {
-        fontFamily: $fontFamily-mulish;
-        fontWeight: 600;
-        fontSize: 0.1rem;
+        font-family: $font-family-mulish;
+        font-weight: 600;
+        font-size: 0.1rem;
     }
 }
 //Space Grotesk fontWeight here: https://fonts.google.com/specimen/Space+Grotesk 

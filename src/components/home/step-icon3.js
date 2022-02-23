@@ -3,7 +3,7 @@ import React from 'react';
 export default function StepIcon3() {
   return (
     <div>
-      <svg xmlns="http://www.w3.org/2000/svg" width="178" height="165" viewBox="44 16 178 165">
+      <svg xmlns="http://www.w3.org/2000/svg" width="178" height="182" viewBox="44 16 178 140">
       <g id="_1_login" data-name="1 login" transform="translate(-4.426 377.017)">
         <g id="icon-data" transform="translate(22 -358.163)">
           <g id="icon-data-2" data-name="icon-data" transform="translate(7.999 -7)">

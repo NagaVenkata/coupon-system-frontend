@@ -7,16 +7,10 @@ import Logo from '../../img/logo';
 export default function Header(props) {
   const [isUser, setIsUser] = useState(false);
   const [showNav, setShowNav] = useState(false);
-  // const [btnText, setBtnText] = useState('');
-
-
-  // const line1 = document.getElementById('line1');
 
   useEffect(() => {
     setIsUser(props.isUser);
-    // setBtnText(props.btnText);
-    console.log("isUser från header:", isUser);
-
+    // console.log("isUser från header:", isUser);
   }, []);
 
 
@@ -62,7 +56,6 @@ export default function Header(props) {
 
   return (
     <>
-        {/* <div id='logo' className={styles.logo}>ADOVEO</div> */}
         <Logo />
         {showNav ? 
           <nav id='sideNav' className={styles.sideNav}>
@@ -74,6 +67,14 @@ export default function Header(props) {
                 <li id='headerMenuItem5' className={styles.menuItem}><a href='http://adoveo.se/'>Kontakt</a></li>
             </ul>
           </nav> : ''}
+
+          <nav id='navHorizontal' className={styles.navHorizontal}>
+            <ul id='menuWrapper' className={styles.menuWrapper}>
+                <li><a className={styles.menuItem}href='http://adoveo.se/'>Så funkar det</a></li>
+                <li><a className={styles.menuItem}href='http://adoveo.se/'>Case</a></li>
+                <li><a className={styles.menuItem} href='http://adoveo.se/'>Kontakt</a></li>
+            </ul>
+          </nav>
 
 
         <div className={styles.btnWrapper}>

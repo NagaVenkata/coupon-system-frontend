@@ -40,10 +40,6 @@ $margin-left-testimonial: 20px;
 .mobileFlow1:hover {
     cursor: pointer;
 }
-.mobileFrame:hover {
-    // TODO: add hover mobile screen
-
-}
 
 .mobileFlow2 {
     background-image: url('../../img/mobile-sprite-sheet.png');
@@ -139,7 +135,13 @@ $margin-left-testimonial: 20px;
         outline: 2px solid red;
     } 
 }
-
+.arrowRight {
+    margin-left: 280px;
+    // padding-left: 10px;
+    @if $debugging {
+        outline: 2px solid red;
+    } 
+}
 //TBD tablet
 @media screen and (min-width: 736px) {
     

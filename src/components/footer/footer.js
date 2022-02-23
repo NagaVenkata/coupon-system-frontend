@@ -1,18 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './footer.module.scss';
-import Logo from '../../img/logo';
 
+import Logo from '../../img/logo';
+import SoMeLogos from '../../img/some-logos';
 
 export default function Footer() {
+
   return (
     <div id='backgroundImgFooter' className={styles.backgroundImgFooter}>
       <div id='logoIconFooterWrapper' className={styles.logoIconFooterWrapper}>
         <Logo />
-        <div id='soMeWrapper' className={styles.soMeWrapper}>
-          <div id='liIcon'>LinkedIn</div>
-          <div id='fbIcon'>Facebook</div>
-          <div id='igIcon'>Instagram</div>
-        </div>
+        <SoMeLogos />
       </div>
       <div id='footerColumnWrapper' className={styles.footerColumnWrapper}>
         <div id='footerColumn1' className={styles.footerColumn1}>
@@ -47,6 +45,13 @@ export default function Footer() {
             </ul>
           </div>
         </div> 
+        {/* TODO add */}
+        {/* <div id='aboutCareer' className={styles.helpWrapper}>
+        <h5 className={styles.h5}>Om oss</h5>
+        <ul id='helpItems' className={styles.helpItems}>
+          <li className={styles.footerMenuItem}>Karriär</li>
+        </ul>
+      </div> */}
       </div>
       <p id='copyrightText' className={styles.copyrightText}>Copyright © 2022 Adoveo AB. All rights reserved.</p>
     </div>

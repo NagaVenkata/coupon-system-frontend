@@ -2,9 +2,8 @@ import React from 'react';
 import styles from './main-section2.module.scss'; 
 import quoteMarks from '../../img/quote-marks.svg';
 import clientLogo from '../../img/sj-logo.gif';
+import RightArrow from '../../img/right-arrow';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 // import { gsap } from "gsap";
 // import BlobBackground from '../../img/blob-svg';
 // import BlobSvg from './blob-svg';
@@ -47,6 +46,7 @@ export default function MainSection2() {
             <img id='clientLogo9' className={styles.clientLogo} alt='client logo' src={clientLogo}></img>
             <img id='clientLogo10' className={styles.clientLogo} alt='client logo' src={clientLogo}></img>
           </div>
+          {/* <RightArrow /> */}
         </div>
       </div>
     </>

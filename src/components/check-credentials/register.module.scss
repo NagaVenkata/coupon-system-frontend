@@ -5,25 +5,19 @@ $height-input-btn: 50px;
 
 .registerWrapper {
     @include styleLoginSlider;
-
-
-    /* TODO remove later: */
-    border: 1px solid black;
 }
 
 .h3 {
     @include fontH3;
 }
 
-//TODO -uppdatera
-// .h5 {
-//     @include fontH5;
-// }
+.h4 {
+    @include fontH5;
+}
 
 
 .input {
     @include styleInput;
-
 }
 
 .createAccountBtn {
@@ -43,7 +37,6 @@ $height-input-btn: 50px;
 }
 .loginBtn:hover {
     @include styleSecondarySquareBtnHover;
-   
 }
 
 .textAndCloseWrapper {

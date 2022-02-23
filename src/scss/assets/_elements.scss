@@ -68,9 +68,7 @@ $height-input-btn: 50px;
     height: 86%;
     width: 100%;
     padding: 6px 30px 0px 30px;
-    // top: 0;
     bottom: 0;
-    // margin-top: 60px;
     z-index: 7;
     right: 0;
 }
@@ -78,9 +76,12 @@ $height-input-btn: 50px;
 @mixin navHorizontal {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
     min-width: 300px;
     padding-left: 0px;
     margin-bottom: 0;
+    
+    
 }
 
 @mixin hoverLinks {
@@ -115,6 +116,16 @@ $height-input-btn: 50px;
     @include colorSecondaryBtnHover;
 
 }
+
+// =======
+
+// =======
+@mixin styleSoMeLogo {
+    // width: 100px;
+}
+
+
+
 
 
 
