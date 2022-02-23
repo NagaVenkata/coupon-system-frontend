@@ -64,6 +64,10 @@ export default function Home(props) {
     }
   };
 
+  const onClickClose = () => {
+    setShowRegister(false);
+  };
+
   return (
     <>
         <header id='header' className={styles.headerWrapper}>
@@ -73,7 +77,7 @@ export default function Home(props) {
         <main className={styles.homePageMain}>
           
           {showLogin ? <Login isUser={isUser}/> : ''}
-          {showRegister ? <Register isUser={isUser}/> : ''}
+          {showRegister ? <Register isUser={isUser} onClickClose={onClickClose}/> : ''}
 
             <div id='backgroundImgAboveFold' className={styles.backgroundImgAboveFold}>
                 <div id='mainSection1' className={styles.mainSection1}>

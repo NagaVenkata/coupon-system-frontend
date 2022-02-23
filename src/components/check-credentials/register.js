@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 import styles from './register.module.scss';
+import CloseBtn from './close-btn.js';
 
 export default function Register(props) {
   let navigate = useNavigate();
@@ -88,10 +89,11 @@ export default function Register(props) {
         <div id='textWrapper' className={styles.textWrapper}>
           <h3 className={styles.h3}>Skapa konto</h3>
           <p>
-            Första steget för att kunna skapa skräddarsydda kupongutskick är att skapa ett konto. Det är gratis!
+            Första steget för att skicka ut skräddarsydda kuponger är att skapa ett konto.
           </p>
         </div>
-        <button className="closeBtn" onClick={props.onClickClose}>X</button>
+        <CloseBtn onClickClose={props.onClickClose}/>
+        {/* <button className="closeBtn" onClick={props.onClickClose}>X</button> */}
       </div>
       
 
