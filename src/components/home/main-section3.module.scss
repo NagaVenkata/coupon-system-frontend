@@ -1,26 +1,36 @@
 @import '../../scss/assets/elements';
 
-$debugging: true; //TODO remove, only for testing
+$debugging: false; //TODO remove, only for testing
 
 .h3 {
     @include styleH3;
 }
 
-.stepTextWrapper {
+.h4 {
+    @include styleH4;
+}
 
+.stepTextWrapper {
+    max-width: 380px;
 }
 
 .stepCardsWrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: baseline;
     row-gap: 20px;
 
 }
 .stepCard {
-    width: 200px;
+    width: 214px;
     @if $debugging {
         outline: 2px solid black;
     } 
+}
+
+.stepText {
+    // text-align: center;
+    margin-top: 10px;
 }

@@ -8,7 +8,7 @@ $debugging: false; //TODO remove, only for testing
 }
 
 .logo {
-    font-family: $font-family-shrikhand;
+    fontFamily: $fontFamily-shrikhand;
 
     @if $debugging {
         outline: 2px solid black;
@@ -52,7 +52,7 @@ $debugging: false; //TODO remove, only for testing
 .menuWrapper {
     list-style: none;
     margin-top: 80px;
-    font-size: 1.5rem;
+    fontSize: 1.5rem;
     // @include styleLoginSlider;
 }
 .menuItem {
@@ -69,7 +69,7 @@ $debugging: false; //TODO remove, only for testing
     .loginBtnShortcut {
         @include styleSecondarySquareBtnActive;
         z-index: 19;
-        font-size: 0.8rem;
+        fontSize: 0.8rem;
     }
 
     .statisticIcon {

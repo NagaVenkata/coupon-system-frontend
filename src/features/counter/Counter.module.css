@@ -13,17 +13,17 @@
 }
 
 .value {
-  font-size: 78px;
+  fontSize: 78px;
   padding-left: 16px;
   padding-right: 16px;
   margin-top: 2px;
-  font-family: 'Courier New', Courier, monospace;
+  fontFamily: 'Courier New', Courier, monospace;
 }
 
 .button {
   appearance: none;
   background: none;
-  font-size: 32px;
+  fontSize: 32px;
   padding-left: 12px;
   padding-right: 12px;
   outline: none;
@@ -37,7 +37,7 @@
 }
 
 .textbox {
-  font-size: 32px;
+  fontSize: 32px;
   padding: 2px;
   width: 64px;
   text-align: center;

@@ -38,7 +38,7 @@
    */
   
   h1 {
-    font-size: 2em;
+    fontSize: 2em;
     margin: 0.67em 0;
   }
   
@@ -62,8 +62,8 @@
    */
   
   pre {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
+    fontFamily: monospace, monospace; /* 1 */
+    fontSize: 1em; /* 2 */
   }
   
   /* Text-level semantics
@@ -94,7 +94,7 @@
   
   b,
   strong {
-    font-weight: bolder;
+    fontWeight: bolder;
   }
   
   /**
@@ -105,8 +105,8 @@
   code,
   kbd,
   samp {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
+    fontFamily: monospace, monospace; /* 1 */
+    fontSize: 1em; /* 2 */
   }
   
   /**
@@ -114,7 +114,7 @@
    */
   
   small {
-    font-size: 80%;
+    fontSize: 80%;
   }
   
   /**
@@ -124,7 +124,7 @@
   
   sub,
   sup {
-    font-size: 75%;
+    fontSize: 75%;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
@@ -162,8 +162,8 @@
   optgroup,
   select,
   textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 1 */
+    fontFamily: inherit; /* 1 */
+    fontSize: 100%; /* 1 */
     line-height: 1.15; /* 1 */
     margin: 0; /* 2 */
   }
