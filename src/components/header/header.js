@@ -2,7 +2,7 @@ import React, { useState ,useEffect } from 'react';
 import gsap from 'gsap';
 import styles from './header.module.scss';
 import Hamburger from './hamburger';
-import Logo from './logo';
+import Logo from '../../img/logo';
 
 export default function Header(props) {
   const [isUser, setIsUser] = useState(false);

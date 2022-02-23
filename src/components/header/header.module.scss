@@ -72,6 +72,10 @@ $debugging: false; //TODO remove, only for testing
         fontSize: 0.8rem;
     }
 
+    .loginBtnShortcut:hover {
+        @include styleSecondarySquareBtnHover;
+    }
+
     .statisticIcon {
 
     }

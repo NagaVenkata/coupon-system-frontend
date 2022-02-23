@@ -128,7 +128,7 @@ export default function Register(props) {
         <p id='errorMsg' className={styles.errorMsg}>{errorMsg}</p>
       </div><br></br>
 
-      <h5>Har du redan ett konto?</h5>
+      <h6 className={styles.h6}>Har du redan ett konto?</h6>
       <button id='loginBtn' className={styles.loginBtn}>LOGGA IN</button>
         
     </div>

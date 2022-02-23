@@ -15,6 +15,12 @@ $height-input-btn: 50px;
     @include fontH3;
 }
 
+//TODO -uppdatera
+// .h5 {
+//     @include fontH5;
+// }
+
+
 .input {
     @include styleInput;
 
@@ -26,11 +32,20 @@ $height-input-btn: 50px;
     height: $height-input-btn;
 }
 
+.createAccountBtn:hover {
+    @include stylePrimarySquareBtnHover;
+}
+
 .loginBtn {
     @include styleSecondarySquareBtnActive;
     width: $width-input-btn;
     height: $height-input-btn;
 }
+.loginBtn:hover {
+    @include styleSecondarySquareBtnHover;
+   
+}
+
 .textAndCloseWrapper {
     display: flex;
     justify-content: space-between;
@@ -42,5 +57,5 @@ $height-input-btn: 50px;
 
 .errorMsg {
     color: red;
-    border: 1px solid black;
+    // border: 1px solid black;
 }

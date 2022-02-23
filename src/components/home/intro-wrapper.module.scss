@@ -25,6 +25,10 @@ $debugging: false; //TODO remove, only for testing
     @include stylePrimarySquareBtnActive;
 }
 
+.ctaBtn:hover {
+    @include stylePrimarySquareBtnHover;
+}
+
 
 // =========== media screens ===========
 

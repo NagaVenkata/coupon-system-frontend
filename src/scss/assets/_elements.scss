@@ -19,6 +19,11 @@ $height-input-btn: 50px;
     @include colorH4;
 }
 
+@mixin styleH5 {
+    @include fontH5;
+    @include colorH5;
+}
+
 @mixin styleHissPitch {
     @include fontHissPitch;
     @include colorHissPitch;
@@ -41,6 +46,16 @@ $height-input-btn: 50px;
     // border-radius: 1.4rem;
     @include colorSecondaryBtnActive;
     @include fontInput;
+}
+
+@mixin styleFooterMenu {
+    @include colorFooterItems;
+}
+
+@mixin hoverFooterMenu {
+    @include colorHoverLinks;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 
@@ -82,11 +97,23 @@ $height-input-btn: 50px;
     padding: 10px 20px 10px 20px;
     text-align: center;
 }
+@mixin stylePrimarySquareBtnHover {
+    // @include fontSquareBtnHover;
+    @include colorPrimaryBtnHover;
+    // padding: 10px 20px 10px 20px;
+    // text-align: center;
+}
+
 @mixin styleSecondarySquareBtnActive {
     @include fontSquareBtnActive;
     @include colorSecondaryBtnActive;
     padding: 10px 20px 10px 20px;
     text-align: center;
+}
+
+@mixin styleSecondarySquareBtnHover {
+    @include colorSecondaryBtnHover;
+
 }
 
 

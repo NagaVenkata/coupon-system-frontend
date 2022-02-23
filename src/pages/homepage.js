@@ -84,11 +84,8 @@ export default function Home(props) {
                   <IntroWrapper onClickRegister={onClickRegister}/>
                 </div>
             </div>
-            {/* <img id='hamburger' className={styles.hamburger} alt='hamburger menu icon' src={hamburger}onClick={onClickHamburger}></img> */}
-            
+
           {/* <div id='blobWrapper' className={styles.blobWrapper}> */}
-           
-          {/* </div> */}
 
           <div id='mainSection2' className={styles.mainSection2}>
             <MainSection2 />

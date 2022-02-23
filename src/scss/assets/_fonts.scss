@@ -37,15 +37,13 @@ $fontFamily-shrikhand: 'Shrikhand', cursive;
 
 @mixin fontH5 {
     fontFamily: $fontFamily-space-grotesk;
-    fontSize: 1rem;
+    fontSize: 1.2rem;
     fontWeight: 600;
 }
 
 @mixin fontDisclaimer {
     fontFamily: $fontFamily-mulish;
-    
 }
-
 
 @mixin fontMainMenu {
     fontFamily: $fontFamily-space-grotesk;
@@ -54,12 +52,12 @@ $fontFamily-shrikhand: 'Shrikhand', cursive;
 }
 
 @mixin fontBodyCopy {
+    fontFamily: $fontFamily-mulish;
     fontSize: 1rem;
 }
 
 @mixin fontHissPitch {
     fontSize: 1.2rem;
-    // fontWeight: 500;
 }
 
 @mixin fontQuote {
@@ -99,8 +97,10 @@ $fontFamily-shrikhand: 'Shrikhand', cursive;
     fontSize: 1rem;
     fontFamily: $fontFamily-mulish;
     fontWeight: 600;
-
 }
+
+
+
 
 //TODO REMOVE?
 @mixin fontPrimaryRoundBtnActive {
