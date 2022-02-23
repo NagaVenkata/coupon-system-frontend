@@ -1,6 +1,6 @@
 @import '../../scss/assets/elements';
 
-$debugging: false; //TODO remove, only for testing
+$debugging: true; //TODO remove, only for testing
 
 $margin-btw-section: 40px; //margin between sections
 $margin-left-testimonial: 20px;
@@ -71,6 +71,7 @@ $margin-left-testimonial: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin-top: $margin-btw-section;
 
     @if $debugging {
@@ -105,7 +106,6 @@ $margin-left-testimonial: 20px;
 
 .clientsSection2 {
     margin-top: $margin-btw-section;
-    margin-left: $margin-left-testimonial;
     margin-bottom: $margin-btw-section;
 }
 
@@ -116,7 +116,8 @@ $margin-left-testimonial: 20px;
 
 .clientLogosWrapper {
     height: 70%;
-    max-width: 80%;
+    max-width: 300px;
+
     display: inline-flex;
     align-items:center;
     gap: 36px;
@@ -151,8 +152,8 @@ $margin-left-testimonial: 20px;
     }
 
     .clientLogosWrapper {
-        max-width: 470px;
-
+        // max-width: 470px;    
+        max-width: 450px;
         gap: 36px;
 
     }
