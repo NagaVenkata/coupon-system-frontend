@@ -44,6 +44,21 @@ $filter-btn: drop-shadow(2px 2px 2px $color-dark-disable);
     // filter: $filter-btn;
 }
 
+
+@mixin colorMenuItems {
+    color: $color-white;
+}
+
+@mixin darkBgColor {
+    background-color: $color-dark-blue;
+}
+
+@mixin colorH3 {
+    background-color: $color-mint;
+}
+@mixin colorPDarkBg {
+    color: $color-white;
+}
 //TODO REMOVE
 $color-blue-ocean: #8AC1E6;//alt1
 //$color-blue-ocean: #86A7CE; //alt 2:
@@ -86,11 +101,11 @@ $color-lightSky: #4893CA;
 }
 
 @mixin colorHeaderWrapper {
-    background: linear-gradient(120deg, $color-darkSky, $color-lightSky 40%); 
+    background-color: $color-creme; 
 }
 
 @mixin colorSideNavSlider {
-    background-color: $color-creme;
+    background-color: $color-dark-blue;
 }
 
 @mixin colorFooterItems {
@@ -118,7 +133,10 @@ $color-lightSky: #4893CA;
     color: $color-white;
 }
 
+@mixin colorSideNav {
+    // background-color: $color-dark-blue;
 
+}
 
 // @mixin colorSecondaryBtnHover {
 //     background-color: $color-black;

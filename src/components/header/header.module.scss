@@ -29,9 +29,15 @@ $debugging: false; //TODO remove, only for testing
         outline: 2px solid black;
     } 
 }
-.navHorizontal {
+.navHeader {
     display: none;
 }
+
+
+
+
+
+
 
 
 //TODO SÅLLA:
@@ -46,37 +52,31 @@ $debugging: false; //TODO remove, only for testing
    cursor: pointer;
 }
 
-.sideNav {
-    height: 86%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    right: 0;
-    background-color: $color-dark-blue;
-
-    @if $debugging {
-        outline: 2px solid black;
-    } 
-    a {
-        text-decoration: none;
-        color: $color-soft-black;
-    }
-    a:hover {
-        @include hoverLinks;
-    }
+.sideNavSliderShow {
+    @include styleSideNav;
+    @include styleMenuItems;
+    
 }
-
+.sideNavSliderHide {
+    
+}
 .menuWrapper {
-    list-style: none;
-    margin-top: 80px;
-    font-size: 1.5rem;
-    // @include styleLoginSlider;
+    @include styleMenuWrapper;    
 }
+
+//menuItems
+a {
+    text-decoration: none;
+    @include colorMenuItems;
+}
+a:hover {
+    @include hoverLinks;
+}
+
+
 .menuItem {
     margin-bottom: 20px;
 }
-
 
 
 
@@ -87,16 +87,16 @@ $debugging: false; //TODO remove, only for testing
     .hamburger {
         display: none;
     }
-    .navHorizontal {
+    .navHeader {
         display: block;
     }
 
     .menuWrapper {
-        @include navHorizontal;
+        @include navHeader;
     }
 
     .menuItem {
-        @include styleH5;
+        @include styleMenuItems;
         text-decoration: none;
     }
 }

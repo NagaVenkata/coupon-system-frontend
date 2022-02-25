@@ -43,15 +43,57 @@
 }
 @mixin styleH3 {
     @include fontH3;
+    @include colorH3;
+    padding: 12px 48px 12px 24px;
+    margin-top: 48px;
+    margin-bottom: 12px;
+}
+@mixin styleBodyCopy {
+    @include fontBodyCopy;
+    @include colorPDarkBg; 
+    margin-bottom: 12px;
 }
 @mixin styleHissPitch {
     @include fontBodyCopy;
     margin-bottom: 1.9rem;
 }
 
-@mixin styleSideNav {
-    @include font
+@mixin styleQuotationMarks {
+
 }
+
+//denna kan ej ha margin-right
+@mixin postItBg {
+    @include darkBgColor;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+@mixin styleSideNav {
+    @include fontH3;
+    @include colorSideNav;
+
+    height: 86%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+}
+
+@mixin styleMenuItems {
+    // @include fontH5;
+    // color: $color-white;
+}
+
+@mixin styleMenuWrapper {
+    @include fontH3;
+    list-style: none;
+    margin-top: 80px;
+
+}
+
 
 
 
@@ -59,8 +101,6 @@
 
 $width-input-btn: 300px;
 $height-input-btn: 50px;
-
-
 
 @mixin styleH4 {
     @include fontH4;
@@ -71,8 +111,6 @@ $height-input-btn: 50px;
     @include fontH5;
     @include colorH5;
 }
-
-
 
 @mixin styleQuote {
     @include fontQuote;
@@ -118,7 +156,7 @@ $height-input-btn: 50px;
     right: 0;
 }
 
-@mixin navHorizontal {
+@mixin navHeader {
     display: flex;
     justify-content: space-between;
     gap: 40px;

@@ -11,7 +11,8 @@ $debugging: false; //TODO remove, only for testing
 }
 
 .stepTextWrapper {
-    max-width: 380px;
+    @include postItBg;
+    // max-width: 380px;
 }
 
 .stepCardsWrapper {

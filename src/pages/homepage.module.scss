@@ -6,15 +6,19 @@
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 60px;
+    padding-top: 0px;
 };
 
 $margin-between-sections: 60px;
 
-$debugging: false; //TODO remove, only for testing
+$debugging: true; //TODO remove, only for testing
 
 .headerWrapper {
     @include screenMargins;
     @include colorHeaderWrapper;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -36,24 +40,13 @@ $debugging: false; //TODO remove, only for testing
         outline: 2px solid black;
     } 
 }
-    
-// .backgroundImgAboveFold {
-//     // background-image: url('../img/clouds.png');
-    
-//     background-image: url('../img/white-clouds-on-blue-sky-pixabay-pexels-cropped.jpg');
-//     height: 100vh;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: 0% 100%; //x% y%
-// }
 
 .mainSection1 {
     @include screenMargins;
-    // @include darkBg;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-top: 180px;
+    padding-top: 130px;
 
     @if $debugging {
         outline: 2px solid red;
@@ -74,7 +67,7 @@ $debugging: false; //TODO remove, only for testing
     // background-repeat: no-repeat;
 
     @if $debugging {
-        // outline: 2px solid red;
+        outline: 2px solid purple;
     } 
 }
 

@@ -49,6 +49,7 @@ $font-family-shrikhand: 'Shrikhand', cursive;
 @mixin fontBodyCopy { //and links
     font-family: $font-family-inter;
     font-size: 1rem;
+    font-style: normal;
 }
 
 @mixin fontBtnText { //and CAPS
@@ -60,6 +61,7 @@ $font-family-shrikhand: 'Shrikhand', cursive;
 @mixin fontQuote { //or 'attention text'
     font-family: $font-family-inter;
     font-size: 1.25rem;
+    //TO DO remove italic effect
 }
 
 @mixin fontDisclaimer { //or placeholder or error

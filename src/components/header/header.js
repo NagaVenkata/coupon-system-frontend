@@ -57,18 +57,19 @@ export default function Header(props) {
   return (
     <>
         <Logo />
+        {/* change to toggle or add/remove classList sideNavSliderShow and sideNavSliderHide */}
         {showNav ? 
-          <nav id='sideNav' className={styles.sideNav}>
+          <nav id='sideNavSlider' className={[styles.sideNavSliderShow]}> 
             <ul id='menuWrapper' className={styles.menuWrapper}>
-                <li id='headerMenuItem1' className={styles.menuItem}><a href='http://adoveo.se/'>Så funkar det</a></li>
-                <li id='headerMenuItem2' className={styles.menuItem}><a href='http://adoveo.se/'>Case</a></li>
-                <li id='headerMenuItem3' className={styles.menuItem}><a href='http://adoveo.se/'>Om oss</a></li>
-                <li id='headerMenuItem4' className={styles.menuItem}><a href='http://adoveo.se/'>Karriär</a></li>
-                <li id='headerMenuItem5' className={styles.menuItem}><a href='http://adoveo.se/'>Kontakt</a></li>
+                <li id='menuItem1' className={styles.menuItem}><a href='http://adoveo.se/'>Så funkar det</a></li>
+                <li id='menuItem2' className={styles.menuItem}><a href='http://adoveo.se/'>Case</a></li>
+                <li id='menuItem3' className={styles.menuItem}><a href='http://adoveo.se/'>Om oss</a></li>
+                <li id='menuItem4' className={styles.menuItem}><a href='http://adoveo.se/'>Karriär</a></li>
+                <li id='menuItem5' className={styles.menuItem}><a href='http://adoveo.se/'>Kontakt</a></li>
             </ul>
           </nav> : ''}
 
-          <nav id='navHorizontal' className={styles.navHorizontal}>
+          <nav id='navHeader' className={styles.navHeader}>
             <ul id='menuWrapper' className={styles.menuWrapper}>
                 <li><a className={styles.menuItem}href='http://adoveo.se/'>Så funkar det</a></li>
                 <li><a className={styles.menuItem}href='http://adoveo.se/'>Case</a></li>

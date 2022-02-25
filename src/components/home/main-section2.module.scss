@@ -1,12 +1,14 @@
 @import '../../scss/assets/elements';
 
-$debugging: false; //TODO remove, only for testing
+$debugging: true; //TODO remove, only for testing
 
 $margin-btw-section: 40px; //margin between sections
 $margin-left-testimonial: 20px;
 
 .ourProductWrapper {
-    margin-top: $margin-btw-section;
+    @include postItBg;
+
+  
 
     @if $debugging {
         outline: 2px solid purple;
@@ -16,6 +18,13 @@ $margin-left-testimonial: 20px;
 .h3 {
     @include styleH3;
 }
+.bodyCopy {
+    @include styleBodyCopy;
+}
+// .quotationMark {
+//     @include styleQuotationMarks;
+// }
+
 
 .mobilePreviewText {
 //     @include styleMobilePreviewText;
@@ -79,15 +88,15 @@ $margin-left-testimonial: 20px;
     } 
 }
 
-.quoteMarks {
-    z-index: -5;
-    position: absolute;
-    margin-top: -40px;
+// .quoteMarks {
+//     z-index: -5;
+//     position: absolute;
+//     margin-top: -40px;
 
-    @if $debugging {
-        // outline: 2px solid black;
-    } 
-}
+//     @if $debugging {
+//         // outline: 2px solid black;
+//     } 
+// }
 
 .testimonialWrapper {
     margin-left: $margin-left-testimonial;
@@ -102,6 +111,13 @@ $margin-left-testimonial: 20px;
 
 .quote {
     @include styleQuote;
+}
+.quoteMark { //TODO add css for both marks, ATM only for first mark
+    margin-left: -50px;
+    margin-bottom: -50px;
+    @if $debugging {
+        outline: 2px solid yellow;
+    } 
 }
 
 .clientsSection2 {
