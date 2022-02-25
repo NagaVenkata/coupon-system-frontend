@@ -8,7 +8,7 @@
     padding-right: 20px;
 };
 
-$margin-sections: 60px;
+$margin-between-sections: 60px;
 
 $debugging: false; //TODO remove, only for testing
 
@@ -37,23 +37,24 @@ $debugging: false; //TODO remove, only for testing
     } 
 }
     
-.backgroundImgAboveFold {
-    // background-image: url('../img/clouds.png');
+// .backgroundImgAboveFold {
+//     // background-image: url('../img/clouds.png');
     
-    background-image: url('../img/white-clouds-on-blue-sky-pixabay-pexels-cropped.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0% 100%; //x% y%
-}
+//     background-image: url('../img/white-clouds-on-blue-sky-pixabay-pexels-cropped.jpg');
+//     height: 100vh;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: 0% 100%; //x% y%
+// }
 
 .mainSection1 {
     @include screenMargins;
+    // @include darkBg;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     padding-top: 180px;
-    
+
     @if $debugging {
         outline: 2px solid red;
     } 
@@ -61,7 +62,7 @@ $debugging: false; //TODO remove, only for testing
 
 .mainSection2 {
     @include screenMargins;
-    margin-top: $margin-sections;
+    margin-top: $margin-between-sections;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -79,7 +80,7 @@ $debugging: false; //TODO remove, only for testing
 
 .mainSection3 {
     @include screenMargins;
-    margin-top: $margin-sections;
+    margin-top: $margin-between-sections;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -95,7 +96,7 @@ $debugging: false; //TODO remove, only for testing
 }
 
 .footerWrapper {
-    margin-top: $margin-sections;
+    margin-top: $margin-between-sections;
 }
 
 // =========== media screens ===========

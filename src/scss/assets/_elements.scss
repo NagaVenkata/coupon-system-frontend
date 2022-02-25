@@ -1,18 +1,66 @@
 @import './colors';
 @import './fonts';
 
+
+// Colors: Mint and dark blue
+// Border: 2px solid
+// Shadow, text-centered
+// Margin left o right: =2* som fontsize
+// Margin-top o bottom: = som fontsize
+@mixin stylePrimaryBtnActive {
+    @include fontBtnText;
+    @include colorPrimaryBtnActive;
+    text-align: center;
+    padding: 0.9rem 1.8rem 0.9rem 1.8rem;
+}
+
+@mixin stylePrimaryBtnHoverDarkBg {
+    @include fontBtnText;
+    @include colorPrimaryBtnHoverDarkBg;
+}
+@mixin stylePrimaryBtnHoverLightBg {
+    @include fontBtnText;
+    @include colorPrimaryBtnHoverLightBg;
+}
+@mixin styleSecondaryBtnActive {
+    @include fontBtnText;
+    @include colorSecondaryBtnActive;
+    text-align: center;
+    padding: 0.9rem 1.8rem 0.9rem 1.8rem;
+}
+@mixin styleSecondaryBtnHover {
+    @include fontBtnText;
+    @include colorSecondaryBtnHover;
+}
+
+@mixin styleH1 {
+    @include fontH1;
+    // @include colorH2;
+}
+@mixin styleH2 {
+    @include fontH2;
+    margin-bottom: 1.9rem;
+}
+@mixin styleH3 {
+    @include fontH3;
+}
+@mixin styleHissPitch {
+    @include fontBodyCopy;
+    margin-bottom: 1.9rem;
+}
+
+@mixin styleSideNav {
+    @include font
+}
+
+
+
+//TO DO rensa
+
 $width-input-btn: 300px;
 $height-input-btn: 50px;
 
-@mixin styleH2 {
-    @include fontH2;
-    @include colorH2;
-}
 
-@mixin styleH3 {
-    @include fontH3;
-    @include colorH3;
-}
 
 @mixin styleH4 {
     @include fontH4;
@@ -24,10 +72,7 @@ $height-input-btn: 50px;
     @include colorH5;
 }
 
-@mixin styleHissPitch {
-    @include fontHissPitch;
-    @include colorHissPitch;
-}
+
 
 @mixin styleQuote {
     @include fontQuote;
@@ -92,12 +137,7 @@ $height-input-btn: 50px;
 
 
 // ==============  Buttons ==============
-@mixin stylePrimarySquareBtnActive {
-    @include fontSquareBtnActive;
-    @include colorPrimaryBtnActive;
-    padding: 10px 20px 10px 20px;
-    text-align: center;
-}
+
 @mixin stylePrimarySquareBtnHover {
     // @include fontSquareBtnHover;
     @include colorPrimaryBtnHover;
@@ -105,12 +145,9 @@ $height-input-btn: 50px;
     // text-align: center;
 }
 
-@mixin styleSecondarySquareBtnActive {
-    @include fontSquareBtnActive;
-    @include colorSecondaryBtnActive;
-    padding: 10px 20px 10px 20px;
-    text-align: center;
-}
+// styleSecondaryBtnActive
+
+
 
 @mixin styleSecondarySquareBtnHover {
     @include colorSecondaryBtnHover;

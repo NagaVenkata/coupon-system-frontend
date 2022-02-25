@@ -1,69 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); //inter: https://fonts.google.com/specimen/Inter
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shrikhand&family=Space+Grotesk:wght@300;400;500;600;700&family=Spinnaker&display=swap');
 
+$font-family-inter: 'Inter', sans-serif;
+// fontWeight: thin 100, extra-light 200, light 300, regular 400, medium 500, semi-bold 600, bold 700, extra-bold 800, black 900
 
+
+// TODO remove
 $font-family-space-grotesk: 'Space Grotesk', sans-serif;
 //fontWeight: Light 300, Regular 400, Medium 500, Semi-bold 600, Bold 700 
 //font-style 
 //TODO clean not used styles
-
 $font-family-mulish: 'Mulish', sans-serif;
-
-
 $font-family-spinnaker: 'Spinnaker', sans-serif;
-
-
 $font-family-shrikhand: 'Shrikhand', cursive;
 
+@mixin fontH1 {
+    font-family: $font-family-inter;
+    font-size: 1.9rem;
+    // font-weight: 700;
+}
 
 @mixin fontH2 {
-    font-family: $font-family-space-grotesk;
-    font-size: 2.2rem;
-    font-weight: 700;
+    font-family: $font-family-inter;
+    font-size: 1.9rem;
+    font-weight: 700; //bold
 }
 
 @mixin fontH3 {
-    font-family: $font-family-space-grotesk;
-    font-size: 1.8rem;
-
-    font-weight: 600;
+    font-family: $font-family-inter;
+    font-size: 1.5rem;
+    font-weight: 700; //bold
 }
 
 @mixin fontH4 {
-    font-family: $font-family-space-grotesk;
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-family: $font-family-inter;
+    font-size: 1.5rem;
 }
 
 @mixin fontH5 {
-    font-family: $font-family-space-grotesk;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-family: $font-family-inter;
+    font-size: 1.25rem;
+    font-weight: 700; //bold
 }
 
-@mixin fontDisclaimer {
-    font-family: $font-family-mulish;
+@mixin fontBodyCopy { //and links
+    font-family: $font-family-inter;
+    font-size: 1rem;
 }
 
+@mixin fontBtnText { //and CAPS
+    font-family: $font-family-inter;
+    font-size: 0.9rem;
+    font-weight: 500; //medium
+}
+
+@mixin fontQuote { //or 'attention text'
+    font-family: $font-family-inter;
+    font-size: 1.25rem;
+}
+
+@mixin fontDisclaimer { //or placeholder or error
+    font-family: $font-family-inter;
+    font-size: 0.75rem;
+}
+
+
+
+
+
+
+// TO DO - sålla nedan
 @mixin fontMainMenu {
-    font-family: $font-family-space-grotesk;
+    font-family: $font-family-inter;
     font-size: 1rem;
     font-weight: 500;
 }
 
-@mixin fontBodyCopy {
-    font-family: $font-family-mulish;
-    font-size: 1rem;
-}
 
-@mixin fontHissPitch {
-    font-size: 1.2rem;
-}
 
-@mixin fontQuote {
-    font-size: 1.2rem;
-    font-family: $font-family-space-grotesk;
-
-}
 
 @mixin fontPCursive {
     font-weight: 500;
@@ -72,14 +89,14 @@ $font-family-shrikhand: 'Shrikhand', cursive;
 
 @mixin fontError {
     color: red; 
-    font-family: $font-family-mulish;
+    font-family: $font-family-inter;
     font-weight: 600;
     font-size: 0.8rem;
 
 }
 
 @mixin fontInput {
-    font-family: $font-family-mulish;
+    font-family: $font-family-inter;
     font-weight: 700;
 }
 
@@ -92,28 +109,24 @@ $font-family-shrikhand: 'Shrikhand', cursive;
 
 // ==============  Buttons ==============
 
-@mixin fontSquareBtnActive {
-    font-size: 1rem;
-    font-family: $font-family-mulish;
-    font-weight: 600;
-}
+
 
 
 
 
 //TODO REMOVE?
-@mixin fontPrimaryRoundBtnActive {
-    font-family: $font-family-mulish;
-    font-weight: 700;
-    font-size: 0.8rem;
-}
+// @mixin fontPrimaryRoundBtnActive {
+//     font-family: $font-family-mulish;
+//     font-weight: 700;
+//     font-size: 0.8rem;
+// }
 
-@mixin fontSecondaryRoundBtnActive {
-    font-family: $font-family-mulish;
-    font-weight: 700;
-    font-size: 0.8rem;
+// @mixin fontSecondaryRoundBtnActive {
+//     font-family: $font-family-mulish;
+//     font-weight: 700;
+//     font-size: 0.8rem;
 
-}
+// }
 
 // ==============  /Buttons ==============
 

@@ -79,11 +79,11 @@ export default function Home(props) {
           {showLogin ? <Login isUser={isUser}/> : ''}
           {showRegister ? <Register isUser={isUser} onClickClose={onClickClose}/> : ''}
 
-            <div id='backgroundImgAboveFold' className={styles.backgroundImgAboveFold}>
+            {/* <div id='backgroundImgAboveFold' className={styles.backgroundImgAboveFold}> */}
                 <div id='mainSection1' className={styles.mainSection1}>
                   <IntroWrapper onClickRegister={onClickRegister}/>
                 </div>
-            </div>
+            {/* </div> */}
 
           {/* <div id='blobWrapper' className={styles.blobWrapper}> */}
 

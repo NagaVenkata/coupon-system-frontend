@@ -68,7 +68,7 @@ $debugging: false; //TODO remove, only for testing
 }
 
 .loginBtn {
-    @include stylePrimarySquareBtnActive;
+    @include stylePrimaryBtnActive;
     margin-top: 10px;
     width: $width-input-btn;
     height: $height-input-btn;
@@ -95,7 +95,7 @@ $debugging: false; //TODO remove, only for testing
 }
 
 .createAccountBtn {
-    @include styleSecondarySquareBtnActive;
+    @include styleSecondaryBtnActive;
     width: $width-input-btn;
     height: $height-input-btn;
 }

@@ -1,13 +1,11 @@
 @import '../../scss/assets/fonts';
 @import '../../scss/assets/elements';
 
-
 $debugging: false; //TODO remove, only for testing
 
 .introWrapper {
     max-width: 550px;
 
-   
     @if $debugging {
         outline: 2px solid purple;
     } 
@@ -22,11 +20,10 @@ $debugging: false; //TODO remove, only for testing
 }
 
 .ctaBtn {
-    @include stylePrimarySquareBtnActive;
+    @include stylePrimaryBtnActive;
 }
-
 .ctaBtn:hover {
-    @include stylePrimarySquareBtnHover;
+    @include stylePrimaryBtnHoverLightBg;
 }
 
 

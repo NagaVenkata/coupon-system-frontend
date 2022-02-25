@@ -21,7 +21,7 @@ $height-input-btn: 50px;
 }
 
 .createAccountBtn {
-    @include stylePrimarySquareBtnActive;
+    @include stylePrimaryBtnActive;
     width: $width-input-btn;
     height: $height-input-btn;
 }
@@ -31,7 +31,7 @@ $height-input-btn: 50px;
 }
 
 .loginBtn {
-    @include styleSecondarySquareBtnActive;
+    @include styleSecondaryBtnActive;
     width: $width-input-btn;
     height: $height-input-btn;
 }
