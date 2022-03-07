@@ -19,24 +19,15 @@ $debugging: false; //TODO remove, only for testing
 
 $margin-bottom-section: 20px;
 
-.backgroundImgFooter {
-  background-image: url('../../img/background-footer.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  @if $debugging {
-    outline: 2px solid pink;
-  } 
+.footerWrapper {
+  @include darkBgColor;
 }
 
 .logoIconFooterWrapper {
   @include screenMargins;
   padding-top: 100px;
   margin-bottom: $margin-bottom-section;
-  max-width: 150px;
+
 
   @if $debugging {
     outline: 2px solid black;
@@ -47,6 +38,7 @@ $margin-bottom-section: 20px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  max-width: 150px;
 }
 
 .soMeLogo {
@@ -61,8 +53,23 @@ $margin-bottom-section: 20px;
   cursor: pointer;
 }
 
+.h3 {
+  @include styleH3;
+}
+
 .h5 {
   @include styleH5;
+}
+
+.footerHisspitch {
+ 
+  @include fontH3;
+  @include mintBgColor;
+  padding: 12px 48px 12px 24px;
+  margin-top: 48px;
+  margin-bottom: 12px;
+  // max-width: 270px;
+
 }
 
 .footerColumnWrapper {

@@ -7,10 +7,13 @@ import SoMeLogos from '../../img/some-logos';
 export default function Footer() {
 
   return (
-    <div id='backgroundImgFooter' className={styles.backgroundImgFooter}>
+    <div id='footerWrapper' className={styles.footerWrapper}>
       <div id='logoIconFooterWrapper' className={styles.logoIconFooterWrapper}>
         <Logo />
+        <h5 className={styles.footerHisspitch}>Lorem ipsum dolor</h5>
+        <h5 className={styles.footerHisspitch}>sit amet, consectetur adipiscing.</h5>
         <SoMeLogos />
+        
       </div>
       <div id='footerColumnWrapper' className={styles.footerColumnWrapper}>
         <div id='footerColumn1' className={styles.footerColumn1}>
@@ -45,14 +48,11 @@ export default function Footer() {
             </ul>
           </div>
         </div> 
-        {/* TODO add */}
-        {/* <div id='aboutCareer' className={styles.helpWrapper}>
-        <h5 className={styles.h5}>Om oss</h5>
-        <ul id='helpItems' className={styles.helpItems}>
-          <li className={styles.footerMenuItem}>Karriär</li>
-        </ul>
-      </div> */}
+        
       </div>
+      <h3 className={styles.h3}>Om oss</h3>
+      <h3 className={styles.h3}>Karriär</h3>
+
       <p id='copyrightText' className={styles.copyrightText}>Copyright © 2022 Adoveo AB. All rights reserved.</p>
     </div>
   )

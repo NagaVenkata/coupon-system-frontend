@@ -4,11 +4,11 @@ import { gsap } from "gsap";
 
 export default function QuoteMark() {
   //TODO rotate only first quote, ATM rotating both
-  useEffect( () => {
-      gsap.to('#quoteMark',  {
-        rotate: 180,
-      });
-  }, []);
+  // useEffect( () => {
+  //     gsap.to('#quoteMark',  {
+  //       rotate: 180,
+  //     });
+  // }, []);
 
   return (
     <>

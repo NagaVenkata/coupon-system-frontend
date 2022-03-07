@@ -1,5 +1,4 @@
 //mobile-screen 357px x 667px
-
 @import '../../src/scss/assets/elements';
 
 @mixin screenMargins {
@@ -10,9 +9,9 @@
     padding-top: 0px;
 };
 
-$margin-between-sections: 60px;
+$margin-between-sections: 66px;
 
-$debugging: true; //TODO remove, only for testing
+$debugging: false; //TODO remove, only for testing
 
 .headerWrapper {
     @include screenMargins;
@@ -45,7 +44,6 @@ $debugging: true; //TODO remove, only for testing
     @include screenMargins;
     display: flex;
     justify-content: center;
-    // align-items: flex-end;
     padding-top: 130px;
 
     @if $debugging {
@@ -54,38 +52,28 @@ $debugging: true; //TODO remove, only for testing
 }
 
 .mainSection2 {
-    // @include screenMargins;
     @include postItBg;
     margin-top: $margin-between-sections;
-
-
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    // align-items: flex-start;
-
     gap: 40px;
-
-    //TODO blob background not finished
-    // background-image: url('../img/blob-svg2.svg');
-    // background-repeat: no-repeat;
 
     @if $debugging {
         outline: 2px solid red;
     } 
 }
 
-.mainSection4 {
-    // @include screenMargins;
+.howItWorksWrapper {
     @include postItBg;
-
     margin-top: $margin-between-sections;
+    // height: 1200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-bottom: $margin-between-sections;
 
     .ourProductWrapper {
     
@@ -96,16 +84,19 @@ $debugging: true; //TODO remove, only for testing
     } 
 }
 
-.footerWrapper {
-    margin-top: $margin-between-sections;
-}
+// .footerWrapper {
+//     margin-top: $margin-between-sections;
+
+//     @if $debugging {
+//         outline: 2px solid red;
+//     } 
+// }
 
 // =========== media screens ===========
 //TBD tablet
 @media screen and (min-width: 736px) {
 
     .mainSection2 {
-        // flex-direction: column;
 
     }
 

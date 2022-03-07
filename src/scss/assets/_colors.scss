@@ -53,8 +53,15 @@ $filter-btn: drop-shadow(2px 2px 2px $color-dark-disable);
     background-color: $color-dark-blue;
 }
 
-@mixin colorH3 {
+@mixin lightBgColor {
+    background-color: $color-creme;
+}
+
+@mixin mintBgColor {
     background-color: $color-mint;
+}
+@mixin colorH4 {
+    color: $color-white;
 }
 @mixin colorPDarkBg {
     color: $color-white;
@@ -73,31 +80,29 @@ $color-plum: #683C45;
 // $color-creme: #F7F1DE; //alt2
 
 $color-black: #0B0B09;
-$color-soft-black: #34342C;
-$color-disable: #34342C;
+$color-soft-black: #34342d;
+$color-disable: #34342c;
 
 $color-darkSky: #2C83C0;
 $color-lightSky: #4893CA;
 
 
-@mixin colorH4 {
-    color: $color-creme;
-}
+
 
 @mixin colorH5 {
     color: $color-white;
 }
 
 @mixin colorHissPitch {
-    color: $color-creme;
+    color: $color-white;
 }
 
 @mixin colorQuote {
-    color: $color-creme;
+    color: $color-white;
 }
 
 @mixin colorPCursive {
-    color: $color-disable;
+    color: $color-white;
 }
 
 @mixin colorHeaderWrapper {

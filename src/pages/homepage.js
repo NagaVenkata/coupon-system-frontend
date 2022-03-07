@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
 import styles from './homepage.module.scss'; 
-import backgroundImg from '../img/qr-code-transaction-in-store-tim-douglas-pexels.jpg';
-// import BlobSvg from '../../src/img/blob-svg';
-
 
 import Header from '../components/header/header';
 import IntroWrapper from '../components/home/intro-wrapper';
@@ -11,10 +7,9 @@ import Login from '../components/check-credentials/login';
 import Register from '../components/check-credentials/register';
 import MainSection2 from '../components/home/main-section2';
 import MainSection3 from '../components/home/main-section3';
-import MainSection4 from '../components/home/main-section4';
-
+import HowItWorks from '../components/how-it-works/How-it-works';
+import Contact from '../components/contact/Contact';
 import Footer from '../components/footer/footer';
-
 
 export default function Home(props) {
   const [showLogin, setShowLogin] = useState(false);
@@ -81,13 +76,9 @@ export default function Home(props) {
           {showLogin ? <Login isUser={isUser}/> : ''}
           {showRegister ? <Register isUser={isUser} onClickClose={onClickClose}/> : ''}
 
-            {/* <div id='backgroundImgAboveFold' className={styles.backgroundImgAboveFold}> */}
-                <div id='mainSection1' className={styles.mainSection1}>
-                  <IntroWrapper onClickRegister={onClickRegister}/>
-                </div>
-            {/* </div> */}
-
-          {/* <div id='blobWrapper' className={styles.blobWrapper}> */}
+          <div id='mainSection1' className={styles.mainSection1}>
+            <IntroWrapper onClickRegister={onClickRegister}/>
+          </div>
 
           <div id='mainSection2' className={styles.mainSection2}>
             <MainSection2 />
@@ -95,15 +86,16 @@ export default function Home(props) {
 
           <MainSection3 />
 
-          <div id='mainSection4' className={styles.mainSection4}>
-            <MainSection4 />
+          <div id='howItWorksWrapper' className={styles.howItWorksWrapper}>
+            <HowItWorks />
           </div>
+
+          <Contact />
         </main>
         
-        <footer id='footer' className={styles.footerWrapper}>
+        {/* <footer id='footer' className={styles.footerWrapper}> */} 
           <Footer /> 
-        </footer>
-
+        {/* </footer> */}
     </>
   )
 };

@@ -20,6 +20,7 @@ $debugging: false; //TODO remove, only for testing
 
 .bodyCopy {
     @include styleBodyCopy;
+    margin-bottom: 0;
 }
 
 .stepTextWrapper {
@@ -38,7 +39,7 @@ $debugging: false; //TODO remove, only for testing
 }
 .stepCard {
     width: 240px;
-    height: 320px;
+    // height: 320px;
     @if $debugging {
         outline: 2px solid black;
     } 

@@ -1,26 +1,21 @@
 import React, { useState, useEffect } from 'react';
 // import gsap from 'gsap';
 
-import styles from './main-section4.module.scss'; 
-import StepIcon1 from './step-icon1';
-import StepIcon2 from './step-icon2';
-import StepIcon3 from './step-icon3';
-
-
+import styles from './how-it-works.module.scss'; 
+import StepIcon1 from '../home/step-icon1';
+import StepIcon2 from '../home/step-icon2';
+import StepIcon3 from '../home/step-icon3';
 
 export default function MainSection3() {
   
-  useEffect( () => {
+  // useEffect( () => {
   
-    // gsap.to('#step1', {
-    //   //viewBox="0 0 738 182.767"> //default
-    //   attr: {viewBox:'0 0 500 -50', width:'220'}, 
-    // });
-      
-  
-  }, []);
-
-  
+  //   gsap.to('#step1', {
+  //     //viewBox="0 0 738 182.767"> //default
+  //     attr: {viewBox:'0 0 500 -50', width:'220'}, 
+  //   });
+    
+  // }, []);
 
   return (
     <>

@@ -1,7 +1,7 @@
 import React, { useState ,useEffect } from 'react';
 import gsap from 'gsap';
 import styles from './header.module.scss';
-import Hamburger from './hamburger';
+import Hamburger from './hamburger2';
 import Logo from '../../img/logo';
 
 export default function Header(props) {
@@ -22,7 +22,7 @@ export default function Header(props) {
     if (showNav === false) {
       gsap.to('#line1', {
         rotate: 45,
-        y: -64,
+        y: -8,
         x: -10,
   
       });
@@ -39,14 +39,14 @@ export default function Header(props) {
     } else {
       gsap.to('#line1', {
         rotate: 0,
-        y: -42.5,
-        x: -16,
+        y: 15,
+        x: 0.21,
   
       });
       gsap.to('#line2', {
         rotate: 0,
-        y: -42.5,
-        x: -16,
+        y: 22,
+        x: 0.21,
       });
       gsap.to('#menuText', {
         fill: '#FFFFFF',

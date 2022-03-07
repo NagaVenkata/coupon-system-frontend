@@ -64,21 +64,9 @@ export default function StepIcon2() {
                 <g id="mobileinhand" transform="translate(123.989 46.145)">
                     <g id="Group_38" data-name="Group 38" transform="translate(9.351 92.082)">
                     <path id="Path_54" data-name="Path 54" d="M98,109.145v5.861l25.913,23.819v15.467" transform="translate(-97.998 -108.736)" fill="none" stroke="#F5F3EE" strokeWidth="3"/>
-                    <g id="Rectangle_75" data-name="Rectangle 75" transform="translate(14.67 0)" fill="#F5F3EE" stroke="#F5F3EE" strokeLinejoin="round" strokeWidth="1">
-                        <rect width="4.004" height="4.004" stroke="none"/>
-                        <rect x="0.5" y="0.5" width="3.004" height="3.004" fill="none"/>
-                    </g>
-                    <g id="Rectangle_76" data-name="Rectangle 76" transform="translate(28.016 0)" fill="none" stroke="#F5F3EE" strokeLinejoin="round" strokeWidth="1">
-                        <rect width="4.004" height="4.004" stroke="none"/>
-                        <rect x="-1" y="0.5" width="3.004" height="3.004" fill="#F5F3EE"/>
-                    </g>
-                    <g id="Rectangle_77" data-name="Rectangle 77" transform="translate(37.357 0)" fill="none" stroke="#F5F3EE" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1">
-                        <rect width="4.004" height="4.004" stroke="none"/>
-                        <rect x="0.5" y="0.5" width="3.004" height="3.004" fill="#F5F3EE"/>
-                    </g>
                     </g>
                     <g id="Group_39" data-name="Group 39" transform="translate(6.673 0)">
-                    <g id="Rectangle_73" data-name="Rectangle 73" transform="translate(0)" fill="none" stroke="#F5F3EE" strokeWidth="3">
+                    <g id="mobileFrame" data-name="mobileFrame" transform="translate(0)" fill="#31354B" stroke="#F5F3EE" strokeWidth="3">
                         <rect width="61.388" height="106.761" rx="5" stroke="none"/>
                         <rect x="1.5" y="1.5" width="58.388" height="103.761" rx="3.5" fill="none"/>
                     </g>
@@ -86,25 +74,25 @@ export default function StepIcon2() {
                         <path d="M0,0H34.7a0,0,0,0,1,0,0V12.349a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V0A0,0,0,0,1,0,0Z" stroke="none"/>
                         <path d="M1.5,1.5H33.2a0,0,0,0,1,0,0V12.349a3.5,3.5,0,0,1-3.5,3.5H5a3.5,3.5,0,0,1-3.5-3.5V1.5A0,0,0,0,1,1.5,1.5Z" fill="none"/>
                     </g>
-                    <path id="Path_53" data-name="Path 53" d="M107.845,74.89l10.814,9.425,17.973-19.034" transform="translate(-90.711 -37.186)" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="5"/>
+                    <path id="Path_53" data-name="Path 53" d="M107.845,74.89l10.814,9.425,17.973-19.034" transform="translate(-90.711 -37.186)" fill="none" stroke="#B1FEA7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="5"/>
                     </g>
-                    <g id="Rectangle_78" data-name="Rectangle 78" transform="translate(0 48.043)" fill="#fff" stroke="#34342c" strokeWidth="2">
+                    <g id="finger1" data-name="finger1" transform="translate(0 48.043)" fill="#31354B" stroke="#F5F3EE" strokeWidth="2">
                     <rect width="21.352" height="12.011" rx="5" stroke="none"/>
                     <rect x="1" y="1" width="19.352" height="10.011" rx="4" fill="none"/>
                     </g>
-                    <g id="Rectangle_79" data-name="Rectangle 79" transform="translate(0 57.384)" fill="#fff" stroke="#34342c" strokeWidth="2">
+                    <g id="finger2" data-name="finger2" transform="translate(0 57.384)" fill="#31354B" stroke="#F5F3EE" strokeWidth="2">
                     <rect width="21.352" height="13.345" rx="5" stroke="none"/>
                     <rect x="1" y="1" width="19.352" height="11.345" rx="4" fill="none"/>
                     </g>
-                    <g id="Rectangle_80" data-name="Rectangle 80" transform="translate(0 69.395)" fill="#fff" stroke="#34342c" strokeWidth="2">
+                    <g id="finger3" data-name="finger3" transform="translate(0 69.395)" fill="#31354B" stroke="#F5F3EE" strokeWidth="2">
                     <rect width="21.352" height="13.345" rx="5" stroke="none"/>
                     <rect x="1" y="1" width="19.352" height="11.345" rx="4" fill="none"/>
                     </g>
-                    <g id="Rectangle_81" data-name="Rectangle 81" transform="translate(0 81.405)" fill="#fff" stroke="#34342c" strokeWidth="2">
+                    <g id="finger4" data-name="finger4" transform="translate(0 81.405)" fill="#31354B" stroke="#F5F3EE" strokeWidth="2">
                     <rect width="21.352" height="12.011" rx="5" stroke="none"/>
                     <rect x="1" y="1" width="19.352" height="10.011" rx="4" fill="none"/>
                     </g>
-                    <path id="Path_55" data-name="Path 55" d="M136.075,94.507l5.536-9.15s3.943-2.132,5.071-1.333,1.446,4.627,1.446,4.627v74" transform="translate(-69.616 -26.381)" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"/>
+                    <path id="Path_55" data-name="Path 55" d="M136.075,94.507l5.536-9.15s3.943-2.132,5.071-1.333,1.446,4.627,1.446,4.627v74" transform="translate(-69.616 -26.381)" fill="none" stroke="#F5F3EE" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"/>
                 </g>
                 </g>
                 {/* <g id="number-icon" transform="translate(-97.6 -19.349)">

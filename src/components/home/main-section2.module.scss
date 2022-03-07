@@ -1,13 +1,11 @@
 @import '../../scss/assets/elements';
 
-$debugging: true; //TODO remove, only for testing
+$debugging: false; //TODO remove, only for testing
 
-$margin-btw-section: 40px; //margin between sections
+$margin-btw-section: 48px; //margin between sections
 $margin-left-testimonial: 20px;
 
 @mixin screenMargins {
-    // width: 100%;
-    // padding-left: 20px;
     padding-right: 20px;
     padding-top: 60px;
     padding-top: 0px;
@@ -22,39 +20,26 @@ $margin-left-testimonial: 20px;
 };
 
 .ourProductWrapper {
-    // @include postItBg;
     @include screenMargins;
 
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-start;
-    // align-items: center;
-
     @if $debugging {
-        outline: 2px solid purple;
+        outline: 2px solid white;
     } 
 }
 
 .h3 {
     @include styleH3;
     @if $debugging {
-        outline: 2px solid purple;
+        outline: 2px solid white;
     } 
 }
 .bodyCopy {
     @include styleBodyCopy;
 }
 
-.bodyCopyLight {
+.reference {
     @include styleBodyCopyLight;
-}
-// .quotationMark {
-//     @include styleQuotationMarks;
-// }
-
-
-.mobilePreviewText {
-//     @include styleMobilePreviewText;
+    margin-bottom: 66px;
 }
 
 .mobileWrapper {
@@ -63,13 +48,11 @@ $margin-left-testimonial: 20px;
 
 .mobileFlow1 {
     @include mobileFlowMargins; //"frame" what's shown
-
     background-image: url('../../img/mobile-sprite-sheet.png');
-
     background-position: 200px 0%; //page1
        
     @if $debugging {
-        outline: 2px solid yellow;
+        outline: 2px solid white;
     } 
 }
 
@@ -79,7 +62,6 @@ $margin-left-testimonial: 20px;
 
 .mobileFlow2 {
     @include mobileFlowMargins; //"frame" what's shown
-
     background-image: url('../../img/mobile-sprite-sheet.png');
     background-position: 0 0; //page2
 }
@@ -90,10 +72,9 @@ $margin-left-testimonial: 20px;
     max-width: 320px;
     min-width: 200px;
     background-size: cover;
-    // align-self: center;
 
     @if $debugging {
-        // outline: 2px solid pink;
+        outline: 2px solid white;
     } 
 }
 
@@ -107,36 +88,24 @@ $margin-left-testimonial: 20px;
     margin-top: $margin-btw-section;
 
     @if $debugging {
-        // outline: 2px solid red;
+        outline: 2px solid white;
     } 
 }
 
-// .quoteMarks {
-//     z-index: -5;
-//     position: absolute;
-//     margin-top: -40px;
-
-//     @if $debugging {
-//         // outline: 2px solid black;
-//     } 
-// }
-
 .testimonialWrapper {
-    // margin-left: $margin-left-testimonial;
     min-width: 375px;
 
     p {
         margin-left: 30px;
         max-width: 300px;
-        // @include stylePCursive;
         margin-top: 20px;
         @if $debugging {
-            outline: 2px solid yellow;
+            outline: 2px solid white;
         } 
     }
 
     @if $debugging {
-        outline: 2px solid yellow;
+        outline: 2px solid white;
     } 
 }
 
@@ -145,13 +114,11 @@ $margin-left-testimonial: 20px;
     min-width: 300px;
 }
 .quoteMark { //TODO add css for both marks, ATM only for first mark
-    // margin-left: -50px;
-    margin-bottom: -50px;
+    margin-bottom: -20px;
     @if $debugging {
-        outline: 2px solid yellow;
+        outline: 2px solid white;
     } 
 }
-
 
 //TBD tablet
 @media screen and (min-width: 736px) {
