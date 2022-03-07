@@ -9,8 +9,10 @@ import Header from '../components/header/header';
 import IntroWrapper from '../components/home/intro-wrapper';
 import Login from '../components/check-credentials/login';
 import Register from '../components/check-credentials/register';
-import MainSection3 from '../components/home/main-section3';
 import MainSection2 from '../components/home/main-section2';
+import MainSection3 from '../components/home/main-section3';
+import MainSection4 from '../components/home/main-section4';
+
 import Footer from '../components/footer/footer';
 
 
@@ -89,11 +91,12 @@ export default function Home(props) {
 
           <div id='mainSection2' className={styles.mainSection2}>
             <MainSection2 />
-       
           </div>
 
-          <div id='mainSection3' className={styles.mainSection3}>
-            <MainSection3 />
+          <MainSection3 />
+
+          <div id='mainSection4' className={styles.mainSection4}>
+            <MainSection4 />
           </div>
         </main>
         

@@ -1,37 +1,99 @@
 @import '../../scss/assets/elements';
 
-$debugging: false; //TODO remove, only for testing
+$debugging: true; //TODO remove, only for testing
 
-.h3 {
-    @include styleH3;
-}
+$margin-btw-section: 40px; //margin between sections
+$margin-left-testimonial: 20px;
 
-.h4 {
-    @include styleH4;
-}
+@mixin screenMargins {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-top: 0px;
+};
 
-.stepTextWrapper {
-    @include postItBg;
-    // max-width: 380px;
-}
 
-.stepCardsWrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 40px;
+.clientsSection2 {
+    @include screenMargins;
+    margin-top: $margin-btw-section;
+    margin-bottom: $margin-btw-section;
 
-}
-.stepCard {
-    width: 240px;
-    height: 320px;
     @if $debugging {
-        outline: 2px solid black;
+        outline: 2px solid green;
     } 
 }
 
-.stepText {
-    margin-top: 10px;
+.h3 {
+    @include styleH3;
+
+}
+
+.clientLogosWrapper {
+
+    height: 126px;
+    // min-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    // // flex-wrap: wrap;
+    justify-content: space-between;
+    // align-items:stretch;
+    // gap: 20px;
+
+
+    // text-align: center;
+
+    // display: inline-flex;
+    // align-items: center;
+    // gap: 36px;
+    // gap: 100px;
+    // overflow-x: scroll;
+
+    @if $debugging {
+        outline: 2px solid yellow;
+    } 
+}
+.logoRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: -20px;
+    // padding-bottom: 20px;
+}
+.clientLogo {
+    height: 8vh;
+
+    @if $debugging {
+        outline: 2px solid red;
+    } 
+}
+.arrowRight {
+    margin-left: 280px;
+    // padding-left: 10px;
+    @if $debugging {
+        outline: 2px solid red;
+    } 
+}
+//TBD tablet
+@media screen and (min-width: 736px) {
+
+
+    .clientsSection2 {
+        margin-bottom: 0px;
+    }
+
+    .clientLogosWrapper {
+        height: 200px;
+
+        // max-width: 600px;
+        // max-width: 470px;    
+        // max-width: 450px;
+        // column-gap: 40%;
+
+    }
+    .clientLogo {
+        height: 10vh;
+
+    }
 }

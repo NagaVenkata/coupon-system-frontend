@@ -47,10 +47,17 @@
     padding: 12px 48px 12px 24px;
     margin-top: 48px;
     margin-bottom: 12px;
+    max-width: 270px;
 }
 @mixin styleBodyCopy {
     @include fontBodyCopy;
     @include colorPDarkBg; 
+    margin-bottom: 12px;
+}
+
+@mixin styleBodyCopyLight {
+    @include fontBodyCopy;
+    color: $color-creme;
     margin-bottom: 12px;
 }
 @mixin styleHissPitch {
@@ -67,7 +74,6 @@
     @include darkBgColor;
     padding-left: 20px;
     padding-right: 20px;
-
 }
 
 @mixin styleSideNav {
@@ -115,6 +121,7 @@ $height-input-btn: 50px;
 @mixin styleQuote {
     @include fontQuote;
     @include colorQuote;
+
 }
 
 @mixin stylePCursive {

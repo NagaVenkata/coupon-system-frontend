@@ -45,7 +45,7 @@ $debugging: true; //TODO remove, only for testing
     @include screenMargins;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    // align-items: flex-end;
     padding-top: 130px;
 
     @if $debugging {
@@ -54,25 +54,33 @@ $debugging: true; //TODO remove, only for testing
 }
 
 .mainSection2 {
-    @include screenMargins;
+    // @include screenMargins;
+    @include postItBg;
     margin-top: $margin-between-sections;
+
+
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 80px;
+    // align-items: flex-start;
+
+    gap: 40px;
 
     //TODO blob background not finished
     // background-image: url('../img/blob-svg2.svg');
     // background-repeat: no-repeat;
 
     @if $debugging {
-        outline: 2px solid purple;
+        outline: 2px solid red;
     } 
 }
 
-.mainSection3 {
-    @include screenMargins;
+.mainSection4 {
+    // @include screenMargins;
+    @include postItBg;
+
     margin-top: $margin-between-sections;
     display: flex;
     flex-direction: row;
@@ -95,6 +103,12 @@ $debugging: true; //TODO remove, only for testing
 // =========== media screens ===========
 //TBD tablet
 @media screen and (min-width: 736px) {
+
+    .mainSection2 {
+        // flex-direction: column;
+
+    }
+
     .hamburger {
         display: none;
     }

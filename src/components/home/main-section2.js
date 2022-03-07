@@ -18,39 +18,28 @@ export default function MainSection2() {
   return (
     <>
       <div id='ourProductWrapper' className={styles.ourProductWrapper}>
-        <h3 className={styles.h3}>Vår produkt</h3>
-        <p className={styles.bodyCopy}>Klicka runt på mobilen för att testa vårt flöde!</p>
-        <div id='mobileFlow' className={styles.mobileFlow1} onClick={onClick}></div>
-        <div id='mobileFrame' className={styles.mobileFrame}></div>
+        {/* <div id='ourProductContentWrapper' className={styles.ourProductContentWrapper}> */}
+          <h3 className={styles.h3}>Vår produkt</h3>
+          <p className={styles.bodyCopy}>Klicka runt på mobilen för att testa vårt flöde!</p>
+          <div id='mobileWrapper' className={styles.mobileWrapper}>
+            <div id='mobileFlow' className={styles.mobileFlow1} onClick={onClick}></div>
+            <div id='mobileFrame' className={styles.mobileFrame}></div>
+          </div>
+        {/* </div> */}
       </div>
 
-      <div id='ourClientsWrapper' className={styles.ourClientsWrapper}> 
-        <div id='clientsSection1' className={styles.clientsSection1}>
+      {/* <div id='ourClientsWrapper' className={styles.ourClientsWrapper}>  */}
+        {/* <div id='clientsSection1' className={styles.clientsSection1}> */}
 
           <div id="testimonialWrapper" className={styles.testimonialWrapper} >
             <QuoteMark />
             <p className={styles.quote} >30 minuter senare hade vi skickat ut 480 kuponger till alla våra anställda! Ett fint sätt att i vardagen ge pepp och visa uppskattning!</p>
-            <QuoteMark />
-            <p className={styles.bodyCopy}>Pär Nyberg, HR-chef Göteborgs Kex</p>
+            {/* <QuoteMark /> */}
+            <p className={styles.bodyCopyLight}>Pär Nyberg, HR-chef Göteborgs Kex</p>
           </div>
-        </div>
-        <div id='clientsSection2' className={styles.clientsSection2}>
-        <h3 className={styles.h3}>Kunder</h3>
-          <div id='clientLogosWrapper' className={styles.clientLogosWrapper}>
-            <img id='clientLogo1' className={styles.clientLogo} alt='client logo' src={clientLogo}></img>
-            <img id='clientLogo2' className={styles.clientLogo} alt='client logo' src={clientLogo}></img>
-            <img id='clientLogo3' className={styles.clientLogo} alt='client logo' src={clientLogo}></img>
-            <img id='clientLogo4' className={styles.clientLogo} alt='client logo' src={clientLogo}></img>
-            <img id='clientLogo5' className={styles.clientLogo} alt='client logo' src={clientLogo}></img>
-            <img id='clientLogo6' className={styles.clientLogo} alt='client logo' src={clientLogo}></img>
-            <img id='clientLogo7' className={styles.clientLogo} alt='client logo' src={clientLogo}></img>
-            <img id='clientLogo8' className={styles.clientLogo} alt='client logo' src={clientLogo}></img>
-            <img id='clientLogo9' className={styles.clientLogo} alt='client logo' src={clientLogo}></img>
-            <img id='clientLogo10' className={styles.clientLogo} alt='client logo' src={clientLogo}></img>
-          </div>
-          {/* <RightArrow /> */}
-        </div>
-      </div>
+        {/* </div> */}
+        
+      {/* </div> */}
     </>
   )
 };
