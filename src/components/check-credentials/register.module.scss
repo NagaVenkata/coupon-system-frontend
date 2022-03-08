@@ -6,6 +6,15 @@ $height-input-btn: 50px;
 .registerWrapper {
     @include styleSlider;
     @include colorSideNavSliderLight;
+    display: flex;
+    // align-items: flex-start;
+    // justify-content: center;
+    // gap: 20px;
+    // z-index: 8;
+    // display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: flex-start;
 }
 
 .h3 {
@@ -16,7 +25,9 @@ $height-input-btn: 50px;
 .h4 {
     @include fontH5;
 }
-
+.bodyCopy {
+    @include styleBodyCopy;
+}
 
 .input {
     @include styleInput;
@@ -44,6 +55,7 @@ $height-input-btn: 50px;
 
 .styleCloseBtn {
     @include styleCloseBtnDarkBg;
+    align-self: flex-end;
 }
 
 .styleCloseBtn:hover {
@@ -60,12 +72,23 @@ $height-input-btn: 50px;
 .textWrapper {
     max-width: 400px;
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
 }
 .inputLabel {
     @include styleInputLabel;
 }
 
+.errorMsgWrapper {
+    // 
+}
 .errorMsg {
-    color: red;
+    @include fontError;
+    margin-bottom: 0;
     // border: 1px solid black;
+}
+
+.h6 {
+    margin-top: 66px;
 }

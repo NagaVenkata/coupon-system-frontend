@@ -53,6 +53,7 @@ $debugging: false; //TODO remove, only for testing
     width: 120px;
 }
 
+//mobile nav
 .sideNavSliderShow {
     @include styleSideNav;
     @include styleMenuItems;
@@ -64,7 +65,6 @@ $debugging: false; //TODO remove, only for testing
 .menuWrapper {
     @include styleMenuWrapper;    
 }
-
 //menuItems
 a {
     text-decoration: none;
@@ -75,9 +75,25 @@ a:hover {
     @include colorHoverLinks;
     text-decoration: underline;
 }
-
 .menuItem {
     margin-bottom: 20px;
+}
+
+//desktop menuNav
+.menuHeaderWrapper {
+    @include fontH5;
+    list-style: none;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 130%;
+
+    @if $debugging {
+        outline: 2px solid black;
+    } 
+}
+.menuHeaderItem {
+    color: $color-dark-blue;
 }
 
 

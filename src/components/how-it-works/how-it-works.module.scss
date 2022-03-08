@@ -40,6 +40,7 @@ $debugging: false; //TODO remove, only for testing
 .stepCard {
     width: 240px;
     // height: 320px;
+    margin-right: 24px;
     @if $debugging {
         outline: 2px solid black;
     } 

@@ -16,6 +16,7 @@ $debugging: false; //TODO remove, only for testing
     @include colorSideNavSliderDark;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     gap: 20px;
     z-index: 8;
 
@@ -26,6 +27,7 @@ $debugging: false; //TODO remove, only for testing
 
 .styleCloseBtn {
     @include styleCloseBtnDarkBg;
+    align-self: flex-end;
 }
 
 .styleCloseBtn:hover {
@@ -51,6 +53,8 @@ $debugging: false; //TODO remove, only for testing
 .textWrapper {
     max-width: 400px;
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
 
     @if $debugging {
         outline: 2px solid purple;
@@ -95,6 +99,7 @@ $debugging: false; //TODO remove, only for testing
 }
 .bodyCopy {
     @include styleBodyCopy;
+    @include colorPDarkBg;
 }
 .link {
     @include styleBodyCopy;
@@ -107,6 +112,8 @@ $debugging: false; //TODO remove, only for testing
 }
 .errorMsg {
     @include fontError;
+    max-width: 300px;
+
 }
 
 .loginLastSection {

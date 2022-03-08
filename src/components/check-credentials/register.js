@@ -89,7 +89,7 @@ export default function Register(props) {
         <div id='textWrapper' className={styles.textWrapper}>
           <button className={styles.styleCloseBtn} onClick={props.onClickClose}>X</button>
           <h3 className={styles.h3}>Skapa konto</h3>
-          <p>
+          <p className={styles.bodyCopy}>
             Första steget för att skicka ut skräddarsydda kuponger är att skapa ett konto.
           </p>
         </div>

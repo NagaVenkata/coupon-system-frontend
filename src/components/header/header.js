@@ -70,10 +70,10 @@ export default function Header(props) {
           </nav> : ''}
 
           <nav id='navHeader' className={styles.navHeader}>
-            <ul id='menuWrapper' className={styles.menuWrapper}>
-                <li><a className={styles.menuItem}href='http://adoveo.se/'>Så funkar det</a></li>
-                <li><a className={styles.menuItem}href='http://adoveo.se/'>Case</a></li>
-                <li><a className={styles.menuItem} href='http://adoveo.se/'>Kontakt</a></li>
+            <ul id='menuHeaderWrapper' className={styles.menuHeaderWrapper}>
+                <li><a className={styles.menuHeaderItem}href='http://adoveo.se/'>Så funkar det</a></li>
+                <li><a className={styles.menuHeaderItem}href='http://adoveo.se/'>Case</a></li>
+                <li><a className={styles.menuHeaderItem} href='http://adoveo.se/'>Kontakt</a></li>
             </ul>
           </nav>
 
