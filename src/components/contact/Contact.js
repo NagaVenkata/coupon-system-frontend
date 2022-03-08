@@ -10,7 +10,7 @@ export default function Contact() {
       <p className={styles.bodyCopy}>lovisa@adoveo.com</p>
       <p className={styles.bodyCopy}>+46 (0) 712 34 56 78</p>
 
-      <img className={styles.imgContactPerson}alt='Image of CEO Lovisa' src={imgContactPerson}></img>
+      <img className={styles.imgContactPerson}alt='CEO Lovisa Wachtmeister' src={imgContactPerson}></img>
 
     </div>
   )

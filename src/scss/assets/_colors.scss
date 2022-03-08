@@ -66,6 +66,10 @@ $filter-btn: drop-shadow(2px 2px 2px $color-dark-disable);
 @mixin colorPDarkBg {
     color: $color-white;
 }
+@mixin colorLogoFooter {
+    color: $color-white;
+}
+
 //TODO REMOVE
 $color-blue-ocean: #8AC1E6;//alt1
 //$color-blue-ocean: #86A7CE; //alt 2:
@@ -111,6 +115,7 @@ $color-lightSky: #4893CA;
 
 @mixin colorSideNavSlider {
     background-color: $color-dark-blue;
+    color: $color-white;
 }
 
 @mixin colorFooterItems {
@@ -118,7 +123,13 @@ $color-lightSky: #4893CA;
 }
 
 @mixin colorHoverLinks {
-    color: $color-creme;
+    color: $color-mint;
+}
+
+@mixin colorH5BgColorHover {
+    background-color: $color-dark-blue;
+    color: $color-white;
+    outline: 2px solid $color-white;
 }
 // ==============  Buttons ==============
 

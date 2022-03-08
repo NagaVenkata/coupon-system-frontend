@@ -52,6 +52,10 @@ $debugging: false; //TODO remove, only for testing
    cursor: pointer;
 }
 
+// .menuBackground:hover {
+//     fill: $color-mint;
+// }
+
 .sideNavSliderShow {
     @include styleSideNav;
     @include styleMenuItems;
@@ -70,9 +74,10 @@ a {
     @include colorMenuItems;
 }
 a:hover {
-    @include hoverLinks;
+    // @include hoverLinks;
+    @include colorHoverLinks;
+    text-decoration: underline;
 }
-
 
 .menuItem {
     margin-bottom: 20px;

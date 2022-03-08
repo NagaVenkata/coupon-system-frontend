@@ -73,7 +73,6 @@ $font-family-shrikhand: 'Shrikhand', cursive;
 
 
 
-
 // TO DO - sålla nedan
 @mixin fontMainMenu {
     font-family: $font-family-inter;
@@ -81,11 +80,8 @@ $font-family-shrikhand: 'Shrikhand', cursive;
     font-weight: 500;
 }
 
-
-
-
 @mixin fontPCursive {
-    font-weight: 500;
+    font-weight: 300;
     font-style: italic;
 }
 

@@ -9,10 +9,17 @@ export default function Footer() {
   return (
     <div id='footerWrapper' className={styles.footerWrapper}>
       <div id='logoIconFooterWrapper' className={styles.logoIconFooterWrapper}>
-        <Logo />
-        <h5 className={styles.footerHisspitch}>Lorem ipsum dolor</h5>
-        <h5 className={styles.footerHisspitch}>sit amet, consectetur adipiscing.</h5>
-        <SoMeLogos />
+        {/* <Logo /> */}
+        <h1 className={styles.logo}>Adoveo</h1> 
+
+        <h5 className={styles.footerHisspitch}>Genvägen till ökad försäljning!</h5>
+
+        {/* <SoMeLogos /> */}
+        <ul className={styles.soMeWrapper}>
+          <li><a className={styles.soMeLogo} href='https://www.linkedin.com/company/adoveo/?originalSubdomain=se' target='_blank' rel="noreferrer">LinkedIn</a></li>
+          <li><a className={styles.soMeLogo} href='https://www.facebook.com/adoveoteam/' target='_blank' rel="noreferrer">Facebook</a></li>
+          <li><a className={styles.soMeLogo} href='https://www.instagram.com/adoveo' target='_blank' rel="noreferrer">Instagram</a></li>
+        </ul>
         
       </div>
       <div id='footerColumnWrapper' className={styles.footerColumnWrapper}>
@@ -42,16 +49,21 @@ export default function Footer() {
           <div id='visitWrapper' className={styles.visitWrapper}>
             <h5 className={styles.h5}>Besöksadress</h5>
             <ul id='visitItems' className={styles.visitItems}>
-              <li className={styles.footerMenuItem}>c/o Epicenter</li>
-              <li className={styles.footerMenuItem}>Mäster Samuelsgatan 36</li >
-              <li className={styles.footerMenuItem}>111 57 Stockholm</li>
+              <a className={styles.footerMenuItem} href='https://www.google.com/maps/place/Epicenter+Stockholm/@59.3339921,18.0641561,17z/data=!3m1!4b1!4m12!1m5!8m4!1e2!2s101202609157798314298!3m1!1e1!3m5!1s0x465f9d5e84075eb9:0xa9de6dbd76819663!8m2!3d59.3339921!4d18.0663448!16s%2Fg%2F11byp6p1b2' target='_blank' rel="noreferrer">
+                <li>c/o Epicenter</li>
+                <li>Mäster Samuelsgatan 36</li>
+                <li>111 57 Stockholm</li>
+              </a>
             </ul>
           </div>
         </div> 
         
       </div>
-      <h3 className={styles.h3}>Om oss</h3>
-      <h3 className={styles.h3}>Karriär</h3>
+      <div className={styles.wrapper}>
+        <h5 className={styles.h5BgColor}>Om oss</h5>
+        <h5 className={styles.h5BgColor}>Karriär</h5>
+      </div>
+
 
       <p id='copyrightText' className={styles.copyrightText}>Copyright © 2022 Adoveo AB. All rights reserved.</p>
     </div>

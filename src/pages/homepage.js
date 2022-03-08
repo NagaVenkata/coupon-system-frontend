@@ -84,6 +84,7 @@ export default function Home(props) {
             <MainSection2 />
           </div>
 
+          {/* this causes an error */}
           <MainSection3 />
 
           <div id='howItWorksWrapper' className={styles.howItWorksWrapper}>

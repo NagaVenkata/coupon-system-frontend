@@ -79,13 +79,14 @@
 @mixin styleSideNav {
     @include fontH3;
     @include colorSideNav;
+    @include darkBgColor;
 
     height: 86%;
     width: 100%;
     position: fixed;
     z-index: 1;
     bottom: 0;
-    right: 0;
+    right: 0;    
 }
 
 @mixin styleMenuItems {
@@ -97,6 +98,8 @@
     @include fontH3;
     list-style: none;
     margin-top: 80px;
+
+   
 
 }
 
@@ -116,6 +119,21 @@ $height-input-btn: 50px;
 @mixin styleH5 {
     @include fontH5;
     @include colorH5;
+}
+
+@mixin styleH5BgColor {
+    @include fontH5;
+    // @include colorH5;
+    // @include fontH3;
+    @include mintBgColor;
+    padding: 12px 48px 12px 24px;
+    // margin-top: 48px;
+    margin-bottom: 12px;
+    max-width: 270px;
+}
+
+@mixin styleH5BgColorHover {
+    @include colorH5BgColorHover;
 }
 
 @mixin styleQuote {
@@ -138,9 +156,10 @@ $height-input-btn: 50px;
     @include fontInput;
 }
 
-@mixin styleFooterMenu {
-    @include colorFooterItems;
-}
+// @mixin styleFooterMenu {
+//     @include colorFooterItems;
+//     list-style: none;
+// }
 
 @mixin hoverFooterMenu {
     @include colorHoverLinks;

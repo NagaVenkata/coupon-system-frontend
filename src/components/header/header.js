@@ -92,7 +92,7 @@ export default function Header(props) {
           </>
         }
         </div>
-        <Hamburger onClickHamburger={onClickHamburger}/>
+        <Hamburger onClickHamburger={onClickHamburger} />
     </>
   )
 };
