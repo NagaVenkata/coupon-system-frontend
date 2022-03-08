@@ -88,7 +88,7 @@ export default function Header(props) {
           : 
           <>
             {/* <button id='registerBtnShortcut' className={styles.registerBtnShortcut} onClick={props.onClickRegister}>Skapa konto</button> */}
-            <button id='loginBtnShortcut' className={styles.loginBtnShortcut} onClick={props.onClickLogin}>{props.btnText}</button>
+            <button id='loginBtnShortcut' className={styles.loginBtnShortcut} onClick={props.onClickLogin}>LOGGA IN</button>
           </>
         }
         </div>

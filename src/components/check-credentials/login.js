@@ -78,8 +78,9 @@ export default function Login(props) {
       <section id='loginColumn1' className={styles.loginColumn1}>
 
         <div id='textWrapper' className={styles.textWrapper}>
+          <button className={styles.styleCloseBtn} onClick={props.onClickClose}>X</button>
           <h3 className={styles.h3}>Logga in</h3>
-          <p>
+          <p className={styles.bodyCopy}>
             Visa uppskattning till kollegor och kunder! Logga in för att skicka ut dina kuponger.
           </p>
         </div>
@@ -110,13 +111,13 @@ export default function Login(props) {
 
           <button type='submit' className={styles.loginBtn}>LOGGA IN</button>
         </form>
-
+        <p className={styles.link}>Glömt lösenord?</p>
         <div id='loginErrorMsgWrapper' className={styles.loginErrorMsgWrapper}>
           <p id='loginErrorMsg' className={styles.errorMsg}>{loginErrorMsg}</p>
         </div>
         
         <section id='loginLastSection' className={styles.loginLastSection}>
-          <h6 className={styles.h5}>Har du inget konto?</h6>
+          <p className={styles.bodyCopy}>Har du inget konto?</p>
           <button id='createAccountBtn' className={styles.createAccountBtn}>SKAPA KONTO</button>
           <p id='forgotPassword' className={styles.forgotPassword}><a href='http://adoveo.se/'>Glömt lösenord?</a></p>
         </section>

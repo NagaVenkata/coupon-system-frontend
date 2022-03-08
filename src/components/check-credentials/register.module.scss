@@ -4,11 +4,13 @@ $width-input-btn: 300px;
 $height-input-btn: 50px;
 
 .registerWrapper {
-    @include styleLoginSlider;
+    @include styleSlider;
+    @include colorSideNavSliderLight;
 }
 
 .h3 {
     @include fontH3;
+    margin-top: 66px;
 }
 
 .h4 {
@@ -22,6 +24,7 @@ $height-input-btn: 50px;
 
 .createAccountBtn {
     @include stylePrimaryBtnActive;
+    margin-top: 10px;
     width: $width-input-btn;
     height: $height-input-btn;
 }
@@ -39,13 +42,27 @@ $height-input-btn: 50px;
     @include styleSecondarySquareBtnHover;
 }
 
+.styleCloseBtn {
+    @include styleCloseBtnDarkBg;
+}
+
+.styleCloseBtn:hover {
+    // @include stylePrimaryBtnHoverDarkBg;
+    @include colorCloseBtnDarkBg;
+}
+
+
 .textAndCloseWrapper {
     display: flex;
     justify-content: space-between;
 }
 
 .textWrapper {
-    max-width: 70%;
+    max-width: 400px;
+    padding-top: 20px;
+}
+.inputLabel {
+    @include styleInputLabel;
 }
 
 .errorMsg {

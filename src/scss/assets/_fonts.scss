@@ -55,7 +55,7 @@ $font-family-shrikhand: 'Shrikhand', cursive;
 @mixin fontBtnText { //and CAPS
     font-family: $font-family-inter;
     font-size: 0.9rem;
-    font-weight: 500; //medium
+    font-weight: 600; //semi-bold
 }
 
 @mixin fontQuote { //or 'attention text'
@@ -89,13 +89,13 @@ $font-family-shrikhand: 'Shrikhand', cursive;
     color: red; 
     font-family: $font-family-inter;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 
 }
 
 @mixin fontInput {
     font-family: $font-family-inter;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 @mixin fontSideNavSlider {

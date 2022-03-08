@@ -12,7 +12,7 @@ $debugging: false; //TODO remove, only for testing
 
     .loginBtnShortcut {
         @include styleSecondaryBtnActive;
-        z-index: 19;
+        // z-index: 19; //funkar ej?
     }
     .loginBtnShortcut:hover {
         @include styleSecondaryBtnHover;
@@ -50,11 +50,8 @@ $debugging: false; //TODO remove, only for testing
 }
 .hamburger:hover {
    cursor: pointer;
+    width: 120px;
 }
-
-// .menuBackground:hover {
-//     fill: $color-mint;
-// }
 
 .sideNavSliderShow {
     @include styleSideNav;
@@ -92,6 +89,7 @@ a:hover {
     .hamburger {
         display: none;
     }
+
     .navHeader {
         display: block;
     }

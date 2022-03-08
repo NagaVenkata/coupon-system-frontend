@@ -32,16 +32,32 @@ $filter-btn: drop-shadow(2px 2px 2px $color-dark-disable);
 //if light bg-color
 @mixin colorSecondaryBtnActive {
     background-color: $color-dark-blue;
-    border: 2px solid $color-dark-blue;
+    border: 2px solid $color-white;
     color: $color-white;
     filter: $filter-btn;
 }
 
 @mixin colorSecondaryBtnHover {
-    background-color: $color-creme;
+    background-color: $color-white;
     // border: 2px solid $color-dark-blue;
     color: $color-dark-blue;
     // filter: $filter-btn;
+}
+
+@mixin colorInput {
+    border: 2px solid $color-white;
+    background-color: $color-dark-blue;
+    color: $color-light-disable;
+    filter: drop-shadow(2px 2px 2px $color-disable);
+
+}
+
+@mixin colorCloseBtnDarkBg {
+    background-color: $color-dark-blue;
+    border: 2px solid $color-white;
+    color: $color-white;
+
+
 }
 
 
@@ -113,9 +129,14 @@ $color-lightSky: #4893CA;
     background-color: $color-creme; 
 }
 
-@mixin colorSideNavSlider {
+@mixin colorSideNavSliderDark {
     background-color: $color-dark-blue;
     color: $color-white;
+}
+
+@mixin colorSideNavSliderLight {
+    background-color: $color-creme;
+    color: $color-dark-blue;
 }
 
 @mixin colorFooterItems {

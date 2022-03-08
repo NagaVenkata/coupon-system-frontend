@@ -15,12 +15,10 @@ export default function Home(props) {
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
   const [isUser, setIsUser] = useState(false);
-  const [btnText, setBtnText] = useState('');
 
   useEffect( () => {
 
     setIsUser(props.isUser);
-    setBtnText('LOGGA IN');
 
     //save mockdata in lS if lS is empty
     if (JSON.parse(localStorage.getItem('users')) === null) {
@@ -54,26 +52,23 @@ export default function Home(props) {
   const onClickLogin = () => {
     setShowLogin(!showLogin);
     // setShowRegister(false);   //TODO remove registerBtn from header?
-    if (showLogin === true) {
-      setBtnText('LOGGA IN');
-    } else {
-      setBtnText('STÄNG');
-    }
   };
 
   const onClickClose = () => {
     setShowRegister(false);
+    setShowLogin(false);
+
   };
 
   return (
     <>
         <header id='header' className={styles.headerWrapper}>
-          <Header isUser={isUser} onClickLogin={onClickLogin} onClickRegister={onClickRegister} btnText={btnText}/>
+          <Header isUser={isUser} onClickLogin={onClickLogin} onClickRegister={onClickRegister} />
         </header>
         
         <main className={styles.homePageMain}>
           
-          {showLogin ? <Login isUser={isUser}/> : ''}
+          {showLogin ? <Login isUser={isUser} onClickClose={onClickClose}/> : ''}
           {showRegister ? <Register isUser={isUser} onClickClose={onClickClose}/> : ''}
 
           <div id='mainSection1' className={styles.mainSection1}>

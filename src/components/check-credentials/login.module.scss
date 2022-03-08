@@ -12,7 +12,8 @@ $height-input-btn: 50px;
 $debugging: false; //TODO remove, only for testing
 
 .loginWrapper {
-    @include styleLoginSlider;
+    @include styleSlider;
+    @include colorSideNavSliderDark;
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -21,6 +22,15 @@ $debugging: false; //TODO remove, only for testing
     @if $debugging {
         outline: 2px solid pink;
     } 
+}
+
+.styleCloseBtn {
+    @include styleCloseBtnDarkBg;
+}
+
+.styleCloseBtn:hover {
+    // @include stylePrimaryBtnHoverDarkBg;
+    @include colorCloseBtnDarkBg;
 }
 
 .loginColumn1 {
@@ -33,11 +43,10 @@ $debugging: false; //TODO remove, only for testing
 
 .h3 {
     @include fontH3;
+    margin-top: 66px;
 }
 .inputLabel {
-    @include fontH5;
-    padding-left: 6px;
-    // margin-bottom: 2px;
+    @include styleInputLabel;
 }
 .textWrapper {
     max-width: 400px;
@@ -73,17 +82,31 @@ $debugging: false; //TODO remove, only for testing
     width: $width-input-btn;
     height: $height-input-btn;
 }
-
+.loginBtn:hover {
+    @include stylePrimaryBtnHoverDarkBg;
+}
 .loginErrorMsgWrapper {
     margin-top: $margin-in-section;
     height: 30px;
+    margin-bottom: 66px;
     @if $debugging {
         // outline: 2px solid red;
     } 
 }
+.bodyCopy {
+    @include styleBodyCopy;
+}
+.link {
+    @include styleBodyCopy;
+    margin-top: 24px;
+}
+.link:hover {
+    @include colorHoverLinks;
+    text-decoration: underline;
+    cursor: pointer;
+}
 .errorMsg {
     @include fontError;
-    margin-bottom: 10px;
 }
 
 .loginLastSection {
@@ -98,6 +121,10 @@ $debugging: false; //TODO remove, only for testing
     @include styleSecondaryBtnActive;
     width: $width-input-btn;
     height: $height-input-btn;
+}
+
+.createAccountBtn:hover {
+    @include colorSecondaryBtnHover;
 }
 
 .forgotPassword {

@@ -87,19 +87,20 @@ export default function Register(props) {
     <div id='registerWrapper' className={styles.registerWrapper}>
       <div id='textAndCloseWrapper' className={styles.textAndCloseWrapper}>
         <div id='textWrapper' className={styles.textWrapper}>
+          <button className={styles.styleCloseBtn} onClick={props.onClickClose}>X</button>
           <h3 className={styles.h3}>Skapa konto</h3>
           <p>
             Första steget för att skicka ut skräddarsydda kuponger är att skapa ett konto.
           </p>
         </div>
-        <CloseBtn onClickClose={props.onClickClose}/>
+        {/* <CloseBtn onClickClose={props.onClickClose}/> */}
         {/* <button className="closeBtn" onClick={props.onClickClose}>X</button> */}
       </div>
       
 
       <form onSubmit={onSubmit}>
         <div id="userNameRegisterWrapper">
-          <h4 id="userNameRegisterLabel">Din email</h4>
+          <h4 id="userNameRegisterLabel" className={styles.inputLabel}>Din email</h4>
           <input className={styles.input}
             id='usernameRegisterInput' 
             type='email' 
@@ -110,7 +111,7 @@ export default function Register(props) {
         </div><br></br>
 
         <div id="passwordRegisterWrapper">
-          <h4 id="passwordRegisterLabel">Välj lösenord</h4>
+          <h4 id="passwordRegisterLabel" className={styles.inputLabel}>Välj lösenord</h4>
           <input className={styles.input}
             id='passwordRegisterInput' 
             type='password' 
@@ -121,7 +122,7 @@ export default function Register(props) {
           />
         </div><br></br>
 
-        <button type="submit" className={styles.createAccountBtn}>Skapa konto</button>
+        <button type="submit" className={styles.createAccountBtn}>SKAPA KONTO</button>
       </form><br></br>
       
       <div id='errorMsgWrapper'>
