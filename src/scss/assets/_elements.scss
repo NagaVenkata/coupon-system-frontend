@@ -163,7 +163,6 @@ $height-input-btn: 50px;
     width: $width-input-btn;
     height: $height-input-btn;
     // border-radius: 1.4rem;
-    @include colorInput;
     @include fontInput;
 }
 

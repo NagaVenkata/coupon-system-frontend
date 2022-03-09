@@ -44,12 +44,22 @@ $filter-btn: drop-shadow(2px 2px 2px $color-dark-disable);
     // filter: $filter-btn;
 }
 
-@mixin colorInput {
+@mixin colorInputDark {
     border: 2px solid $color-white;
     background-color: $color-dark-blue;
     color: $color-light-disable;
     filter: drop-shadow(2px 2px 2px $color-disable);
+}
 
+@mixin colorInputLight {
+    border: 2px solid $color-dark-blue;
+    background-color: $color-creme;
+    color: $color-light-disable;
+    filter: drop-shadow(2px 2px 2px $color-disable);
+}
+
+@mixin colorInputFocus {
+    background-color: $color-white;
 }
 
 @mixin colorCloseBtnDarkBg {

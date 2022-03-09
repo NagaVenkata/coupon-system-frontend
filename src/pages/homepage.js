@@ -51,13 +51,12 @@ export default function Home(props) {
 
   const onClickLogin = () => {
     setShowLogin(!showLogin);
-    // setShowRegister(false);   //TODO remove registerBtn from header?
+    setShowRegister(false);   //TODO remove registerBtn from header?
   };
 
   const onClickClose = () => {
     setShowRegister(false);
     setShowLogin(false);
-
   };
 
   return (
@@ -68,8 +67,8 @@ export default function Home(props) {
         
         <main className={styles.homePageMain}>
           
-          {showLogin ? <Login isUser={isUser} onClickClose={onClickClose}/> : ''}
-          {showRegister ? <Register isUser={isUser} onClickClose={onClickClose}/> : ''}
+          {showLogin ? <Login isUser={isUser} onClickClose={onClickClose} onClickRegister={onClickRegister}/> : ''}
+          {showRegister ? <Register isUser={isUser} onClickClose={onClickClose} onClickLogin={onClickLogin}/> : ''}
 
           <div id='mainSection1' className={styles.mainSection1}>
             <IntroWrapper onClickRegister={onClickRegister}/>

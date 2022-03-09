@@ -31,6 +31,12 @@ $height-input-btn: 50px;
 
 .input {
     @include styleInput;
+    @include colorInputLight;
+}
+
+.input:focus {
+    @include colorInputFocus;
+    outline: none;
 }
 
 .createAccountBtn {

@@ -130,7 +130,7 @@ export default function Register(props) {
       </div><br></br>
 
       <h6 className={styles.h6}>Har du redan ett konto?</h6>
-      <button id='loginBtn' className={styles.loginBtn}>LOGGA IN</button>
+      <button id='loginBtn' className={styles.loginBtn} onClick={props.onClickLogin}>LOGGA IN</button>
         
     </div>
   )

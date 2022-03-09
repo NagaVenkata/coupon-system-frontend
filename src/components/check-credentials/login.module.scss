@@ -78,6 +78,12 @@ $debugging: false; //TODO remove, only for testing
 }
 .input {
     @include styleInput;
+    @include colorInputDark;
+}
+
+.input:focus {
+    @include colorInputFocus;
+    outline: none;
 }
 
 .loginBtn {
