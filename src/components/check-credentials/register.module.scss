@@ -1,5 +1,7 @@
 @import '../../scss/assets/elements';
 
+$margin-btw-section: 40px;
+$margin-in-section: 16px;
 $width-input-btn: 300px;
 $height-input-btn: 50px;
 
@@ -80,8 +82,17 @@ $height-input-btn: 50px;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    
 }
+
+.userNameRegisterWrapper {
+    margin-top: $margin-in-section;
+}
+
+.passwordRegisterWrapper {
+    margin-top: $margin-in-section;
+    margin-bottom: 10px;
+}
+
 .inputLabel {
     @include styleInputLabel;
 }
@@ -92,6 +103,7 @@ $height-input-btn: 50px;
 .errorMsg {
     @include fontError;
     margin-bottom: 0;
+    max-width: 300px;
     // border: 1px solid black;
 }
 

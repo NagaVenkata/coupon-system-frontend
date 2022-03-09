@@ -99,8 +99,8 @@ export default function Register(props) {
       
 
       <form onSubmit={onSubmit}>
-        <div id="userNameRegisterWrapper">
-          <h4 id="userNameRegisterLabel" className={styles.inputLabel}>Din email</h4>
+        <div id='userNameRegisterWrapper' className={styles.userNameRegisterWrapper}>
+          <h4 id='userNameRegisterLabel' className={styles.inputLabel}>Din email</h4>
           <input className={styles.input}
             id='usernameRegisterInput' 
             type='email' 
@@ -108,10 +108,10 @@ export default function Register(props) {
             value={userValue.username} 
             onChange={onChange}
           />
-        </div><br></br>
+        </div>
 
-        <div id="passwordRegisterWrapper">
-          <h4 id="passwordRegisterLabel" className={styles.inputLabel}>Välj lösenord</h4>
+        <div id='passwordRegisterWrapper' className={styles.passwordRegisterWrapper}>
+          <h4 id='passwordRegisterLabel' className={styles.inputLabel}>Välj lösenord</h4>
           <input className={styles.input}
             id='passwordRegisterInput' 
             type='password' 
@@ -120,14 +120,14 @@ export default function Register(props) {
             value={userValue.password} 
             onChange={onChange}
           />
-        </div><br></br>
+        </div>
 
-        <button type="submit" className={styles.createAccountBtn}>SKAPA KONTO</button>
-      </form><br></br>
+        <button type='submit' className={styles.createAccountBtn}>SKAPA KONTO</button>
+      </form>
       
       <div id='errorMsgWrapper'>
         <p id='errorMsg' className={styles.errorMsg}>{errorMsg}</p>
-      </div><br></br>
+      </div>
 
       <h6 className={styles.h6}>Har du redan ett konto?</h6>
       <button id='loginBtn' className={styles.loginBtn} onClick={props.onClickLogin}>LOGGA IN</button>

@@ -35,13 +35,13 @@ $debugging: false; //TODO remove, only for testing
     @include colorCloseBtnDarkBg;
 }
 
-.loginColumn1 {
-    gap: 40px;
+// .loginColumn1 {
+//     // gap: 40px;s
 
-    @if $debugging {
-        outline: 2px solid black;
-    } 
-}
+//     @if $debugging {
+//         outline: 2px solid black;
+//     } 
+// }
 
 .h3 {
     @include fontH3;
@@ -74,7 +74,6 @@ $debugging: false; //TODO remove, only for testing
 .passwordLoginWrapper {
     margin-top: $margin-in-section;
     margin-bottom: 10px;
-
 }
 .input {
     @include styleInput;
