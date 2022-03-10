@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import styles from './main-section2.module.scss'; 
+import styles from './Our-product.module.scss'; 
 import QuoteMark from '../../img/quote-mark.js';
 
-export default function MainSection2() {
+export default function OurProduct() {
 
   const onClick = () => {
     document.getElementById('mobileFlow').classList.toggle(`${styles.mobileFlow2}`);

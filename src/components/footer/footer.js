@@ -1,20 +1,14 @@
-import React, { useEffect } from 'react';
-import styles from './footer.module.scss';
-
-import Logo from '../../img/logo';
-import SoMeLogos from '../../img/some-logos';
+import React from 'react';
+import styles from './Footer.module.scss';
 
 export default function Footer() {
-
   return (
     <div id='footerWrapper' className={styles.footerWrapper}>
       <div id='logoIconFooterWrapper' className={styles.logoIconFooterWrapper}>
-        {/* <Logo /> */}
         <h1 className={styles.logo}>Adoveo</h1> 
 
         <h5 className={styles.footerHisspitch}>Genvägen till ökad försäljning!</h5>
 
-        {/* <SoMeLogos /> */}
         <ul className={styles.soMeWrapper}>
           <li><a className={styles.soMeLogo} href='https://www.linkedin.com/company/adoveo/?originalSubdomain=se' target='_blank' rel="noreferrer">LinkedIn</a></li>
           <li><a className={styles.soMeLogo} href='https://www.facebook.com/adoveoteam/' target='_blank' rel="noreferrer">Facebook</a></li>
@@ -63,7 +57,6 @@ export default function Footer() {
         <h5 className={styles.h5BgColor}>Om oss</h5>
         <h5 className={styles.h5BgColor}>Karriär</h5>
       </div>
-
 
       <p id='copyrightText' className={styles.copyrightText}>Copyright © 2022 Adoveo AB. All rights reserved.</p>
     </div>

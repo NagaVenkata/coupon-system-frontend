@@ -22,27 +22,27 @@ $debugging: false; //TODO remove, only for testing
 .footerWrapper {
   @include darkBgColor;
 }
+
 .logo {
   @include styleH1;
   @include colorLogoFooter;
   margin-bottom: 0;
 }
+
 .logoIconFooterWrapper {
   @include screenMargins;
   padding-top: 100px;
   margin-bottom: $margin-bottom-section;
 
-
   @if $debugging {
     outline: 2px solid black;
   } 
 }
+
 .soMeWrapper {
   @include colorFooterItems;
   list-style: none;
   padding-left: 0;
-
-  // display: flex;
   justify-content: space-between;
   gap: 10px;
   max-width: 150px;
@@ -53,7 +53,6 @@ $debugging: false; //TODO remove, only for testing
 }
 
 .soMeLogo {
-  @include styleSoMeLogo;
   height: 40px;
 }
 
@@ -85,7 +84,6 @@ $debugging: false; //TODO remove, only for testing
   margin-top: 24px;
   margin-bottom: 24px;
   max-width: 500px;
-
 }
 
 .footerColumnWrapper {
@@ -141,10 +139,11 @@ $debugging: false; //TODO remove, only for testing
 }
 
 .copyrightText {
+  @include styleCopyright;
+  @include fontBodyCopy;
   text-align: center;
   margin-bottom: 0;
   padding-bottom: 24px;
-  @include stylePCursive;
 }
 
 .wrapper {
@@ -154,18 +153,11 @@ $debugging: false; //TODO remove, only for testing
 // =========== media screens ===========
 //TBD tablet
 @media screen and (min-width: 736px) {
-  .backgroundImgFooter {
-    // background-color: red;
-    height: 80vh;
-  }
+
 }
 
-// desktop, height: 1024px
+// TBD desktop, height: 1024px
 @media screen and (min-width: 1440px) {
-  .backgroundImgFooter {
-    // background-color: green;
-    // height: 90vh;s
-  }
 
 }
 // =========== / media screens ===========

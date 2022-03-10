@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
-import styles from './login.module.scss';
+import styles from './Login.module.scss';
 
 export default function Login(props) {
   let navigate = useNavigate();
@@ -28,18 +28,17 @@ export default function Login(props) {
     
     if ( (userValueLogin.userName !== '') && (userValueLogin.password !== '')) {
       // ========= send userValue to backend, output errorMsg or successMsg + needed userInfo
-      // getData TODO: can 
-
+      // getData 
       let getMockUsers = JSON.parse(localStorage.getItem('users'));
 
       // check if userName is available
       let userExists = Object.values(getMockUsers).find(obj => obj.userName === userValueLogin.userName);
 
       if (userExists !== undefined) {
-        console.log("användarnamnet finns -> kolla lösen", userExists);
+        // console.log("användarnamnet finns -> kolla lösen", userExists);
 
         if (userExists.password === userValueLogin.password) {
-          console.log("match -> visa userPage");
+          // console.log("match -> visa userPage");
           let userLoggedIn = {
             userId: userExists.userId,
             campaignArr: [
@@ -104,18 +103,18 @@ export default function Login(props) {
               type='password' 
               name='password' 
               placeholder='Minst 8 tecken' 
-              // value={userPassword}
               onChange={onChange}
             />
           </section>
 
           <button type='submit' className={styles.loginBtn}>LOGGA IN</button>
         </form>
-        <p className={styles.link}>Glömt lösenord?</p>
-        <div id='loginErrorMsgWrapper' className={styles.loginErrorMsgWrapper}>
+        <div id='loginErrorMsgWrapper'>
           <p id='loginErrorMsg' className={styles.errorMsg}>{loginErrorMsg}</p>
         </div>
+        <p className={styles.link}>Glömt lösenord?</p>
         
+        <div className={styles.line}></div>
         <section id='loginLastSection' className={styles.loginLastSection}>
           <p className={styles.bodyCopy}>Har du inget konto?</p>
           <button id='createAccountBtn' className={styles.createAccountBtn} onClick={props.onClickRegister}>SKAPA KONTO</button>
@@ -127,12 +126,4 @@ export default function Login(props) {
 };
 
 //show errorMsg if input fields + termsCheckbox are empty
-
-
-//ev byta från showLogin state till kolla if isUserExist
-
-
-
-
-
-        
+//ev change showLogin state to check if isUserExist        

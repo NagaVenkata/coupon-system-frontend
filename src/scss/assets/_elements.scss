@@ -1,12 +1,6 @@
 @import './colors';
 @import './fonts';
 
-
-// Colors: Mint and dark blue
-// Border: 2px solid
-// Shadow, text-centered
-// Margin left o right: =2* som fontsize
-// Margin-top o bottom: = som fontsize
 @mixin stylePrimaryBtnActive {
     @include fontBtnText;
     @include colorPrimaryBtnActive;
@@ -22,6 +16,7 @@
     @include fontBtnText;
     @include colorPrimaryBtnHoverLightBg;
 }
+
 @mixin styleSecondaryBtnActive {
     @include fontBtnText;
     @include colorSecondaryBtnActive;
@@ -32,6 +27,7 @@
     @include fontBtnText;
     @include colorSecondaryBtnHover;
 }
+
 @mixin styleCloseBtnDarkBg {
     @include fontBtnText;
     @include stylePrimaryBtnHoverDarkBg;
@@ -42,7 +38,6 @@
 @mixin styleH1 {
     @include fontH1;
     z-index: 100;
-    // @include colorH2;
 }
 @mixin styleH2 {
     @include fontH2;
@@ -56,72 +51,6 @@
     margin-bottom: 12px;
     max-width: 270px;
 }
-@mixin styleBodyCopy {
-    @include fontBodyCopy; 
-    margin-bottom: 12px;
-}
-
-@mixin styleBodyCopyLight {
-    @include fontBodyCopy;
-    color: $color-creme;
-    margin-bottom: 12px;
-}
-@mixin styleHissPitch {
-    @include fontBodyCopy;
-    margin-bottom: 1.9rem;
-}
-
-@mixin styleQuotationMarks {
-
-}
-
-@mixin styleInputLabel {
-    @include fontH5;
-    padding-left: 6px;
-}
-
-//denna kan ej ha margin-right
-@mixin postItBg {
-    @include darkBgColor;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-@mixin styleSideNav {
-    @include fontH3;
-    @include colorSideNav;
-    @include darkBgColor;
-
-    height: 86%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    right: 0;    
-}
-
-@mixin styleMenuItems {
-    // @include fontH5;
-    // color: $color-white;
-}
-
-@mixin styleMenuWrapper {
-    @include fontH3;
-    list-style: none;
-    margin-top: 80px;
-
-   
-
-}
-
-
-
-
-//TO DO rensa
-
-$width-input-btn: 300px;
-$height-input-btn: 50px;
-
 @mixin styleH4 {
     @include fontH4;
     @include colorH4;
@@ -131,7 +60,6 @@ $height-input-btn: 50px;
     @include fontH5;
     @include colorH5;
 }
-
 @mixin styleH5BgColor {
     @include fontH5;
     // @include colorH5;
@@ -142,9 +70,52 @@ $height-input-btn: 50px;
     margin-bottom: 12px;
     max-width: 270px;
 }
-
 @mixin styleH5BgColorHover {
     @include colorH5BgColorHover;
+}
+
+
+@mixin styleBodyCopy {
+    @include fontBodyCopy; 
+    margin-bottom: 12px;
+}
+@mixin styleBodyCopyLight {
+    @include fontBodyCopy;
+    color: $color-creme;
+    margin-bottom: 12px;
+}
+
+@mixin styleHissPitch {
+    @include fontBodyCopy;
+    margin-bottom: 1.9rem;
+}
+
+@mixin styleInputLabel {
+    @include fontH5;
+    padding-left: 6px;
+}
+
+@mixin postItBg {
+    @include darkBgColor;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@mixin styleSideNav {
+    @include fontH3;
+    @include darkBgColor;
+    height: 86%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;    
+}
+
+@mixin styleMenuWrapper {
+    @include fontH3;
+    list-style: none;
+    margin-top: 80px;
 }
 
 @mixin styleQuote {
@@ -153,9 +124,8 @@ $height-input-btn: 50px;
 
 }
 
-@mixin stylePCursive {
-    @include fontPCursive;
-    @include colorPCursive;
+@mixin styleCopyright {
+    @include colorCopyright;
 }
 
 @mixin styleInput {
@@ -166,30 +136,26 @@ $height-input-btn: 50px;
     @include fontInput;
 }
 
-// @mixin styleFooterMenu {
-//     @include colorFooterItems;
-//     list-style: none;
-// }
-
 @mixin hoverFooterMenu {
     @include colorHoverLinks;
     text-decoration: underline;
     cursor: pointer;
 }
 
+@mixin styleError {
+    @include fontError;
+    @include colorError;
+}
+
 
 //menu
-
 @mixin styleSlider {
-    @include fontSideNavSlider;
     position: fixed;
     height: 100vh;
     width: 100%;
     padding: 6px 30px 0px 30px;
-    // bottom: 0;
     z-index: 9;
     right: 0;
-    
 }
 
 @mixin navHeader {
@@ -199,97 +165,29 @@ $height-input-btn: 50px;
     min-width: 300px;
     padding-left: 0px;
     margin-bottom: 0;
-    
-    
 }
 
-@mixin hoverLinks {
-    color: $color-plum;
-    text-decoration: underline;
-    cursor: pointer;
+@mixin line {
+    width: 200px;
+    margin-left: 10%;
+    margin-top: $margin-btw-section;
+    margin-bottom: $margin-btw-section;
 }
-
 
 // ==============  Buttons ==============
 
 @mixin stylePrimarySquareBtnHover {
-    // @include fontSquareBtnHover;
     @include colorPrimaryBtnHover;
-    // padding: 10px 20px 10px 20px;
-    // text-align: center;
 }
-
-// styleSecondaryBtnActive
-
-
 
 @mixin styleSecondarySquareBtnHover {
     @include colorSecondaryBtnHover;
-
 }
-
-// =======
-
-// =======
-@mixin styleSoMeLogo {
-    // width: 100px;
-}
-
-
-
-
-
-
-//TODO remove round btns?
-//rename round borders
-@mixin stylePrimaryRoundBtnActive {
-    @include colorPrimaryBtnActive;
-    @include fontPrimaryRoundBtnActive;
-    padding: 6px 20px 6px 20px;
-    border-radius: 1.4rem;
-}
-
-// @mixin stylePrimaryRoundBtnHover {
-//     @include colorPrimaryBtnActive;
-//     @include fontPrimaryBtnActive;
-//     padding: 10px 20px 10px 20px;
-//     border-radius: 1rem;
-// }
-
-@mixin stylePrimaryRoundBtnInactive {
-    // @include colorPrimaryBtnInactive ;
-    // @include fontPrimaryBtnInactive;
-    // padding: 10px 20px 10px 20px;
-    // border-radius: 1.4rem;
-
-}
-
-@mixin styleSecondaryRoundBtnActive {
-    @include colorSecondaryBtnActive;
-    @include fontSecondaryRoundBtnActive;
-    padding: 6px 20px 6px 20px;
-    border-radius: 1.4rem;
-}
-
-// ==============  /Buttons ==============
 
 // =========== media screens ===========
 //TBD tablet
 @media screen and (min-width: 736px) {
 
-    @mixin styleSideNavSlider {
-        // @include fontSideNavSlider;
-        // @include colorSideNavSlider;
-        // position: fixed;
-        // height: 86vh;
-        // width: 70%;
-        // padding: 20px 20px 0px 20px;
-        // margin-top: 60px;
-        // z-index: 100;
-        // right: 0;
-    
-    
-    }
 }
 
 // desktop, height: 1024px

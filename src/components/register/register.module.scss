@@ -21,6 +21,12 @@ $height-input-btn: 50px;
 .h4 {
     @include fontH5;
 }
+
+
+.h6 {
+    margin-top: 56px;
+}
+
 .bodyCopy {
     @include styleBodyCopy;
 }
@@ -51,6 +57,7 @@ $height-input-btn: 50px;
     width: $width-input-btn;
     height: $height-input-btn;
 }
+
 .loginBtn:hover {
     @include styleSecondarySquareBtnHover;
 }
@@ -89,18 +96,14 @@ $height-input-btn: 50px;
     @include styleInputLabel;
 }
 
-.errorMsgWrapper {
-    margin-top: $margin-in-section;
-    height: 45px;
-    margin-bottom: 66px;
-}
 .errorMsg {
-    @include fontError;
+    @include styleError;
     margin-bottom: 0;
     padding-top: $margin-in-section;
     max-width: 300px;
 }
 
-.h6 {
-    margin-top: 56px;
+.line {
+    @include line;
+    border-top: 1px solid $color-dark-blue;
 }

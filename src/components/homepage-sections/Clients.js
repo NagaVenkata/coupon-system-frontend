@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './main-section3.module.scss'; 
+import styles from './Clients.module.scss'; 
 import clientLogo from '../../img/sj-logo.gif';
 
-export default function MainSection3() {
+export default function Clients() {
 
   return (
     <div id='clientsSection2' className={styles.clientsSection2}>

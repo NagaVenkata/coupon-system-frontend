@@ -1,22 +1,11 @@
-import React, { useState, useEffect } from 'react';
-// import gsap from 'gsap';
+import React from 'react';
 
 import styles from './how-it-works.module.scss'; 
-import StepIcon1 from '../home/step-icon1';
-import StepIcon2 from '../home/step-icon2';
-import StepIcon3 from '../home/step-icon3';
+import StepIcon1 from '../../img/step-icon1';
+import StepIcon2 from '../../img/step-icon2';
+import StepIcon3 from '../../img/step-icon3';
 
-export default function MainSection3() {
-  
-  // useEffect( () => {
-  
-  //   gsap.to('#step1', {
-  //     //viewBox="0 0 738 182.767"> //default
-  //     attr: {viewBox:'0 0 500 -50', width:'220'}, 
-  //   });
-    
-  // }, []);
-
+export default function HowItWorks() {
   return (
     <>
       <div id='stepTextWrapper' className={styles.stepTextWrapper}>

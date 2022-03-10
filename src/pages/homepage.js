@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import styles from './homepage.module.scss'; 
 
 import Header from '../components/header/Header';
-import IntroWrapper from '../components/home/intro-wrapper';
-import Login from '../components/login/login';
-import Register from '../components/register/register';
-import MainSection2 from '../components/home/main-section2';
-import MainSection3 from '../components/home/main-section3';
+import IntroSection from '../components/homepage-sections/Intro-section';
+import Login from '../components/login/Login';
+import Register from '../components/register/Register';
+import OurProduct from '../components/homepage-sections/Our-product';
+import Clients from '../components/homepage-sections/Clients';
 import HowItWorks from '../components/how-it-works/How-it-works';
 import Contact from '../components/contact/Contact';
 import Footer from '../components/footer/Footer';
@@ -43,7 +43,6 @@ export default function Home(props) {
 
   }, []);
 
-  //TODO remove registerBtn from header?
   const onClickRegister = () => {
     setShowRegister(true);
     setShowLogin(false);
@@ -51,7 +50,7 @@ export default function Home(props) {
 
   const onClickLogin = () => {
     setShowLogin(!showLogin);
-    setShowRegister(false);   //TODO remove registerBtn from header?
+    setShowRegister(false);   
   };
 
   const onClickClose = () => {
@@ -71,15 +70,14 @@ export default function Home(props) {
           {showRegister ? <Register isUser={isUser} onClickClose={onClickClose} onClickLogin={onClickLogin}/> : ''}
 
           <div id='mainSection1' className={styles.mainSection1}>
-            <IntroWrapper onClickRegister={onClickRegister}/>
+            <IntroSection onClickRegister={onClickRegister}/>
           </div>
 
           <div id='mainSection2' className={styles.mainSection2}>
-            <MainSection2 />
+            <OurProduct />
           </div>
 
-          {/* this causes an error */}
-          <MainSection3 />
+          <Clients />
 
           <div id='howItWorksWrapper' className={styles.howItWorksWrapper}>
             <HowItWorks />
@@ -87,12 +85,8 @@ export default function Home(props) {
 
           <Contact />
         </main>
-        
-        {/* <footer id='footer' className={styles.footerWrapper}> */} 
+
           <Footer /> 
-        {/* </footer> */}
     </>
   )
 };
-
-// needs to add footer here and not in App due to css/sass?

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './intro-wrapper.module.scss'; 
+import styles from './Intro-section.module.scss'; 
 
 
 export default function IntroSection(props) {

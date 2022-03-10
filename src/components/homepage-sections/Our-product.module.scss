@@ -113,7 +113,7 @@ $margin-left-testimonial: 20px;
     @include styleQuote;
     min-width: 300px;
 }
-.quoteMark { //TODO add css for both marks, ATM only for first mark
+.quoteMark { 
     margin-bottom: -20px;
     @if $debugging {
         outline: 2px solid white;

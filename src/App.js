@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from './pages/homepage';
 import UserPage from './pages/userpage';
 import CreateCampaign from './components/create-campaign/index';
-import NotFound from './components/not-found/not-found';
+import NotFound from './components/not-found/Not-found';
 
 function App() {
 
@@ -31,9 +31,3 @@ function App() {
 };
 
 export default App;
-
-
-//  Q: why naming: CouponSystemMainPage?
-// why put BrowserRouter in another file? Dvs only BrowserRouter in step 1 and then i CouponSysdtemMainPage -> "as Router(...)"
-
-//why get warning: react_devtools_backend.js:4061 No routes matched location "/"   ? Need to addt o backend?

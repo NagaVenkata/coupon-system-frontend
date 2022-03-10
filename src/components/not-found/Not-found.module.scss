@@ -1,0 +1,27 @@
+//mobile-screen 357px x 667px
+@import '../../scss/assets/elements';
+@import '../../scss/assets/fonts';
+@import '../../scss/assets/colors';
+
+.wrapper {
+    @include styleSlider;
+    @include colorSideNavSliderDark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 8;
+}
+
+.h2 {
+    @include fontH2;
+}
+
+.ctaBtn {
+    @include stylePrimaryBtnActive;
+}
+
+.ctaBtn:hover {
+    @include stylePrimaryBtnHoverDarkBg;
+}

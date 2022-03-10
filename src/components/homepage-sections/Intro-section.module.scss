@@ -29,9 +29,6 @@ $debugging: false; //TODO remove, only for testing
 
 // =========== media screens ===========
 
-//mobile-screen 357px x 667px
-// @import '_base.scss';
-
 //TBD tablet
 @media screen and (min-width: 736px) {
     .introWrapper {
@@ -40,7 +37,7 @@ $debugging: false; //TODO remove, only for testing
 }
 
 // desktop, height: 1024px
-// @media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
 
-// }
+}
 // =========== / media screens ===========

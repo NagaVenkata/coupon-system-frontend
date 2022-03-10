@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
-import styles from './register.module.scss';
+import styles from './Register.module.scss';
 
 export default function Register(props) {
   let navigate = useNavigate();
@@ -94,7 +94,7 @@ export default function Register(props) {
             </p>
           </div>
         </div>
-        
+
 
         <form onSubmit={onSubmit}>
           <div id='userNameRegisterWrapper' className={styles.userNameRegisterWrapper}>
@@ -123,9 +123,11 @@ export default function Register(props) {
           <button type='submit' className={styles.createAccountBtn}>SKAPA KONTO</button>
         </form>
         
-        <div id='errorMsgWrapper'>
-          <p id='errorMsg' className={styles.errorMsg}>{errorMsg}</p>
+        <div id='registerErrorMsgWrapper'>
+          <p id='registerErrorMsg' className={styles.errorMsg}>{errorMsg}</p>
         </div>
+        
+        <div className={styles.line}></div>
 
         <h6 className={styles.h6}>Har du redan ett konto?</h6>
         <button id='loginBtn' className={styles.loginBtn} onClick={props.onClickLogin}>LOGGA IN</button>

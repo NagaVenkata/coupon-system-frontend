@@ -1,5 +1,4 @@
 //mobile-screen 357px x 667px
-
 @import '../../scss/assets/elements';
 @import '../../scss/assets/fonts';
 @import '../../scss/assets/colors';
@@ -31,25 +30,17 @@ $debugging: false; //TODO remove, only for testing
 }
 
 .styleCloseBtn:hover {
-    // @include stylePrimaryBtnHoverDarkBg;
     @include colorCloseBtnDarkBg;
 }
 
-// .loginColumn1 {
-//     // gap: 40px;s
-
-//     @if $debugging {
-//         outline: 2px solid black;
-//     } 
-// }
-
 .h3 {
     @include fontH3;
-    // margin-top: 66px;
 }
+
 .inputLabel {
     @include styleInputLabel;
 }
+
 .textWrapper {
     max-width: 400px;
     padding-top: 20px;
@@ -66,8 +57,8 @@ $debugging: false; //TODO remove, only for testing
         outline: 2px solid black;
     } 
 }
+
 .userNameLoginWrapper {
-    // margin-top: $margin-btw-section;
     margin-top: $margin-in-section;
 }
 
@@ -75,6 +66,7 @@ $debugging: false; //TODO remove, only for testing
     margin-top: $margin-in-section;
     margin-bottom: 10px;
 }
+
 .input {
     @include styleInput;
     @include colorInputDark;
@@ -91,38 +83,39 @@ $debugging: false; //TODO remove, only for testing
     width: $width-input-btn;
     height: $height-input-btn;
 }
+
 .loginBtn:hover {
     @include stylePrimaryBtnHoverDarkBg;
 }
-.loginErrorMsgWrapper {
-    margin-top: $margin-in-section;
-    height: 30px;
-    margin-bottom: 66px;
-    @if $debugging {
-        // outline: 2px solid red;
-    } 
-}
+
 .bodyCopy {
     @include styleBodyCopy;
     @include colorPDarkBg;
 }
+
 .link {
     @include styleBodyCopy;
     margin-top: 24px;
 }
+
 .link:hover {
     @include colorHoverLinks;
     text-decoration: underline;
     cursor: pointer;
 }
-.errorMsg {
-    @include fontError;
-    max-width: 300px;
 
+.errorMsg {
+    @include styleError;
+    max-width: 300px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
+.line {
+    @include line;
+    border-top: 1px solid $color-mint;
+}
 .loginLastSection {
-    margin-top: $margin-in-section;
 
     @if $debugging {
         outline: 2px solid black;
@@ -137,16 +130,4 @@ $debugging: false; //TODO remove, only for testing
 
 .createAccountBtn:hover {
     @include colorSecondaryBtnHover;
-}
-
-.forgotPassword {
-    margin-top: 10px;
-    a {
-        text-decoration: none;
-        color: $color-soft-black;
-    }
-    a:hover {
-        @include hoverLinks;
-    }
-
 }
