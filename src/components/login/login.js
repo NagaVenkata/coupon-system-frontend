@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
-import styles from './Login.module.scss';
+import styles from './login.module.scss';
 
 export default function Login(props) {
   let navigate = useNavigate();

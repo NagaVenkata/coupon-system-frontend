@@ -1,6 +1,6 @@
 import React, { useState ,useEffect } from 'react';
 import gsap from 'gsap';
-import styles from './Header.module.scss';
+import styles from './header.module.scss';
 import Hamburger from '../../img/hamburger';
 import Logo from '../../img/logo';
 

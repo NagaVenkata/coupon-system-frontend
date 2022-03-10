@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Contact.module.scss'; 
+import styles from './contact.module.scss'; 
 import imgContactPerson from '../../img/lovisa.png';
 
 export default function Contact() {

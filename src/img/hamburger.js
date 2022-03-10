@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../components/header/Header.module.scss';
+import styles from '../components/header/header.module.scss';
 
 export default function Hamburger(props) {
 

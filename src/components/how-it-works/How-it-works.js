@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './How-it-works.module.scss'; 
+import styles from './how-it-works.module.scss'; 
 import StepIcon1 from '../../img/step-icon1';
 import StepIcon2 from '../../img/step-icon2';
 import StepIcon3 from '../../img/step-icon3';
