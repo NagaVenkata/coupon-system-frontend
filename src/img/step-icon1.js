@@ -4,7 +4,7 @@ export default function StepIcon1() {
 
   return (
     <div>
-      <svg id="stepIcon1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="214" height="178.072" viewBox="44 0 214 178">
+      <svg id="stepIcon1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="200" height="178.072" viewBox="44 0 200 168">
       <defs>
         <filter id="left-hand" x="52.559" y="71.426" width="69.529" height="106.645" filterUnits="userSpaceOnUse">
           <feOffset dy="3" input="SourceAlpha"/>

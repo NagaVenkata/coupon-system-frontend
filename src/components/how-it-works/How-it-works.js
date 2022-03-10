@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './how-it-works.module.scss'; 
+import styles from './How-it-works.module.scss'; 
 import StepIcon1 from '../../img/step-icon1';
 import StepIcon2 from '../../img/step-icon2';
 import StepIcon3 from '../../img/step-icon3';
@@ -8,13 +8,13 @@ import StepIcon3 from '../../img/step-icon3';
 export default function HowItWorks() {
   return (
     <>
-      <div id='stepTextWrapper' className={styles.stepTextWrapper}>
+      <div id='stepTextWrapper'>
         <h3 className={styles.h3}>Så funkar det</h3>
         <p className={styles.bodyCopy}>Tre enkla steg för att skapa din brandade kupong. Vårt fantastiska team guidar dig längs vägen!</p>
       </div>
       
       <div id='stepCardsWrapper'className={styles.stepCardsWrapper} >
-        <div id='stepCard1' className={styles.stepCard}>
+        <div id='stepCard1' className={styles.stepCard1}>
           <StepIcon1/>
           <div className={styles.stepText}>
             <h4 className={styles.h4}>1. Logga in</h4>

@@ -19,6 +19,7 @@ $debugging: false; //TODO remove, only for testing
 .h3 {
     @include styleH3;
     @include screenMargins;
+    margin-left: 20px;
 
     @if $debugging {
         outline: 2px solid purple;
@@ -42,3 +43,18 @@ $debugging: false; //TODO remove, only for testing
     padding-top: 0px;
     object-fit: cover;
 }
+
+// =========== media screens ===========
+//TBD tablet
+@media screen and (min-width: 736px) {
+    .imgContactPerson {
+        max-width: 600px;
+    }
+}
+
+// desktop, height: 1024px
+@media screen and (min-width: 1440px) {
+
+
+}
+// =========== / media screens ===========

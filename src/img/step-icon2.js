@@ -3,7 +3,7 @@ import React from 'react';
 export default function StepIcon2() {
   return (
     <div>
-        <svg id="stepIcon2" xmlns="http://www.w3.org/2000/svg" width="226.5" height="182" viewBox="44 -16 226.5 178">
+        <svg id="stepIcon2" xmlns="http://www.w3.org/2000/svg" width="226.5" height="180" viewBox="44 -16 226.5 190">
             <g id="qrcodeicon" transform="translate(97.6 18.854)">
                 <g id="qrhandicon" transform="translate(-75.1 -19.999)">
                 <g id="qrcode-icon" transform="translate(22.5 46.202)">

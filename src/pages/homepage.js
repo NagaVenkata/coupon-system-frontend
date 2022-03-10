@@ -64,7 +64,7 @@ export default function Home(props) {
           <Header isUser={isUser} onClickLogin={onClickLogin} onClickRegister={onClickRegister} />
         </header>
         
-        <main className={styles.homePageMain}>
+        <main>
           
           {showLogin ? <Login isUser={isUser} onClickClose={onClickClose} onClickRegister={onClickRegister}/> : ''}
           {showRegister ? <Register isUser={isUser} onClickClose={onClickClose} onClickLogin={onClickLogin}/> : ''}

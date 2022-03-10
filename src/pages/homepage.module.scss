@@ -33,13 +33,6 @@ $debugging: false; //TODO remove, only for testing
     } 
 }
 
-.homePageMain {
-
-    @if $debugging {
-        outline: 2px solid black;
-    } 
-}
-
 .mainSection1 {
     @include screenMargins;
     display: flex;

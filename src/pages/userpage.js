@@ -15,7 +15,7 @@ export default function UserPage(props) {
     useEffect( () => {
         const userLoggedIn = location.state;
         console.log("userLoggedIn från userpage", userLoggedIn);
-        // setIsUser(true);
+        setIsUser(true);
     }, []);
 
     //Adjust Header - remove register+loginBtns. Print statisticIcon+Accountsettings
@@ -33,11 +33,10 @@ export default function UserPage(props) {
             <div id='userpage-main'>
                 <div id='userpage-start'>
                     <div id='create-campaign-wrapper'>
-                        <h4>Skapa ny kupongkampanj</h4>
-                        <button onClick={handleClick}>Skapa ny kupongkampanj</button>
+                        <button onClick={handleClick}>Skapa ny kupong</button>
                     </div>
                     <div id='view-all-campaigns-wrapper'>
-                        <h4>Alla kampanjer</h4>
+                        <h4>Dina kuponger</h4>
                         <div id='campaign-card-wrapper'>
                             <div id='campaign-card1'>Kampanj1</div>
                             <div id='campaign-card2'>Kampanj2</div>

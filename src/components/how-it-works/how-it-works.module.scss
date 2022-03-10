@@ -23,23 +23,24 @@ $debugging: false; //TODO remove, only for testing
     margin-bottom: 0;
 }
 
-.stepTextWrapper {
-    // @include postItBg;
-    // max-width: 380px;
-}
-
 .stepCardsWrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: baseline;
     gap: 40px;
-
 }
+
+.stepCard1 {
+    width: 240px;
+    @if $debugging {
+        outline: 2px solid black;
+    } 
+}
+
 .stepCard {
     width: 240px;
-    // height: 320px;
     margin-right: 24px;
     @if $debugging {
         outline: 2px solid black;
