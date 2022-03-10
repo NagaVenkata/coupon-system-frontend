@@ -15,11 +15,15 @@ function App() {
   //state true if user is logged in, else false
   const [isUser, setIsUser] = useState(false);
 
+  const loggedIn = () => {
+    setIsUser(true);
+  }
+
   return (
         <div id="app" className={styles.appWrapper}>
           <Router>
             <Routes>
-              <Route exact path="/" element={<HomePage isUser={isUser} />}></Route>
+              <Route exact path="/" element={<HomePage isUser={isUser} loggedIn={loggedIn}/>}></Route>
               <Route exact path="/userpage/:userId" element={<UserPage isUser={isUser} />}></Route>
               <Route exact path="/userpage/create-campaign/:campaignId" element={<CreateCampaign />}></Route>
               <Route exact path='*' element={<NotFound />}></Route>

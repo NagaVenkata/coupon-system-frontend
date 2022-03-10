@@ -8,14 +8,14 @@ export default function UserPage(props) {
     let navigate = useNavigate();
     const location = useLocation();
 
-    const [isUser, setIsUser] = useState(true);
+    const [isUser, setIsUser] = useState(false);
     // const [showCreateCampaign, setShowCreateCampaign] = useState(false);
 
 
     useEffect( () => {
         const userLoggedIn = location.state;
         console.log("userLoggedIn från userpage", userLoggedIn);
-        setIsUser(true);
+        setIsUser(props.isUser);
     }, []);
 
     //Adjust Header - remove register+loginBtns. Print statisticIcon+Accountsettings

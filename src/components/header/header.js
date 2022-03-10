@@ -10,7 +10,6 @@ export default function Header(props) {
 
   useEffect(() => {
     setIsUser(props.isUser);
-    // console.log("isUser från header:", isUser);
   }, []);
 
 
@@ -87,7 +86,6 @@ export default function Header(props) {
           </> 
           : 
           <>
-            {/* <button id='registerBtnShortcut' className={styles.registerBtnShortcut} onClick={props.onClickRegister}>Skapa konto</button> */}
             <button id='headerBtnShortcut' className={styles.loginBtn} onClick={props.onClickLogin}>LOGGA IN</button>
           </>
         }

@@ -14,11 +14,10 @@ import Footer from '../components/footer/Footer';
 export default function Home(props) {
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
-  const [isUser, setIsUser] = useState(false);
+  // const [isUser, setIsUser] = useState(false);
 
   useEffect( () => {
-
-    setIsUser(props.isUser);
+    // setIsUser(props.isUser);
 
     //save mockdata in lS if lS is empty
     if (JSON.parse(localStorage.getItem('users')) === null) {
@@ -61,13 +60,13 @@ export default function Home(props) {
   return (
     <>
         <header id='header' className={styles.headerWrapper}>
-          <Header isUser={isUser} onClickLogin={onClickLogin} onClickRegister={onClickRegister} />
+          <Header loggedIn={props.loggedIn} onClickLogin={onClickLogin} onClickRegister={onClickRegister} />
         </header>
         
         <main>
           
-          {showLogin ? <Login isUser={isUser} onClickClose={onClickClose} onClickRegister={onClickRegister}/> : ''}
-          {showRegister ? <Register isUser={isUser} onClickClose={onClickClose} onClickLogin={onClickLogin}/> : ''}
+          {showLogin ? <Login loggedIn={props.loggedIn} onClickClose={onClickClose} onClickRegister={onClickRegister}/> : ''}
+          {showRegister ? <Register loggedIn={props.loggedIn}onClickClose={onClickClose} onClickLogin={onClickLogin}/> : ''}
 
           <div id='mainSection1' className={styles.mainSection1}>
             <IntroSection onClickRegister={onClickRegister}/>

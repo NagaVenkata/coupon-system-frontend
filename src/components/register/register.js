@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import styles from './Register.module.scss';
 
 export default function Register(props) {
   let navigate = useNavigate();
-
+  // const [isUser, setIsUser] = useState(false);
   const [userValue, setUserValue] = useState({
     userName: '',
     password: ''
   });
   const [errorMsg, setErrorMsg] = useState('');
+
+  // useEffect(() => {
+  //   setIsUser(props.isUser);
+  // }, []);
 
   const onChange = (evt) => {
     //save input value username + password in state
@@ -72,6 +76,8 @@ export default function Register(props) {
 
        //TODO: save state userInfo in redux  
        localStorage.setItem('userLoggedIn', JSON.stringify(userLoggedIn));
+
+      //  setIsUser(true);
 
         //print userPage 
         navigate(`/userpage/${newUser.userId}`, {state: userLoggedIn});
