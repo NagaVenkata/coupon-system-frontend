@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import styles from './homepage.module.scss'; 
 
-import Header from '../components/header/header';
+import Header from '../components/header/Header';
 import IntroWrapper from '../components/home/intro-wrapper';
-import Login from '../components/check-credentials/login';
-import Register from '../components/check-credentials/register';
+import Login from '../components/login/login';
+import Register from '../components/register/register';
 import MainSection2 from '../components/home/main-section2';
 import MainSection3 from '../components/home/main-section3';
 import HowItWorks from '../components/how-it-works/How-it-works';
 import Contact from '../components/contact/Contact';
-import Footer from '../components/footer/footer';
+import Footer from '../components/footer/Footer';
 
 export default function Home(props) {
   const [showLogin, setShowLogin] = useState(false);

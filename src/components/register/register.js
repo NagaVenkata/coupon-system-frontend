@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 import styles from './register.module.scss';
-import CloseBtn from './close-btn.js';
 
 export default function Register(props) {
   let navigate = useNavigate();
@@ -85,53 +84,52 @@ export default function Register(props) {
 
   return (
     <div id='registerWrapper' className={styles.registerWrapper}>
-      <div id='textAndCloseWrapper' className={styles.textAndCloseWrapper}>
-        <div id='textWrapper' className={styles.textWrapper}>
-          <button className={styles.styleCloseBtn} onClick={props.onClickClose}>X</button>
-          <h3 className={styles.h3}>Skapa konto</h3>
-          <p className={styles.bodyCopy}>
-            Första steget för att skicka ut skräddarsydda kuponger är att skapa ett konto.
-          </p>
+      <section>
+        <div id='textAndCloseWrapper' className={styles.textAndCloseWrapper}>
+          <div id='textWrapper' className={styles.textWrapper}>
+            <button className={styles.styleCloseBtn} onClick={props.onClickClose}>X</button>
+            <h3 className={styles.h3}>Skapa konto</h3>
+            <p className={styles.bodyCopy}>
+              Första steget för att skicka ut skräddarsydda kuponger är att skapa ett konto.
+            </p>
+          </div>
         </div>
-        {/* <CloseBtn onClickClose={props.onClickClose}/> */}
-        {/* <button className="closeBtn" onClick={props.onClickClose}>X</button> */}
-      </div>
-      
-
-      <form onSubmit={onSubmit}>
-        <div id='userNameRegisterWrapper' className={styles.userNameRegisterWrapper}>
-          <h4 id='userNameRegisterLabel' className={styles.inputLabel}>Din email</h4>
-          <input className={styles.input}
-            id='usernameRegisterInput' 
-            type='email' 
-            name='userName' placeholder='example@mail.com' 
-            value={userValue.username} 
-            onChange={onChange}
-          />
-        </div>
-
-        <div id='passwordRegisterWrapper' className={styles.passwordRegisterWrapper}>
-          <h4 id='passwordRegisterLabel' className={styles.inputLabel}>Välj lösenord</h4>
-          <input className={styles.input}
-            id='passwordRegisterInput' 
-            type='password' 
-            name='password' 
-            placeholder='Minst 8 tecken' 
-            value={userValue.password} 
-            onChange={onChange}
-          />
-        </div>
-
-        <button type='submit' className={styles.createAccountBtn}>SKAPA KONTO</button>
-      </form>
-      
-      <div id='errorMsgWrapper'>
-        <p id='errorMsg' className={styles.errorMsg}>{errorMsg}</p>
-      </div>
-
-      <h6 className={styles.h6}>Har du redan ett konto?</h6>
-      <button id='loginBtn' className={styles.loginBtn} onClick={props.onClickLogin}>LOGGA IN</button>
         
+
+        <form onSubmit={onSubmit}>
+          <div id='userNameRegisterWrapper' className={styles.userNameRegisterWrapper}>
+            <h4 id='userNameRegisterLabel' className={styles.inputLabel}>Din email</h4>
+            <input className={styles.input}
+              id='usernameRegisterInput' 
+              type='email' 
+              name='userName' placeholder='example@mail.com' 
+              value={userValue.username} 
+              onChange={onChange}
+            />
+          </div>
+
+          <div id='passwordRegisterWrapper' className={styles.passwordRegisterWrapper}>
+            <h4 id='passwordRegisterLabel' className={styles.inputLabel}>Välj lösenord</h4>
+            <input className={styles.input}
+              id='passwordRegisterInput' 
+              type='password' 
+              name='password' 
+              placeholder='Minst 8 tecken' 
+              value={userValue.password} 
+              onChange={onChange}
+            />
+          </div>
+
+          <button type='submit' className={styles.createAccountBtn}>SKAPA KONTO</button>
+        </form>
+        
+        <div id='errorMsgWrapper'>
+          <p id='errorMsg' className={styles.errorMsg}>{errorMsg}</p>
+        </div>
+
+        <h6 className={styles.h6}>Har du redan ett konto?</h6>
+        <button id='loginBtn' className={styles.loginBtn} onClick={props.onClickLogin}>LOGGA IN</button>
+      </section>
     </div>
   )
 };

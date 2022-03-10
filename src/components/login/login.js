@@ -119,7 +119,7 @@ export default function Login(props) {
         <section id='loginLastSection' className={styles.loginLastSection}>
           <p className={styles.bodyCopy}>Har du inget konto?</p>
           <button id='createAccountBtn' className={styles.createAccountBtn} onClick={props.onClickRegister}>SKAPA KONTO</button>
-          <p id='forgotPassword' className={styles.forgotPassword}><a href='http://adoveo.se/'>Glömt lösenord?</a></p>
+   
         </section>
       </section>
     </div>

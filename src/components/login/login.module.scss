@@ -45,7 +45,7 @@ $debugging: false; //TODO remove, only for testing
 
 .h3 {
     @include fontH3;
-    margin-top: 66px;
+    // margin-top: 66px;
 }
 .inputLabel {
     @include styleInputLabel;

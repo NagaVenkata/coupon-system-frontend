@@ -1,7 +1,7 @@
 import React, { useState ,useEffect } from 'react';
 import gsap from 'gsap';
 import styles from './header.module.scss';
-import Hamburger from './hamburger2';
+import Hamburger from './hamburger';
 import Logo from '../../img/logo';
 
 export default function Header(props) {
@@ -87,7 +87,6 @@ export default function Header(props) {
           </> 
           : 
           <>
-            {/* <button id='registerBtnShortcut' className={styles.registerBtnShortcut} onClick={props.onClickRegister}>Skapa konto</button> */}
             <button id='loginBtnShortcut' className={styles.loginBtnShortcut} onClick={props.onClickLogin}>LOGGA IN</button>
           </>
         }

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import Header from '../components/header/header';
-import Footer from '../components/footer/footer';
+import Header from '../components/header/Header';
+import Footer from '../components/footer/Footer';
 import { useNavigate } from 'react-router';
 import { useLocation } from "react-router-dom";
 
