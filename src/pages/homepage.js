@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import styles from './homepage.module.scss'; 
 
+//useSelector gets things from our state. When we create a var with a state and use useSelector to get the state -> almost like a useEffect (first render = var is created and we get the state as it is BUT also an automatic subscription of our state so if state is changed -> automatic re-rendering of the component)
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router';
+
 import Header from '../components/header/Header';
 import IntroSection from '../components/homepage-sections/Intro-section';
 import Login from '../components/login/Login';
@@ -14,10 +18,14 @@ import Footer from '../components/footer/Footer';
 export default function Home(props) {
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
+  let navigate = useNavigate();
+
+
+  //test with redux
+  // const isUser = useSelector(state = state.isUser);
   // const [isUser, setIsUser] = useState(false);
 
   useEffect( () => {
-    // setIsUser(props.isUser);
 
     //save mockdata in lS if lS is empty
     if (JSON.parse(localStorage.getItem('users')) === null) {
@@ -36,11 +44,13 @@ export default function Home(props) {
         }
       ];
       localStorage.setItem('users', JSON.stringify(mockUsers));
-
       //later add mockCampaignArrs with userIds?
     }
 
+    console.log("props.isUser homepage:", props.isUser);
   }, []);
+
+
 
   const onClickRegister = () => {
     setShowRegister(true);
@@ -50,6 +60,7 @@ export default function Home(props) {
   const onClickLogin = () => {
     setShowLogin(!showLogin);
     setShowRegister(false);   
+    console.log("test");
   };
 
   const onClickClose = () => {
@@ -65,7 +76,7 @@ export default function Home(props) {
         
         <main>
           
-          {showLogin ? <Login loggedIn={props.loggedIn} onClickClose={onClickClose} onClickRegister={onClickRegister}/> : ''}
+          {showLogin ? <Login loggedIn={props.loggedIn} onClickClose={onClickClose} onClickRegister={onClickRegister} isUser={props.isUser} /> : ''}
           {showRegister ? <Register loggedIn={props.loggedIn}onClickClose={onClickClose} onClickLogin={onClickLogin}/> : ''}
 
           <div id='mainSection1' className={styles.mainSection1}>

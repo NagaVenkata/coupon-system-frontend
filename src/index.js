@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
 import App from './App';
-import {store} from "./store/index";
 import { Provider as ReduxProvider } from "react-redux";
-import * as serviceWorker from './serviceWorker';
+import {store} from "./store/store";
 
+
+// import './index.css';
+import * as serviceWorker from './serviceWorker';
 //const reduxStore = configureStore(window.REDUX_INITIAL_DATA);
 
 ReactDOM.render(
@@ -21,3 +22,5 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+//Row 13 -> Above App.js level, we have access to "subscribe"/get the changes + send dispatches/actions to our reducers 

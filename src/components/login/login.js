@@ -10,11 +10,14 @@ export default function Login(props) {
     password: ''
   });
   const [loginErrorMsg, setLoginErrorMsg] = useState('');
-  // const [isUser, setIsUser] = useState(false);
+  const [isUser, setIsUser] = useState(false);
 
-  // useEffect(() => {
-  //   setIsUser(props.isUser);
-  // }, []);
+  useEffect(() => {
+    setIsUser(props.isUser);
+    console.log("isUser login:", isUser);
+    console.log("props.isUser login:", props.isUser);
+
+  }, []);
 
   const onChange = (evt) => {
     setUserValueLogin({
@@ -57,7 +60,7 @@ export default function Login(props) {
           // setIsUser(true);
           // console.log("isUser after login OK:", isUser);
 
-          //what happens with isUser state in userpage when using navigate?
+          localStorage.setItem('isAuth', 'true'); //check if exists in userpage.js
           navigate(`/userpage/${userExists.userId}`, {state: userLoggedIn})
 
         } else {

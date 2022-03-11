@@ -1,10 +1,14 @@
 import React, { useState ,useEffect } from 'react';
 import gsap from 'gsap';
+import { useNavigate } from 'react-router';
+
 import styles from './header.module.scss';
 import Hamburger from '../../img/hamburger';
 import Logo from '../../img/logo';
 
 export default function Header(props) {
+  let navigate = useNavigate();
+
   const [isUser, setIsUser] = useState(false);
   const [showNav, setShowNav] = useState(false);
 
@@ -53,6 +57,11 @@ export default function Header(props) {
     }
   };
 
+  const onClickHome = () => {
+    localStorage.removeItem('isAuth');
+    navigate('/');
+  }
+
   return (
     <>
         <Logo />
@@ -83,6 +92,7 @@ export default function Header(props) {
           <>
             <button id='statisticIcon' className={styles.statisticIcon}>Statistik</button>
             <button id='settingsIcon' className={styles.settingsIcon}>Min profil</button> 
+            <button className={styles.loginBtn} onClick={onClickHome}>LOGGA UT</button>
           </> 
           : 
           <>

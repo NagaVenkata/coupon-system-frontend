@@ -13,9 +13,15 @@ export default function UserPage(props) {
 
 
     useEffect( () => {
+        //check isAuth
+        if (localStorage.getItem('isAuth') === null) {
+            navigate('/');
+        } 
+
         const userLoggedIn = location.state;
         console.log("userLoggedIn från userpage", userLoggedIn);
-        setIsUser(props.isUser);
+
+        setIsUser(props.isUser); //correct: App->homepage->Login->userpage
     }, []);
 
     //Adjust Header - remove register+loginBtns. Print statisticIcon+Accountsettings
@@ -29,7 +35,7 @@ export default function UserPage(props) {
 
   return (
     <>
-        <Header isUser={setIsUser}/>
+        <Header isUser={props.isUser}/>
             <div id='userpage-main'>
                 <div id='userpage-start'>
                     <div id='create-campaign-wrapper'>
