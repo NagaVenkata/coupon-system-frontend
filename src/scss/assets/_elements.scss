@@ -7,7 +7,6 @@
     text-align: center;
     padding: 0.9rem 1.8rem 0.9rem 1.8rem;
 }
-
 @mixin stylePrimaryBtnHoverDarkBg {
     @include fontBtnText;
     @include colorPrimaryBtnHoverDarkBg;
@@ -32,6 +31,7 @@
     @include fontBtnText;
     @include stylePrimaryBtnHoverDarkBg;
     width: 40px;
+    height: 30px;
     text-align: left;
 }
 
@@ -62,18 +62,14 @@
 }
 @mixin styleH5BgColor {
     @include fontH5;
-    // @include colorH5;
-    // @include fontH3;
     @include mintBgColor;
     padding: 12px 48px 12px 24px;
-    // margin-top: 48px;
     margin-bottom: 12px;
     max-width: 270px;
 }
 @mixin styleH5BgColorHover {
     @include colorH5BgColorHover;
 }
-
 
 @mixin styleBodyCopy {
     @include fontBodyCopy; 
@@ -109,8 +105,27 @@
     position: fixed;
     z-index: 1;
     bottom: 0;
-    right: 0;    
+    right: 0; 
 }
+
+//login + register
+@mixin styleSlider {
+    .h3 {
+        margin-top: 0;
+    }
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    padding: 6px 30px 0px 30px;
+    z-index: 9;
+    right: 0;
+    overflow: scroll;   
+}
+
+@mixin styleSliderBiggerScreens {
+    width: 50%;
+}
+
 
 @mixin styleMenuWrapper {
     @include fontH3;
@@ -129,11 +144,10 @@
 }
 
 @mixin styleInput {
-    padding: 6px 20px 6px 20px;
-    width: $width-input-btn;
-    height: $height-input-btn;
-    // border-radius: 1.4rem;
     @include fontInput;
+    width: 285px;
+    height: $height-input-btn;
+    padding-left: 10px;
 }
 
 @mixin hoverFooterMenu {
@@ -145,16 +159,6 @@
 @mixin styleError {
     @include fontError;
     @include colorError;
-}
-
-//menu
-@mixin styleSlider {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    padding: 6px 30px 0px 30px;
-    z-index: 9;
-    right: 0;
 }
 
 @mixin navHeader {
@@ -186,7 +190,7 @@
 // =========== media screens ===========
 //TBD tablet
 @media screen and (min-width: 736px) {
-
+    
 }
 
 // desktop, height: 1024px

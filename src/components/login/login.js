@@ -120,7 +120,7 @@ export default function Login(props) {
         
         <div className={styles.line}></div>
         <section id='loginLastSection' className={styles.loginLastSection}>
-          <p className={styles.bodyCopy}>Har du inget konto?</p>
+          <h6 className={styles.bodyCopy}>Har du inget konto?</h6>
           <button id='createAccountBtn' className={styles.createAccountBtn} onClick={props.onClickRegister}>SKAPA KONTO</button>
    
         </section>

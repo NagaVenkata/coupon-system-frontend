@@ -31,12 +31,9 @@ export default function Header(props) {
       });
       gsap.to('#line2', {
         rotate: -45,
-        // y: 36,
         x: -10,
       });
       gsap.to('#menuText', {
-        // y: 36,
-        // x: -26,
         fill: 'none',
       });
     } else {

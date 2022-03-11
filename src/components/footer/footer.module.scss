@@ -21,6 +21,7 @@ $debugging: false; //TODO remove, only for testing
 
 .footerWrapper {
   @include darkBgColor;
+  @include fontBodyCopy;
 }
 
 .logo {
@@ -75,6 +76,7 @@ $debugging: false; //TODO remove, only for testing
 
 .h5BgColor:hover {
   @include styleH5BgColorHover;
+  cursor: pointer;
 }
 
 .footerHisspitch {

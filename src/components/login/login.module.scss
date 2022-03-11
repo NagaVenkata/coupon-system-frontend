@@ -28,7 +28,6 @@ $debugging: false; //TODO remove, only for testing
     @include styleCloseBtnDarkBg;
     align-self: flex-end;
 }
-
 .styleCloseBtn:hover {
     @include colorCloseBtnDarkBg;
 }
@@ -69,7 +68,9 @@ $debugging: false; //TODO remove, only for testing
 
 .input {
     @include styleInput;
+    // @include fontInput;
     @include colorInputDark;
+
 }
 
 .input:focus {
@@ -91,6 +92,7 @@ $debugging: false; //TODO remove, only for testing
 .bodyCopy {
     @include styleBodyCopy;
     @include colorPDarkBg;
+    max-width: 350px;
 }
 
 .link {
@@ -116,7 +118,7 @@ $debugging: false; //TODO remove, only for testing
     border-top: 1px solid $color-mint;
 }
 .loginLastSection {
-
+    margin-bottom: $margin-btw-section;
     @if $debugging {
         outline: 2px solid black;
     } 
@@ -131,3 +133,18 @@ $debugging: false; //TODO remove, only for testing
 .createAccountBtn:hover {
     @include colorSecondaryBtnHover;
 }
+
+// =========== media screens ===========
+//TBD tablet
+@media screen and (min-width: 736px) {
+    .loginWrapper {
+        @include styleSliderBiggerScreens
+    }
+}
+
+// desktop, height: 1024px
+@media screen and (min-width: 1440px) {
+
+}
+// =========== / media screens ===========
+

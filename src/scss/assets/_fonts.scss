@@ -48,7 +48,6 @@ $font-family-inter: 'Inter', sans-serif;
 @mixin fontQuote { //or 'attention text'
     font-family: $font-family-inter;
     font-size: 1.25rem;
-    //TO DO remove italic effect
 }
 
 @mixin fontDisclaimer { //or placeholder or error

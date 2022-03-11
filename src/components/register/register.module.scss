@@ -12,7 +12,9 @@ $height-input-btn: 50px;
     flex-direction: column;
     align-items: center;
 }
-
+.registerSection {
+    margin-bottom: $margin-btw-section;
+}
 .h3 {
     @include fontH3;
     margin-top: 66px;
@@ -20,11 +22,6 @@ $height-input-btn: 50px;
 
 .h4 {
     @include fontH5;
-}
-
-
-.h6 {
-    margin-top: 56px;
 }
 
 .bodyCopy {
@@ -107,3 +104,18 @@ $height-input-btn: 50px;
     @include line;
     border-top: 1px solid $color-dark-blue;
 }
+
+// =========== media screens ===========
+//TBD tablet
+@media screen and (min-width: 736px) {
+    .registerWrapper {
+        @include styleSliderBiggerScreens
+    }
+}
+
+// desktop, height: 1024px
+@media screen and (min-width: 1440px) {
+
+}
+// =========== / media screens ===========
+

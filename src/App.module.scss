@@ -3,27 +3,10 @@
 @import '../src/scss/assets/colors';
 @import '../src/scss/assets/fonts';
 
-
-
 .appWrapper {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: $color-dark-blue;
   background-color: $color-creme;
-}
-
-
-
-//mobile-screen 357px x 667px
-// @import '_base.scss';
-
-//TBD tablet
-// @media screen and (min-width: 736px) {
-//     @import "tablet.scss";
-// }
-
-//desktop, height: 1024px
-// @media screen and (min-width: 1440px) {
-//     @import "_desktop.scss";
-// }
+};

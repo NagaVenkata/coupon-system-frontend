@@ -90,7 +90,7 @@ export default function Register(props) {
 
   return (
     <div id='registerWrapper' className={styles.registerWrapper}>
-      <section>
+      <section className={styles.registerSection}>
         <div id='textAndCloseWrapper' className={styles.textAndCloseWrapper}>
           <div id='textWrapper' className={styles.textWrapper}>
             <button className={styles.styleCloseBtn} onClick={props.onClickClose}>X</button>
@@ -135,7 +135,7 @@ export default function Register(props) {
         
         <div className={styles.line}></div>
 
-        <h6 className={styles.h6}>Har du redan ett konto?</h6>
+        <h6 className={styles.bodyCopy}>Har du redan ett konto?</h6>
         <button id='loginBtn' className={styles.loginBtn} onClick={props.onClickLogin}>LOGGA IN</button>
       </section>
     </div>
