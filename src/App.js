@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from './pages/homepage'; //helloworld
 import UserPage from './pages/userpage';
 import CreateCampaign from './components/create-campaign/index';
-import NotFound from './components/not-found/Not-found';
+import NotFound from './components/not-found/not-found';
 
 function App() {
 

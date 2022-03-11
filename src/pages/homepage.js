@@ -5,15 +5,15 @@ import styles from './homepage.module.scss';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
 
-import Header from '../components/header/Header';
-import IntroSection from '../components/homepage-sections/Intro-section';
-import Login from '../components/login/Login';
-import Register from '../components/register/Register';
-import OurProduct from '../components/homepage-sections/Our-product';
-import Clients from '../components/homepage-sections/Clients';
-import HowItWorks from '../components/how-it-works/How-it-works';
-import Contact from '../components/contact/Contact';
-import Footer from '../components/footer/Footer';
+import Header from '../components/header/header';
+import IntroSection from '../components/homepage-sections/intro-section';
+import Login from '../components/login/login';
+import Register from '../components/register/register';
+import OurProduct from '../components/homepage-sections/our-product';
+import Clients from '../components/homepage-sections/clients';
+import HowItWorks from '../components/how-it-works/how-it-works';
+import Contact from '../components/contact/contact';
+import Footer from '../components/footer/footer';
 
 export default function Home(props) {
   const [showLogin, setShowLogin] = useState(false);

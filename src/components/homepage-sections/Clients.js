@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Clients.module.scss'; 
+import styles from './clients.module.scss'; 
 import clientLogo from '../../img/sj-logo.gif';
 
 export default function Clients() {

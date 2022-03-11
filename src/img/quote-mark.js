@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../components/homepage-sections/Our-product.module.scss';
+import styles from '../components/homepage-sections/our-product.module.scss';
 
 export default function QuoteMark() {
   return (

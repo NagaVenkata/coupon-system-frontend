@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Our-product.module.scss'; 
+import styles from './our-product.module.scss'; 
 import QuoteMark from '../../img/quote-mark.js';
 
 export default function OurProduct() {
